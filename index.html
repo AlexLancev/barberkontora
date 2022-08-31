@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/slick.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,regular&display=swap&subset=cyrillic-ext" rel="stylesheet" />
@@ -12,7 +12,10 @@
     <title>barberkontora</title>
 </head>
 <body>
+
     <div class="wrapper">
+
+
         <header class="header">
             <div class="header__body">
 
@@ -52,9 +55,9 @@
                     </nav>
     
                     <div class="logo">
-                            <a href="#" class="logo__link">
-                                <img src="images/svg/logo.svg" alt="">
-                            </a>
+                            <span class="logo__link">
+                                <img src="images/svg/logo.svg" alt="Логотип компании barberkontora">
+                            </span>
                     </div>
     
                     <nav class="header__menu menu">
@@ -109,9 +112,9 @@
 
                    </div>
 
-                    <div class="burger btn">
+                    <button type="button" class="burger btn">
                         <span></span>
-                    </div>
+                    </button>
 
                     
                         <ul class="menu__list">
@@ -184,6 +187,7 @@
 
             </div>
         </header>
+
         <main class="main">
             <div class="header__performance" style="background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(images/bg/header-bg.jpg);">
             
@@ -196,7 +200,7 @@
                     </h2>
                     <div class="btn">
                         <span class="btn__span"></span>
-                        <a href="#" class="btn__link">Online - сертификат</a>
+                        <a href="#modal-1" class="btn__link">Online - сертификат</a>
                     </div>
                 </div>
 
@@ -436,7 +440,7 @@
                         </h2>
                         <div class="btn">
                             <span class="btn__span"></span>
-                            <a href="#" class="btn__link">Все барберы</a>
+                            <a href="barbers.html" class="btn__link">Все барберы</a>
                         </div>
                     </div>
                     <div class="barbers-slider">
@@ -468,9 +472,9 @@
                                 </div>
                             </div>
                             <div class="barbers-slider__images">
-                                <div class="barbers__box-images">
-                                    <img src="images/barbers/home-barber-1.png" alt="">
-                                </div>
+                                <figure class="barbers__box-images">
+                                    <img src="images/barbers/home-barber-1.png" alt="ШЕФ БАРБЕР Святослав Пушкин">
+                                </figure>
                             </div>
                         </div>
 
@@ -501,9 +505,9 @@
                                 </div>
                             </div>
                             <div class="barbers-slider__images">
-                                <div class="barbers__box-images">
-                                    <img src="images/barbers/home-barber-2.png" alt="">
-                                </div>
+                                <figure class="barbers__box-images">
+                                    <img src="images/barbers/home-barber-2.png" alt="ШЕФ БАРБЕР Евгений Антоненко">
+                                </figure>
                             </div>
                         </div>
                         <div class="barbers-slider__column">
@@ -533,9 +537,9 @@
                                 </div>
                             </div>
                             <div class="barbers-slider__images">
-                                <div class="barbers__box-images">
-                                    <img src="images/barbers/home-barber-3.png" alt="">
-                                </div>
+                                <figure class="barbers__box-images">
+                                    <img src="images/barbers/home-barber-3.png" alt="ШЕФ БАРБЕР Олег Мухин">
+                                </figure>
                             </div>
                         </div>
 
@@ -550,7 +554,7 @@
                         </h2>
                         <div class="btn">
                             <span class="btn__span"></span>
-                            <a href="#" class="btn__link">Вся продукция</a>
+                            <a href="market.html" class="btn__link">Вся продукция</a>
                         </div>
                     </div>
                     <div class="market-home__body">
@@ -558,11 +562,11 @@
                             <div class="market-home__slider">
 
                                 <div class="market-home__cell">
-                                    <div class="market-home__images">
+                                    <figure class="market-home__images">
                                         <a href="#">
-                                            <img src="images/market/market-1.jpg" alt="">
+                                            <img src="images/market/market-1.jpg" alt="Матовая глина LS&B 85 Karats Original Clay">
                                         </a>
-                                    </div>
+                                    </figure>
                                     <h3 class="market-home__title">
                                         <a href="#">LS&B 85 Karats Original Clay</a>
                                     </h3>
@@ -575,11 +579,11 @@
                                 </div>
 
                                 <div class="market-home__cell">
-                                    <div class="market-home__images">
+                                    <figure class="market-home__images">
                                         <a href="#">
-                                            <img src="images/market/market-2.png" alt="">
+                                            <img src="images/market/market-2.png" alt="Аргановое масло LS&B Argan Blend Shave Oil">
                                         </a>
-                                    </div>
+                                    </figure>
                                     <h3 class="market-home__title">
                                         <a href="#">LS&B Argan Blend Shave Oil</a>
                                     </h3>
@@ -592,11 +596,11 @@
                                 </div>
 
                                 <div class="market-home__cell">
-                                    <div class="market-home__images">
+                                    <figure class="market-home__images">
                                         <a href="#">
-                                            <img src="images/market/market-3.png" alt="">
+                                            <img src="images/market/market-3.png" alt="Гель конструктор LS&B Freestyl Protein Gel">
                                         </a>
-                                    </div>
+                                    </figure>
                                     <h3 class="market-home__title">
                                         <a href="#">LS&B Freestyl Protein Gel</a>
                                     </h3>
@@ -609,11 +613,11 @@
                                 </div>
 
                                 <div class="market-home__cell">
-                                    <div class="market-home__images">
+                                    <figure class="market-home__images">
                                         <a href="#">
-                                            <img src="images/market/market-4.png" alt="">
+                                            <img src="images/market/market-4.png" alt="Шампунь для густых, седых, жестких волос LS&B Recharge Moisture Shampoo">
                                         </a>
-                                    </div>
+                                    </figure>
                                     <h3 class="market-home__title">
                                         <a href="#">LS&B Recharge Moisture Shampoo</a>
                                     </h3>
@@ -626,11 +630,11 @@
                                 </div>
 
                                 <div class="market-home__cell">
-                                    <div class="market-home__images">
+                                    <figure class="market-home__images">
                                         <a href="#">
-                                            <img src="images/market/market-5.jpg" alt="">
+                                            <img src="images/market/market-5.jpg" alt="Матовая помада Reuzel Clay Matte Pomade">
                                         </a>
-                                    </div>
+                                    </figure>
                                     <h3 class="market-home__title">
                                         <a href="#">Reuzel Clay Matte Pomade</a>
                                     </h3>
@@ -643,11 +647,11 @@
                                 </div>
 
                                 <div class="market-home__cell">
-                                    <div class="market-home__images">
+                                    <figure class="market-home__images">
                                         <a href="#">
-                                            <img src="images/market/market-6.jpg" alt="">
+                                            <img src="images/market/market-6.jpg" alt="Кондиционированный шампунь Reuzel Daily Shampoo">
                                         </a>
-                                    </div>
+                                    </figure>
                                     <h3 class="market-home__title">
                                         <a href="#">Reuzel Daily Shampoo</a>
                                     </h3>
@@ -745,190 +749,190 @@
                     
                         <div class="top-row">
                             <h2 class="top-row__title">
-                                МАРКЕТ
+                                БЛОГ
                             </h2>
                             <div class="btn">
                                 <span class="btn__span"></span>
-                                <a href="#" class="btn__link">Вся продукция</a>
+                                <a href="blog.html" class="btn__link">НАШ БЛОГ</a>
                             </div>
                         </div>
 
                         <div class="blog-body">
                             
-                            <div class="blog-column">
+                            <a class="blog-column">
                                 <div class="blog-item">
-                                    <a class="blog-item__images-first" href="#">
-                                            <img src="images/blog/blog-1.jpg" alt="">
-                                    </a>
+                                    <figure class="blog-item__images-first">
+                                            <img src="images/blog/blog-1.jpg" alt="Барбер крепкого телосложения в чёрной бейсболке подстригает клиента">
+                                    </figure>
                                     <div class="blog-item__info">
                                         <h4 class="blog-item__heading">
                                             МУЖСКИЕ СТРИЖКИ
                                         </h4>
                                         <h3 class="blog-item__title">
-                                            <a href="#">
+                                            
                                                 Нормально ли не разговаривать с парикмахером во время стрижки?
-                                            </a>
+                                            
                                         </h3>
                                         <p class="blog-item__text">
                                             Да, конечно! Вы можете просто расслабится и наслаждаться покоем.
                                         </p>
                                         <div class="blog-author">
-                                            <a href="#" class="blog-author__info">
-                                                <div class="blog-author__images">
-                                                    <img src="images/blog/blog-author/blog-author_1.png" alt="">
-                                                </div>
+                                            <div class="blog-author__info">
+                                                <figure class="blog-author__images">
+                                                    <img src="images/blog/blog-author/blog-author_1.png" alt="Александр Тетюев">
+                                                </figure>
                                                 <div class="blog-author__name">
                                                     <span>Автор</span>
                                                     <span>Александр Тетюев</span>
                                                 </div>
-                                            </a>
+                                            </div>
                                             <div class="blog-author__time">
                                                 <span>4 минуты</span>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
-                            </div>
+                            </a>
 
-                            <div class="blog-column">
+                            <a class="blog-column">
                                 <div class="blog-item">
-                                    <a class="blog-item__images" href="#">
-                                            <img src="images/blog/blog-2.jpg" alt="">
-                                    </a>
+                                    <figure class="blog-item__images">
+                                            <img src="images/blog/blog-2.jpg" alt="Глиняный горшок">
+                                    </figure>
                                     <div class="blog-item__info">
                                         <h4 class="blog-item__heading">
                                             МУЖСКИЕ СТРИЖКИ
                                         </h4>
                                         <h3 class="blog-item__title">
-                                            <a href="#">
+                                            
                                                 «Горшок» снова в моде
-                                            </a>
+                                            
                                         </h3>
                                         <p class="blog-item__text">
                                             Хотите добавить немного ностальгии в свой образ в этом сезоне? У вас могут быть приятные воспоминания о давно минувших днях, когда мама или папа усаживали вас на кухонный стул и стригли как умеют.
                                         </p>
                                     </div>
                                     <div class="blog-author">
-                                        <a href="#" class="blog-author__info">
-                                            <div class="blog-author__images">
-                                                <img src="images/blog/blog-author/blog-author_2.png" alt="">
-                                            </div>
+                                        <div href="#" class="blog-author__info">
+                                            <figure class="blog-author__images">
+                                                <img src="images/blog/blog-author/blog-author_2.png" alt="Александр Салатов">
+                                            </figure>
                                             <div class="blog-author__name">
                                                 <span>Автор</span>
                                                 <span>Александр Салатов</span>
                                             </div>
-                                        </a>
+                                        </div>
                                         <div class="blog-author__time">
                                             <span>4 минуты</span>
                                         </div>
                                     </div>
                                 </div>
-                            </div>
+                            </a>
 
-                            <div class="blog-column">
+                            <a class="blog-column">
                                 <div class="blog-item">
-                                    <a class="blog-item__images" href="#">
-                                            <img src="images/blog/blog-3.jpg" alt="">
-                                    </a>
+                                    <figure class="blog-item__images" href="#">
+                                            <img src="images/blog/blog-3.jpg" alt="Кудрявый мужчина в пальто">
+                                    </figure>
                                     <div class="blog-item__info">
                                         <h4 class="blog-item__heading">
                                             МУЖСКИЕ СТРИЖКИ
                                         </h4>
                                         <h3 class="blog-item__title">
-                                            <a href="#">
+                                            
                                                 Мужские кудри
-                                            </a>
+                                            
                                         </h3>
                                         <p class="blog-item__text">
                                             Говоря о вьющихся волосах, на ум может прийти химическая завивка 80-х. Но при правильном уходе и укладке, кудрявые волосы могут выглядеть очень стильно. Вспомните Джона Сноу из «Игры
                                         </p>
                                     </div>
                                     <div class="blog-author">
-                                        <a href="#" class="blog-author__info">
-                                            <div class="blog-author__images">
-                                                <img src="images/blog/blog-author/blog-author_3.png" alt="">
-                                            </div>
+                                        <div class="blog-author__info">
+                                            <figure class="blog-author__images">
+                                                <img src="images/blog/blog-author/blog-author_3.png" alt="Максим Филлипов">
+                                            </figure>
                                             <div class="blog-author__name">
                                                 <span>Автор</span>
                                                 <span>Максим Филлипов</span>
                                             </div>
-                                        </a>
+                                        </div>
                                         <div class="blog-author__time">
                                             <span>4 минуты</span>
                                         </div>
                                     </div>
                                 </div>
-                            </div>
+                            </a>
 
-                            <div class="blog-column">
+                            <a class="blog-column">
                                 <div class="blog-item">
-                                    <a class="blog-item__images" href="#">
-                                            <img src="images/blog/blog-4.jpg" alt="">
-                                    </a>
+                                    <figure class="blog-item__images">
+                                            <img src="images/blog/blog-4.jpg" alt="Команда барберов стоят возле клиента который усажен в кресло. И все вместе что то обсуждают">
+                                    </figure>
                                     <div class="blog-item__info">
                                         <h4 class="blog-item__heading">
                                             МУЖСКИЕ СТРИЖКИ
                                         </h4>
                                         <h3 class="blog-item__title">
-                                            <a href="#">
+                                            
                                                 Почему карьера парикмахера хороший выбор
-                                            </a>
+                                            
                                         </h3>
                                         <p class="blog-item__text">
                                             Выбрать правильный карьерный путь может быть непросто. В идеале вам нужно выбрать прибыльную профессию, основанную на том, что вам нравится
                                         </p>
                                     </div>
                                     <div class="blog-author">
-                                        <a href="#" class="blog-author__info">
-                                            <div class="blog-author__images">
-                                                <img src="images/blog/blog-author/blog-author_4.png" alt="">
-                                            </div>
+                                        <div class="blog-author__info">
+                                            <figure class="blog-author__images">
+                                                <img src="images/blog/blog-author/blog-author_4.png" alt="Богдан Бородин">
+                                            </figure>
                                             <div class="blog-author__name">
                                                 <span>Автор</span>
                                                 <span>Богдан Бородин</span>
                                             </div>
-                                        </a>
+                                        </div>
                                         <div class="blog-author__time">
                                             <span>4 минуты</span>
                                         </div>
                                     </div>
                                 </div>
-                            </div>
+                            </a>
 
-                            <div class="blog-column">
+                            <a class="blog-column">
                                 <div class="blog-item">
-                                    <a class="blog-item__images" href="#">
-                                            <img src="images/blog/blog-5.jpg" alt="">
-                                    </a>
+                                    <figure class="blog-item__images">
+                                            <img src="images/blog/blog-5.jpg" alt="Ресепшн барбершопа">
+                                    </figure>
                                     <div class="blog-item__info">
                                         <h4 class="blog-item__heading">
                                             МУЖСКИЕ СТРИЖКИ
                                         </h4>
                                         <h3 class="blog-item__title">
-                                            <a href="#">
+                                            
                                                 Как найти первоклассную парикмахерскую
-                                            </a>
+                                            
                                         </h3>
                                         <p class="blog-item__text">
                                             Когда мужчины хотят подстричься и побриться, они часто говорят себе: «Мне просто нужно найти дешевую парикмахерскую рядом с домом и зайти в
                                         </p>
                                     </div>
                                     <div class="blog-author">
-                                        <a href="#" class="blog-author__info">
-                                            <div class="blog-author__images">
-                                                <img src="images/blog/blog-author/blog-author_5.png" alt="">
-                                            </div>
+                                        <div class="blog-author__info">
+                                            <figure class="blog-author__images">
+                                                <img src="images/blog/blog-author/blog-author_5.png" alt="Слава Зиновьев">
+                                            </figure>
                                             <div class="blog-author__name">
                                                 <span>Автор</span>
                                                 <span>Слава Зиновьев</span>
                                             </div>
-                                        </a>
+                                        </div>
                                         <div class="blog-author__time">
                                             <span>4 минуты</span>
                                         </div>
                                     </div>
                                 </div>
-                            </div>
+                            </a>
                         </div>
                 </div>
             </div>
@@ -938,26 +942,27 @@
                         НАШИ ПАРТНЕРЫ
                     </h2>
                     <div class="partners-body">
-                        <div class="partners__item" style="width: 150px; height: 162px;">
-                            <img src="images/partners/partners-1.png" alt="">
-                        </div>
-                        <div class="partners__item" style="width: 150px; height: 162px;">
-                            <img src="images/partners/partners-2.png" alt="">
-                        </div>
-                        <div class="partners__item" style="width: 150px; height: 162px;">
-                            <img src="images/partners/partners-3.png" alt="">
-                        </div>
-                        <div class="partners__item" style="width: 150px; height: 162px;">
-                            <img src="images/partners/partners-4.png" alt="">
-                        </div>
-                        <div class="partners__item" style="width: 150px; height: 162px;">
-                            <img src="images/partners/partners-5.png" alt="">
-                        </div>
+                        <figure class="partners__item">
+                            <img src="images/partners/partners-1.png" alt="Логотип компании CLEAR">
+                        </figure>
+                        <figure class="partners__item">
+                            <img src="images/partners/partners-2.png" alt="Логотип компании ЗОЛОТОЕ ЯБЛОКО">
+                        </figure>
+                        <figure class="partners__item">
+                            <img src="images/partners/partners-3.png" alt="Логотип компании LIBO">
+                        </figure>
+                        <figure class="partners__item">
+                            <img src="images/partners/partners-4.png" alt="Логотип компании BOLSHOY">
+                        </figure>
+                        <figure class="partners__item">
+                            <img src="images/partners/partners-5.png" alt="Логотип компании BZHOTEKA">
+                        </figure>
                     </div>
                 </div>
             </div>
             <div class="parallax" style="background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(images/bg/footer-bg.jpg);"></div>
         </main>
+
         <footer class="footer">
             <div class="container">
                 <div class="footer__body">
@@ -1032,14 +1037,14 @@
                     <div class="footer__column footer__column-social">
 
                         <div class="logo">
-                            <a href="#" class="logo__link">
-                                <img src="images/svg/logo.svg" alt="">
-                            </a>
+                            <span class="logo__link">
+                                <img src="images/svg/logo.svg" alt="Логотип компании barberkontora">
+                            </span>
                         </div>
                         <div class="footer__social social">
                             <ul class="social__list">
                                 <li class="social__item">
-                                    <a href="#" class="social__link">
+                                    <a href="https://www.facebook.com/" target="_blank" class="social__link">
                                         <svg width="11px" height="20px" viewBox="0 0 11 20" fill="rgba(255, 255, 255, 0.3)" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
                                             <g transform="translate(-710.000000, -8017.000000)">
                                               <g transform="translate(0.000000, 7837.000000)">
@@ -1054,7 +1059,7 @@
                                     </a>
                                 </li>
                                 <li class="social__item">
-                                    <a href="#" class="social__link">
+                                    <a href="https://www.instagram.com/" target="_blank" class="social__link">
                                         <svg width="20px" height="20px" viewBox="0 0 20 20" fill="rgba(255, 255, 255, 0.3)" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
                                             <g transform="translate(-670.000000, -8017.000000)">
                                               <g transform="translate(0.000000, 7837.000000)">
@@ -1069,7 +1074,7 @@
                                     </a>
                                 </li>
                                 <li class="social__item">
-                                    <a href="#" class="social__link">
+                                    <a href="https://vk.com/" target="_blank" class="social__link">
                                         <svg width="22px" height="20px" viewBox="0 0 20 12" fill="rgba(255, 255, 255, 0.3)" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
                                             <g transform="translate(-630.000000, -8021.000000)">
                                               <g transform="translate(0.000000, 7837.000000)">
@@ -1082,7 +1087,7 @@
                                     </a>
                                 </li>
                                 <li class="social__item">
-                                    <a href="#" class="social__link">
+                                    <a href="https://www.youtube.com/" target="_blank" class="social__link">
                                         <svg width="28px" height="20px" viewBox="0 0 28 20" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
                                             <g transform="translate(-741.000000, -8017.000000)">
                                               <g transform="translate(0.000000, 7837.000000)">
@@ -1105,7 +1110,37 @@
                 </div>
             </div>
         </footer>
+
+
     </div>
+
+
+
+    <!-- <div id="modal-1" data-modal class="modalId fade-block hidden">
+        <div class="modal-window">
+            <div class="card">
+                <div class="card-header">
+                    Модальное окно №1
+                </div>
+                <div class="card-body">
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing
+                        elit. Integer posuere erat a ante.
+                    </p>
+                    <button
+                        data-modal-close
+                        type="button"
+                        class="btn btn-dark"
+                    >
+                        Закрыть окно
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div> -->
+
+
+
 
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>

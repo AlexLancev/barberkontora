@@ -17,7 +17,7 @@
                 <div class="header__body">
     
                     <div class="header__maps">
-                        <a href="#" class="menu__link menu__link-maps">
+                        <a class="menu__link menu__link-maps">
                             <span>
                                 <svg xmlns="http://www.w3.org/2000/svg" id="Outline" viewBox="0 0 24 24" width="18" height="18" fill="rgba(255, 255, 255, 0.3)"><path class="svg-patch" d="M12,6a4,4,0,1,0,4,4A4,4,0,0,0,12,6Zm0,6a2,2,0,1,1,2-2A2,2,0,0,1,12,12Z"/><path class="svg-patch" d="M12,24a5.271,5.271,0,0,1-4.311-2.2c-3.811-5.257-5.744-9.209-5.744-11.747a10.055,10.055,0,0,1,20.11,0c0,2.538-1.933,6.49-5.744,11.747A5.271,5.271,0,0,1,12,24ZM12,2.181a7.883,7.883,0,0,0-7.874,7.874c0,2.01,1.893,5.727,5.329,10.466a3.145,3.145,0,0,0,5.09,0c3.436-4.739,5.329-8.456,5.329-10.466A7.883,7.883,0,0,0,12,2.181Z"/>
                                 </svg>
@@ -51,11 +51,11 @@
                             </ul>
                         </nav>
         
-                        <div class="logo">
+                       
                                 <a href="index.html" class="logo__link">
                                     <img src="images/svg/logo.svg" alt="Логотип компании barberkontora">
                                 </a>
-                        </div>
+                        
         
                         <nav class="header__menu menu">
                             <ul class="menu__list">
@@ -73,7 +73,7 @@
                                 </li>
         
                                 <li class="menu__item">
-                                    <a href="#" class="menu__link">
+                                    <a class="menu__link disabled">
                                         Блог
                                     </a>
                                 </li>
@@ -81,6 +81,10 @@
                             </ul>
                         </nav>
                     </div>
+
+                    <button aria-label="Меню октрыть закрыть" type="button" class="burger btn">
+                        <span></span>
+                    </button>
     
                     <div class="header__content">
     
@@ -109,15 +113,13 @@
     
                        </div>
     
-                        <div class="burger btn">
-                            <span></span>
-                        </div>
+                        
     
                         
                         <ul class="menu__list">
 
                             <li class="menu__item menu__item--active">
-                                <a href="#main-thing" class="menu__link menu__link--active">
+                                <a tabindex="-1" href="#main-thing" class="menu__link menu__link--active">
                                         <object type="owo/uwu">
                                             <a href="mainthing.html" class="menu__link">О главном</a>
                                         </object>
@@ -126,7 +128,7 @@
                             
 
                             <li class="menu__item">
-                                <a href="#network" class="menu__link">
+                                <a tabindex="-1" href="#network" class="menu__link">
                                     <object type="owo/uwu">
                                         <a href="network.html" class="menu__link">Сеть</a>
                                     </object>
@@ -134,7 +136,7 @@
                             </li>
 
                             <li class="menu__item">
-                                <a href="#price" class="menu__link">
+                                <a tabindex="-1" href="#price" class="menu__link">
                                     <object type="owo/uwu">
                                         <a href="price.html" class="menu__link">
                                             Цена вопроса
@@ -144,7 +146,7 @@
                             </li>
 
                             <li class="menu__item">
-                                <a href="#barbers" class="menu__link">
+                                <a tabindex="-1" href="#barbers" class="menu__link">
                                     <object type="owo/uwu">
                                         <a href="barbers.html" class="menu__link">
                                             Барберы
@@ -154,7 +156,7 @@
                             </li>
 
                             <li class="menu__item">
-                                <a href="#market" class="menu__link">
+                                <a tabindex="-1" href="#market" class="menu__link">
                                     <object type="owo/uwu">
                                         <a href="market.html" class="menu__link">
                                             Маркет
@@ -164,9 +166,9 @@
                             </li>
 
                             <li class="menu__item">
-                                <a href="#blog" class="menu__link disabled">
+                                <a tabindex="-1" href="#blog" class="menu__link disabled">
                                     <object type="owo/uwu">
-                                        <a href="#" class="menu__link disabled">
+                                        <a class="menu__link disabled">
                                             Блог
                                         </a>
                                     </object>
@@ -176,7 +178,7 @@
     
                         <div class="btn">
                             <span class="btn__span"></span>
-                            <a href="#" class="btn__link">Записаться на стрижку</a>
+                            <a href="barbers.html" class="btn__link">Записаться на стрижку</a>
                         </div>
                     </div>
     
@@ -1459,7 +1461,7 @@
                                     620142, г. Екатеринбург, ул. Белинского, д.180
                                 </li>
                                 <li class="footer__item">
-                                    <a class="footer__conf menu__link" href="#">
+                                    <a class="footer__conf menu__link" href="policy.html">
                                         Политика конфиденциальности
                                     </a>
                                 </li>
@@ -1494,13 +1496,8 @@
                         <div class="footer__column">
                             <ul class="footer__menu-list">
                                 <li class="footer__menu-item">
-                                    <a href="#" class="menu__link disabled">
+                                    <a class="menu__link disabled">
                                         БЛОГ
-                                    </a>
-                                </li>
-                                <li class="footer__menu-item">
-                                    <a href="#" class="menu__link">
-                                        ФРАНШИЗА
                                     </a>
                                 </li>
                                 <li class="footer__menu-item">
@@ -1519,9 +1516,9 @@
                                 </a>
                             </div>
                             <div class="footer__social social">
-                                <ul class="social__list">
+                                <ul class="social__list" aria-label="Наши социальные сети">
                                     <li class="social__item">
-                                        <a href="https://www.facebook.com/" class="social__link">
+                                        <a href="https://www.facebook.com/" aria-label="Перейти на сайт Фейсбук" target="_blank" class="social__link">
                                             <svg width="11px" height="20px" viewBox="0 0 11 20" fill="rgba(255, 255, 255, 0.3)" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
                                                 <g transform="translate(-710.000000, -8017.000000)">
                                                   <g transform="translate(0.000000, 7837.000000)">
@@ -1536,7 +1533,7 @@
                                         </a>
                                     </li>
                                     <li class="social__item">
-                                        <a href="https://www.instagram.com/" class="social__link">
+                                        <a href="https://www.instagram.com/" aria-label="Перейти на сайт Инстаграм" target="_blank" class="social__link">
                                             <svg width="20px" height="20px" viewBox="0 0 20 20" fill="rgba(255, 255, 255, 0.3)" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
                                                 <g transform="translate(-670.000000, -8017.000000)">
                                                   <g transform="translate(0.000000, 7837.000000)">
@@ -1551,7 +1548,7 @@
                                         </a>
                                     </li>
                                     <li class="social__item">
-                                        <a href="https://vk.com/" class="social__link">
+                                        <a href="https://vk.com/" aria-label="Перейти на сайт Вконтакте" target="_blank" class="social__link">
                                             <svg width="22px" height="20px" viewBox="0 0 20 12" fill="rgba(255, 255, 255, 0.3)" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
                                                 <g transform="translate(-630.000000, -8021.000000)">
                                                   <g transform="translate(0.000000, 7837.000000)">
@@ -1564,7 +1561,7 @@
                                         </a>
                                     </li>
                                     <li class="social__item">
-                                        <a href="https://www.youtube.com/" class="social__link">
+                                        <a href="https://www.youtube.com/" aria-label="Перейти на сайт Ютуб" target="_blank" class="social__link">
                                             <svg width="28px" height="20px" viewBox="0 0 28 20" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
                                                 <g transform="translate(-741.000000, -8017.000000)">
                                                   <g transform="translate(0.000000, 7837.000000)">

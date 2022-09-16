@@ -20,7 +20,7 @@
             <div class="header__body">
 
                 <div class="header__maps">
-                    <a href="#" class="menu__link menu__link-maps">
+                    <a class="menu__link menu__link-maps">
                         <span>
                             <svg xmlns="http://www.w3.org/2000/svg" id="Outline" viewBox="0 0 24 24" width="18" height="18" fill="rgba(255, 255, 255, 0.3)"><path class="svg-patch" d="M12,6a4,4,0,1,0,4,4A4,4,0,0,0,12,6Zm0,6a2,2,0,1,1,2-2A2,2,0,0,1,12,12Z"/><path class="svg-patch" d="M12,24a5.271,5.271,0,0,1-4.311-2.2c-3.811-5.257-5.744-9.209-5.744-11.747a10.055,10.055,0,0,1,20.11,0c0,2.538-1.933,6.49-5.744,11.747A5.271,5.271,0,0,1,12,24ZM12,2.181a7.883,7.883,0,0,0-7.874,7.874c0,2.01,1.893,5.727,5.329,10.466a3.145,3.145,0,0,0,5.09,0c3.436-4.739,5.329-8.456,5.329-10.466A7.883,7.883,0,0,0,12,2.181Z"/>
                             </svg>
@@ -53,12 +53,10 @@
     
                         </ul>
                     </nav>
-    
-                    <div class="logo">
-                            <span class="logo__link">
-                                <img src="images/svg/logo.svg" alt="Логотип компании barberkontora">
-                            </span>
-                    </div>
+                    
+                    <a class="logo__link">
+                        <img src="images/svg/logo.svg" alt="Логотип компании barberkontora">
+                    </a>
     
                     <nav class="header__menu menu">
                         <ul class="menu__list">
@@ -80,10 +78,44 @@
                                     Блог
                                 </a>
                             </li>
+
+                            <li class="menu__item">
+                                <a href="blog.html" class="menu__link">
+                                    Блог
+                                </a>
+                            </li>
+
+                            <li class="menu__item">
+                                <a href="blog.html" class="menu__link">
+                                    Блог
+                                </a>
+                            </li>
+
+                            <li class="menu__item">
+                                <a href="blog.html" class="menu__link">
+                                    Блог
+                                </a>
+                            </li>
+
+                            <li class="menu__item">
+                                <a href="blog.html" class="menu__link">
+                                    Блог
+                                </a>
+                            </li>
+
+                            <li class="menu__item">
+                                <a href="blog.html" class="menu__link">
+                                    Блог
+                                </a>
+                            </li>
     
                         </ul>
                     </nav>
                 </div>
+
+                <button aria-label="Меню октрыть закрыть" type="button" class="burger btn">
+                    <span></span>
+                </button>
 
                 <div class="header__content">
 
@@ -112,15 +144,11 @@
 
                    </div>
 
-                    <button type="button" class="burger btn">
-                        <span></span>
-                    </button>
-
                     
                         <ul class="menu__list">
 
                             <li class="menu__item menu__item--active">
-                                <a href="#main-thing" class="menu__link menu__link--active">
+                                <a tabindex="-1" href="#main-thing" class="menu__link menu__link--active">
                                         <object type="owo/uwu">
                                             <a href="mainthing.html" class="menu__link">О главном</a>
                                         </object>
@@ -129,7 +157,7 @@
                             
 
                             <li class="menu__item">
-                                <a href="#network" class="menu__link">
+                                <a tabindex="-1" href="#network" class="menu__link">
                                     <object type="owo/uwu">
                                         <a href="network.html" class="menu__link">Сеть</a>
                                     </object>
@@ -137,7 +165,7 @@
                             </li>
 
                             <li class="menu__item">
-                                <a href="#price" class="menu__link">
+                                <a tabindex="-1" href="#price" class="menu__link">
                                     <object type="owo/uwu">
                                         <a href="price.html" class="menu__link">
                                             Цена вопроса
@@ -147,7 +175,7 @@
                             </li>
 
                             <li class="menu__item">
-                                <a href="#barbers" class="menu__link">
+                                <a tabindex="-1" href="#barbers" class="menu__link">
                                     <object type="owo/uwu">
                                         <a href="barbers.html" class="menu__link">
                                             Барберы
@@ -157,7 +185,7 @@
                             </li>
 
                             <li class="menu__item">
-                                <a href="#market" class="menu__link">
+                                <a tabindex="-1" href="#market" class="menu__link">
                                     <object type="owo/uwu">
                                         <a href="market.html" class="menu__link">
                                             Маркет
@@ -167,7 +195,7 @@
                             </li>
 
                             <li class="menu__item">
-                                <a href="#blog" class="menu__link">
+                                <a tabindex="-1" href="#blog" class="menu__link">
                                     <object type="owo/uwu">
                                         <a href="blog.html" class="menu__link">
                                             Блог
@@ -179,9 +207,10 @@
 
                     <div class="btn">
                         <span class="btn__span"></span>
-                        <a href="#" class="btn__link">Записаться на стрижку</a>
+                        <a href="barbers.html" class="btn__link">Записаться на стрижку</a>
                     </div>
                 </div>
+
 
                 <div class="decorection"></div>
 
@@ -200,22 +229,165 @@
                     </h2>
                     <div class="btn">
                         <span class="btn__span"></span>
-                        <a href="#modal-1" class="btn__link">Online - сертификат</a>
+                        <a href="#certificate" class="btn__link popup-link">Online - сертификат</a>
                     </div>
+                     <!-- modal-start -->
+                    <div id="certificate" class="popup certificate" role="alert">
+                        <div class="popup__body">
+                            <div class="popup__content popup__content-certificatete">
+                                <button type="button" class="popup__close close-popup" aria-label="закрыть модальное окно"></button>
+                                
+                                <form action="#" method="post" class="certificate__form">
+
+                                    <h2 class="certificate__title">Купить сертификат</h2>
+
+                                    <fieldset class="certificate__fieldset">
+
+                                        <div class="certificate__inner-card">
+                                            
+                                            <label class="certificate__label">
+                                                <input class="sertificate__real-checkbox visually-hidden" type="checkbox" name="sertificate[]" value="1000 ₽">
+                                                <span class="sertificate__fake-checkbox">1000 ₽</span>
+                                            </label>
+                            
+                                            <label class="certificate__label">
+                                                <input class="sertificate__real-checkbox visually-hidden" type="checkbox" name="sertificate[]" value="2000 ₽">
+                                                <span class="sertificate__fake-checkbox">2000 ₽</span>
+                                            </label>
+                            
+                                            <label class="certificate__label">
+                                                <input class="sertificate__real-checkbox visually-hidden" type="checkbox" name="sertificate[]" value="3000 ₽">
+                                                <span class="sertificate__fake-checkbox">3000 ₽</span>
+                                            </label>
+                            
+                                            <label class="certificate__label">
+                                                <input class="sertificate__real-checkbox visually-hidden" type="checkbox" name="sertificate[]" value="5000 ₽">
+                                                <span class="sertificate__fake-checkbox">5000 ₽</span>
+                                            </label>
+                            
+                                            <label class="certificate__label">
+                                                <input class="sertificate__real-checkbox visually-hidden" type="checkbox" name="sertificate[]" value="10000 ₽">
+                                                <span class="sertificate__fake-checkbox">10000 ₽</span>
+                                            </label>
+
+                                        </div>
+
+                                    </fieldset>
+
+                                    <fieldset class="person certificate__fieldset">
+
+                                        <legend class="certificate__person-title person__title">Ваши данные</legend>
+
+                                        <div class="certificate__inner-person person__inner certificate-person">
+
+                                            <label class="certificate-person__label" aria-label="Введите ваше имя">
+                                                <input type="text" name="name" placeholder="Ваше имя">
+                                            </label>
+
+                                            <label class="certificate-person__label" aria-label="Введите ваш номер телефона">
+                                                <input type="tel" name="phone" placeholder="Ваш телефон">
+                                            </label>
+
+                                            <label class="certificate-person__select">
+                                                <b class="certificate-person__title">Заберу здесь</b>
+                                                <select class="certificate-person__network" name="certificate-network[]">
+                                                    <option value="УЛ. МАМИНА-СИБИРЯКА, 102">
+                                                        УЛ. МАМИНА-СИБИРЯКА, 102
+                                                    </option>
+                                                    <option value="УЛ. МАРШАЛА ЖУКОВА, 11">
+                                                        УЛ. МАРШАЛА ЖУКОВА, 11
+                                                    </option>
+                                                    <option value="УЛ. МАЛЫШЕВА, 71 | BOLSHOY">
+                                                        УЛ. МАЛЫШЕВА, 71 | BOLSHOY
+                                                    </option>
+                                                    <option value="УЛ. 8 МАРТА, 169">
+                                                        УЛ. 8 МАРТА, 169
+                                                    </option>
+                                                    <option value="УЛ. ТКАЧЕЙ, 17">
+                                                        УЛ. ТКАЧЕЙ, 17
+                                                    </option>
+                                                </select>
+                                            </label>
+
+                                        </div>
+
+                                        <button class="certificate__btn button">Заказать</button>
+
+                                    </fieldset>
+
+                                </form>
+
+                            </div>
+                        </div>
+                    </div>
+                    <!-- modal-end -->
                 </div>
 
                 <div class="header__info-btn">
-                    <div class="btn">
-                        <span class="btn__span"></span>
-                        <a href="#" class="btn__link">SHOWREEL</a>
-                    </div>
+                    
                     <div class="btn btn__link-fixed">
                         <span class="btn__span"></span>
-                        <a href="#" class="btn__link">Онлайн запись</a>
+                        <a href="#entry1" class="btn__link popup-link">Онлайн запись</a>
                     </div>
+                    <!-- modal-start -->
+                    <div id="entry1" class="popup entry" role="alert">
+                        <div class="popup__body">
+                            <div class="popup__content popup__content__entry">
+                                <button type="button" class="popup__close close-popup" aria-label="закрыть модальное окно"></button>
+                                
+                                <form class="entry__form" action="#" method="post">
+
+                                    <h2 class="entry__title">Запись</h2>
+
+                                    <fieldset class="entry__fieldset">
+
+                                        <label class="entry__label">
+                                            <b>Ваше имя</b>
+                                            <input type="text" name="Имя клиента">
+                                        </label>
+
+                                        <label class="entry__label">
+                                            <b>Ваш телефон</b>
+                                            <input type="tel" name="Номер телефона клиента">
+                                        </label>
+
+                                        <label class="entry__label">
+                                            <b class="entry__person-title">Выбрать адрес</b>
+                                            <select class="entry__network" name="entry-network[]">
+                                                <option value="УЛ. МАМИНА-СИБИРЯКА, 102">
+                                                    УЛ. МАМИНА-СИБИРЯКА, 102
+                                                </option>
+                                                <option value="УЛ. МАРШАЛА ЖУКОВА, 11">
+                                                    УЛ. МАРШАЛА ЖУКОВА, 11
+                                                </option>
+                                                <option value="УЛ. МАЛЫШЕВА, 71 | BOLSHOY">
+                                                    УЛ. МАЛЫШЕВА, 71 | BOLSHOY
+                                                </option>
+                                                <option value="УЛ. 8 МАРТА, 169">
+                                                    УЛ. 8 МАРТА, 169
+                                                </option>
+                                                <option value="УЛ. ТКАЧЕЙ, 17">
+                                                    УЛ. ТКАЧЕЙ, 17
+                                                </option>
+                                            </select>
+                                        </label>
+
+                                        <p class="entry__text">Мы свяжемся с вами для уточнения времени, даты и мастера.</p>
+
+                                        <button class="entry__btn button">Записаться</button>
+
+                                    </fieldset>
+
+                                </form>
+                                
+                            </div>
+                        </div>
+                    </div>
+                    <!-- modal-end -->
+
                 </div>
                 <div id="section06" class="demo">
-                    <a href="#power"><span></span>Scroll</a>
+                    <a href="#power" aria-label="Перейти чуть ниже по странице"><span></span>Scroll</a>
                 </div>
             </div>
             <section>
@@ -229,7 +401,7 @@
                         </p>
                         <div class="btn">
                             <span class="btn__span"></span>
-                            <a href="#" class="btn__link">Подробнее</a>
+                            <a href="mainthing.html" aria-label="Перейти на страницу о нас" class="btn__link">Подробнее</a>
                         </div>
                     </div>
                 </div>
@@ -238,11 +410,11 @@
                 <div class="shops">
                     <div class="shops-slider">
                         <div class="shops__images-slider">
-                            <img src="images/shops/shop-1.jpg" alt="">
-                            <img src="images/shops/shop-2.jpg" alt="">
-                            <img src="images/shops/shop-3.jpg" alt="">
-                            <img src="images/shops/shop-4.jpg" alt="">
-                            <img src="images/shops/shop-5.jpg" alt="">
+                            <img src="images/shops/shop-1.jpg" alt="Компания друзей весело улыбается стоя возле входа в помещение">
+                            <img src="images/shops/shop-2.jpg" alt="Команда барберов стоя вокруг клиента обсуждают как подстригать клиента">
+                            <img src="images/shops/shop-3.jpg" alt="Совместное фото барберов">
+                            <img src="images/shops/shop-4.jpg" alt="Мужчина средних лет позирует на камеру сморщив лоб держа в руке машинку для стрижки">
+                            <img src="images/shops/shop-5.jpg" alt="Два мужчины смотрят друг на друга в полумраке и курят">
                         </div>
                         <div class="shops__info-slider">
 
@@ -259,11 +431,11 @@
                                  <div class="shops__info">
                                      <span>УЛ. МАМИНА-СИБИРЯКА, 102</span>
                                      <span>ЕЖЕДНЕВНО 10:00 - 22:00</span>
-                                     <a href="tel:+73433009010">+7 (343) 300-90-10</a>
+                                     <a href="tel:+73433009010" aria-label="Позвонить нам">+7 (343) 300-90-10</a>
                                  </div>
                                  <div class="btn">
                                     <span class="btn__span"></span>
-                                    <a href="#" class="btn__link">ПОДРОБНЕЕ</a>
+                                    <a href="network.html" aria-label="Перейти на страницу нашей сети барбершопов" class="btn__link">ПОДРОБНЕЕ</a>
                                 </div>
                              </div>
 
@@ -278,11 +450,11 @@
                                  <div class="shops__info">
                                      <span>УЛ. МАРШАЛА ЖУКОВА, 11</span>
                                      <span>ЕЖЕДНЕВНО 10:00 - 22:00</span>
-                                     <a href="tel:+73433009010">+7 (343) 300-90-10</a>
+                                     <a href="tel:+73433009010" aria-label="Позвонить нам">+7 (343) 300-90-10</a>
                                  </div>
                                  <div class="btn">
                                     <span class="btn__span"></span>
-                                    <a href="#" class="btn__link">ПОДРОБНЕЕ</a>
+                                    <a href="network.html" aria-label="Перейти на страницу нашей сети барбершопов" class="btn__link">ПОДРОБНЕЕ</a>
                                 </div>
                              </div>
 
@@ -297,11 +469,11 @@
                                  <div class="shops__info">
                                      <span>УЛ. МАЛЫШЕВА, 71 | BOLSHOY</span>
                                      <span>ЕЖЕДНЕВНО 10:00 - 22:00</span>
-                                     <a href="tel:+73433009010">+7 (343) 300-90-10</a>
+                                     <a href="tel:+73433009010" aria-label="Позвонить нам">+7 (343) 300-90-10</a>
                                  </div>
                                  <div class="btn">
                                     <span class="btn__span"></span>
-                                    <a href="#" class="btn__link">ПОДРОБНЕЕ</a>
+                                    <a href="network.html" aria-label="Перейти на страницу нашей сети барбершопов" class="btn__link">ПОДРОБНЕЕ</a>
                                 </div>
                              </div>
 
@@ -316,11 +488,11 @@
                                  <div class="shops__info">
                                      <span>УЛ. 8 МАРТА, 169</span>
                                      <span>ЕЖЕДНЕВНО 10:00 - 22:00</span>
-                                     <a href="tel:+73433009010">+7 (343) 300-90-10</a>
+                                     <a href="tel:+73433009010" aria-label="Позвонить нам">+7 (343) 300-90-10</a>
                                  </div>
                                  <div class="btn">
                                     <span class="btn__span"></span>
-                                    <a href="#" class="btn__link">ПОДРОБНЕЕ</a>
+                                    <a href="network.html" aria-label="Перейти на страницу нашей сети барбершопов" class="btn__link">ПОДРОБНЕЕ</a>
                                 </div>
                              </div>
 
@@ -335,11 +507,11 @@
                                  <div class="shops__info">
                                      <span>УЛ. ТКАЧЕЙ, 17</span>
                                      <span>ЕЖЕДНЕВНО 10:00 - 22:00</span>
-                                     <a href="tel:+73433009010">+7 (343) 300-90-10</a>
+                                     <a href="tel:+73433009010" aria-label="Позвонить нам">+7 (343) 300-90-10</a>
                                  </div>
                                  <div class="btn">
                                     <span class="btn__span"></span>
-                                    <a href="#" class="btn__link">ПОДРОБНЕЕ</a>
+                                    <a href="network.html" aria-label="Перейти на страницу нашей сети барбершопов" class="btn__link">ПОДРОБНЕЕ</a>
                                 </div>
                              </div>
 
@@ -460,16 +632,7 @@
                                     <span>Адрес</span>
                                     <span>ул. Малышева, 70</span>
                                 </p>
-                                <div class="barbers-btn__inner">
-                                    <div class="btn btn-barbers">
-                                        <span class="btn__span"></span>
-                                        <a href="#" class="btn__link">Записаться к мастеру</a>
-                                    </div>
-                                    <div class="btn">
-                                        <span class="btn__span"></span>
-                                        <a href="#" class="btn__link">Подробнее о барбере</a>
-                                    </div>
-                                </div>
+                                
                             </div>
                             <div class="barbers-slider__images">
                                 <figure class="barbers__box-images">
@@ -493,16 +656,6 @@
                                     <span>Адрес</span>
                                     <span>ул. Маршала Жукова, 11</span>
                                 </p>
-                                <div class="barbers-btn__inner">
-                                    <div class="btn btn-barbers">
-                                        <span class="btn__span"></span>
-                                        <a href="#" class="btn__link">Записаться к мастеру</a>
-                                    </div>
-                                    <div class="btn">
-                                        <span class="btn__span"></span>
-                                        <a href="#" class="btn__link">Подробнее о барбере</a>
-                                    </div>
-                                </div>
                             </div>
                             <div class="barbers-slider__images">
                                 <figure class="barbers__box-images">
@@ -525,16 +678,6 @@
                                     <span>Адрес</span>
                                     <span>ул. Маршала Жукова, 11</span>
                                 </p>
-                                <div class="barbers-btn__inner">
-                                    <div class="btn btn-barbers">
-                                        <span class="btn__span"></span>
-                                        <a href="#" class="btn__link">Записаться к мастеру</a>
-                                    </div>
-                                    <div class="btn">
-                                        <span class="btn__span"></span>
-                                        <a href="#" class="btn__link">Подробнее о барбере</a>
-                                    </div>
-                                </div>
                             </div>
                             <div class="barbers-slider__images">
                                 <figure class="barbers__box-images">
@@ -563,12 +706,12 @@
 
                                 <div class="market-home__cell">
                                     <figure class="market-home__images">
-                                        <a href="#">
+                                        
                                             <img src="images/market/market-1.jpg" alt="Матовая глина LS&B 85 Karats Original Clay">
-                                        </a>
+                                       
                                     </figure>
                                     <h3 class="market-home__title">
-                                        <a href="#">LS&B 85 Karats Original Clay</a>
+                                        <b>LS&B 85 Karats Original Clay</b>
                                     </h3>
                                     <p class="market-home__text">
                                         Матовая глина средней фиксации для густых толстых и буйных волос не поддающихся контролю. Дает волосами пластичность и контроль.
@@ -580,12 +723,12 @@
 
                                 <div class="market-home__cell">
                                     <figure class="market-home__images">
-                                        <a href="#">
+                                       
                                             <img src="images/market/market-2.png" alt="Аргановое масло LS&B Argan Blend Shave Oil">
-                                        </a>
+                                        
                                     </figure>
                                     <h3 class="market-home__title">
-                                        <a href="#">LS&B Argan Blend Shave Oil</a>
+                                        <b>LS&B Argan Blend Shave Oil</b>
                                     </h3>
                                     <p class="market-home__text">
                                         Аргановое масло для бритья и ухода за бородой. Обеспечивает 100 % контроль видимости при бритье, отлично питает и увлажняет кожу и волосы.
@@ -597,12 +740,12 @@
 
                                 <div class="market-home__cell">
                                     <figure class="market-home__images">
-                                        <a href="#">
+                                       
                                             <img src="images/market/market-3.png" alt="Гель конструктор LS&B Freestyl Protein Gel">
-                                        </a>
+                                        
                                     </figure>
                                     <h3 class="market-home__title">
-                                        <a href="#">LS&B Freestyl Protein Gel</a>
+                                        <b>LS&B Freestyl Protein Gel</b>
                                     </h3>
                                     <p class="market-home__text">
                                         Гель конструктор для стильных и точных укладок. Единственный в мире гель без эффекта мокрых волос. Придает полуматовый благородную текстуру.
@@ -614,12 +757,12 @@
 
                                 <div class="market-home__cell">
                                     <figure class="market-home__images">
-                                        <a href="#">
+                                     
                                             <img src="images/market/market-4.png" alt="Шампунь для густых, седых, жестких волос LS&B Recharge Moisture Shampoo">
-                                        </a>
+                                       
                                     </figure>
                                     <h3 class="market-home__title">
-                                        <a href="#">LS&B Recharge Moisture Shampoo</a>
+                                        <b>LS&B Recharge Moisture Shampoo</b>
                                     </h3>
                                     <p class="market-home__text">
                                         Шампунь для густых, седых, жестких волос. Отлично очищает волосы и кожу головы, размягчает волосы, делает их мягкими и послушными.
@@ -631,12 +774,12 @@
 
                                 <div class="market-home__cell">
                                     <figure class="market-home__images">
-                                        <a href="#">
+                                        
                                             <img src="images/market/market-5.jpg" alt="Матовая помада Reuzel Clay Matte Pomade">
-                                        </a>
+                                        
                                     </figure>
                                     <h3 class="market-home__title">
-                                        <a href="#">Reuzel Clay Matte Pomade</a>
+                                        <b>Reuzel Clay Matte Pomade</b>
                                     </h3>
                                     <p class="market-home__text">
                                         Матовая помада на основе глины, не утяжеляет волосы при этом дает существенную фиксацию. Подойдет для укладок.
@@ -648,12 +791,12 @@
 
                                 <div class="market-home__cell">
                                     <figure class="market-home__images">
-                                        <a href="#">
+                                       
                                             <img src="images/market/market-6.jpg" alt="Кондиционированный шампунь Reuzel Daily Shampoo">
-                                        </a>
+                                        
                                     </figure>
                                     <h3 class="market-home__title">
-                                        <a href="#">Reuzel Daily Shampoo</a>
+                                        <b>Reuzel Daily Shampoo</b>
                                     </h3>
                                     <p class="market-home__text">
                                         Кондиционированный шампунь для ежедневного применения, идеально подходит для всех типов волос. Отлично очищает, увлажняет и питает кожу головы.
@@ -667,75 +810,75 @@
                         <div class="market-home__info">
                             <ul class="market-home__list">
                                 <li class="market-home__item">
-                                    <a class="market-home__link" href="#">
+                                    <b class="market-home__link">
                                         Урал Молодость
-                                    </a>
+                                    </b>
                                 </li>
                                 <li class="market-home__item">
                                     ул. Мамина-Сибиряка, 102
                                 </li>
                                 <li class="market-home__item">
-                                    <a class="market-home__phone" href="tel:+73433009010">
+                                    <a class="market-home__phone" href="tel:+73433009010" aria-label="Позвонить нам">
                                         +7 (343) 300-90-10
                                     </a>
                                 </li>
                             </ul>
                             <ul class="market-home__list">
                                 <li class="market-home__item">
-                                    <a class="market-home__link" href="#">
+                                    <b class="market-home__link">
                                         Урал Надежность
-                                    </a>
+                                    </b>
                                 </li>
                                 <li class="market-home__item">
                                     ул. Маршала Жукова, 11
                                 </li>
                                 <li class="market-home__item">
-                                    <a class="market-home__phone" href="tel:+73433009010">
+                                    <a class="market-home__phone" href="tel:+73433009010" aria-label="Позвонить нам">
                                         +7 (343) 300-90-10
                                     </a>
                                 </li>
                             </ul>
                             <ul class="market-home__list">
                                 <li class="market-home__item">
-                                    <a class="market-home__link" href="#">
+                                    <b class="market-home__link">
                                         Урал Прогресс
-                                    </a>
+                                    </b>
                                 </li>
                                 <li class="market-home__item">
                                     ул. Малышева, 71
                                 </li>
                                 <li class="market-home__item">
-                                    <a class="market-home__phone" href="tel:+73433009010">
+                                    <a class="market-home__phone" href="tel:+73433009010" aria-label="Позвонить нам">
                                         +7 (343) 300-90-10
                                     </a>
                                 </li>
                             </ul>
                             <ul class="market-home__list">
                                 <li class="market-home__item">
-                                    <a class="market-home__link" href="#">
+                                    <b class="market-home__link">
                                         Урал Решимость
-                                    </a>
+                                    </b>
                                 </li>
                                 <li class="market-home__item">
                                     ул. 8 Марта, 169
                                 </li>
                                 <li class="market-home__item">
-                                    <a class="market-home__phone" href="tel:+73433009010">
+                                    <a class="market-home__phone" href="tel:+73433009010" aria-label="Позвонить нам">
                                         +7 (343) 300-90-10
                                     </a>
                                 </li>
                             </ul>
                             <ul class="market-home__list">
                                 <li class="market-home__item">
-                                    <a class="market-home__link" href="#">
+                                    <b class="market-home__link">
                                         Урал Сила
-                                    </a>
+                                    </b>
                                 </li>
                                 <li class="market-home__item">
                                     ул. Ткачей, 17
                                 </li>
                                 <li class="market-home__item">
-                                    <a class="market-home__phone" href="tel:+73433009010">
+                                    <a class="market-home__phone" href="tel:+73433009010" aria-label="Позвонить нам">
                                         +7 (343) 300-90-10
                                     </a>
                                 </li>
@@ -982,7 +1125,7 @@
                                 620142, г. Екатеринбург, ул. Белинского, д.180
                             </li>
                             <li class="footer__item">
-                                <a class="footer__conf menu__link" href="#">
+                                <a class="footer__conf menu__link" href="policy.html">
                                     Политика конфиденциальности
                                 </a>
                             </li>
@@ -1022,11 +1165,6 @@
                                 </a>
                             </li>
                             <li class="footer__menu-item">
-                                <a href="#" class="menu__link">
-                                    ФРАНШИЗА
-                                </a>
-                            </li>
-                            <li class="footer__menu-item">
                                 <a href="network.html" class="menu__link">
                                     СЕТЬ
                                 </a>
@@ -1036,15 +1174,15 @@
 
                     <div class="footer__column footer__column-social">
 
-                        <div class="logo">
+                        <a class="logo">
                             <span class="logo__link">
                                 <img src="images/svg/logo.svg" alt="Логотип компании barberkontora">
                             </span>
-                        </div>
+                        </a>
                         <div class="footer__social social">
-                            <ul class="social__list">
+                            <ul class="social__list" aria-label="Наши социальные сети">
                                 <li class="social__item">
-                                    <a href="https://www.facebook.com/" target="_blank" class="social__link">
+                                    <a href="https://www.facebook.com/" aria-label="Перейти на сайт Фейсбук" target="_blank" class="social__link">
                                         <svg width="11px" height="20px" viewBox="0 0 11 20" fill="rgba(255, 255, 255, 0.3)" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
                                             <g transform="translate(-710.000000, -8017.000000)">
                                               <g transform="translate(0.000000, 7837.000000)">
@@ -1059,7 +1197,7 @@
                                     </a>
                                 </li>
                                 <li class="social__item">
-                                    <a href="https://www.instagram.com/" target="_blank" class="social__link">
+                                    <a href="https://www.instagram.com/" aria-label="Перейти на сайт Инстаграм" target="_blank" class="social__link">
                                         <svg width="20px" height="20px" viewBox="0 0 20 20" fill="rgba(255, 255, 255, 0.3)" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
                                             <g transform="translate(-670.000000, -8017.000000)">
                                               <g transform="translate(0.000000, 7837.000000)">
@@ -1074,7 +1212,7 @@
                                     </a>
                                 </li>
                                 <li class="social__item">
-                                    <a href="https://vk.com/" target="_blank" class="social__link">
+                                    <a href="https://vk.com/" aria-label="Перейти на сайт Вконтакте" target="_blank" class="social__link">
                                         <svg width="22px" height="20px" viewBox="0 0 20 12" fill="rgba(255, 255, 255, 0.3)" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
                                             <g transform="translate(-630.000000, -8021.000000)">
                                               <g transform="translate(0.000000, 7837.000000)">
@@ -1087,7 +1225,7 @@
                                     </a>
                                 </li>
                                 <li class="social__item">
-                                    <a href="https://www.youtube.com/" target="_blank" class="social__link">
+                                    <a href="https://www.youtube.com/" aria-label="Перейти на сайт Ютуб" target="_blank" class="social__link">
                                         <svg width="28px" height="20px" viewBox="0 0 28 20" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
                                             <g transform="translate(-741.000000, -8017.000000)">
                                               <g transform="translate(0.000000, 7837.000000)">
@@ -1113,33 +1251,6 @@
 
 
     </div>
-
-
-
-    <!-- <div id="modal-1" data-modal class="modalId fade-block hidden">
-        <div class="modal-window">
-            <div class="card">
-                <div class="card-header">
-                    Модальное окно №1
-                </div>
-                <div class="card-body">
-                    <p>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing
-                        elit. Integer posuere erat a ante.
-                    </p>
-                    <button
-                        data-modal-close
-                        type="button"
-                        class="btn btn-dark"
-                    >
-                        Закрыть окно
-                    </button>
-                </div>
-            </div>
-        </div>
-    </div> -->
-
-
 
 
 

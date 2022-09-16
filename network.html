@@ -18,7 +18,7 @@
             <div class="header__body">
     
                 <div class="header__maps">
-                    <a href="#" class="menu__link menu__link-maps">
+                    <a class="menu__link menu__link-maps">
                         <span>
                             <svg xmlns="http://www.w3.org/2000/svg" id="Outline" viewBox="0 0 24 24" width="18" height="18" fill="rgba(255, 255, 255, 0.3)"><path class="svg-patch" d="M12,6a4,4,0,1,0,4,4A4,4,0,0,0,12,6Zm0,6a2,2,0,1,1,2-2A2,2,0,0,1,12,12Z"/><path class="svg-patch" d="M12,24a5.271,5.271,0,0,1-4.311-2.2c-3.811-5.257-5.744-9.209-5.744-11.747a10.055,10.055,0,0,1,20.11,0c0,2.538-1.933,6.49-5.744,11.747A5.271,5.271,0,0,1,12,24ZM12,2.181a7.883,7.883,0,0,0-7.874,7.874c0,2.01,1.893,5.727,5.329,10.466a3.145,3.145,0,0,0,5.09,0c3.436-4.739,5.329-8.456,5.329-10.466A7.883,7.883,0,0,0,12,2.181Z"/>
                             </svg>
@@ -38,7 +38,7 @@
                             </li>
     
                             <li class="menu__item">
-                                <a href="#" class="menu__link disabled">
+                                <a class="menu__link disabled">
                                     Сеть
                                 </a>
                             </li>
@@ -82,6 +82,10 @@
                         </ul>
                     </nav>
                 </div>
+
+                <button aria-label="Меню октрыть закрыть" type="button" class="burger btn">
+                    <span></span>
+                </button>
     
                 <div class="header__content">
     
@@ -110,15 +114,10 @@
     
                    </div>
     
-                    <div class="burger btn">
-                        <span></span>
-                    </div>
-    
-                    
                     <ul class="menu__list">
 
                         <li class="menu__item menu__item--active">
-                            <a href="#main-thing" class="menu__link menu__link--active">
+                            <a tabindex="-1" href="#main-thing" class="menu__link menu__link--active">
                                     <object type="owo/uwu">
                                         <a href="mainthing.html" class="menu__link">О главном</a>
                                     </object>
@@ -127,15 +126,15 @@
                         
 
                         <li class="menu__item">
-                            <a href="#network" class="menu__link disabled">
+                            <a tabindex="-1" href="#network" class="menu__link disabled">
                                 <object type="owo/uwu">
-                                    <a href="#" class="menu__link disabled">Сеть</a>
+                                    <a class="menu__link disabled">Сеть</a>
                                 </object>
                             </a>
                         </li>
 
                         <li class="menu__item">
-                            <a href="#price" class="menu__link">
+                            <a tabindex="-1" href="#price" class="menu__link">
                                 <object type="owo/uwu">
                                     <a href="price.html" class="menu__link">
                                         Цена вопроса
@@ -145,7 +144,7 @@
                         </li>
 
                         <li class="menu__item">
-                            <a href="#barbers" class="menu__link">
+                            <a tabindex="-1" href="#barbers" class="menu__link">
                                 <object type="owo/uwu">
                                     <a href="barbers.html" class="menu__link">
                                         Барберы
@@ -155,7 +154,7 @@
                         </li>
 
                         <li class="menu__item">
-                            <a href="#market" class="menu__link">
+                            <a tabindex="-1" href="#market" class="menu__link">
                                 <object type="owo/uwu">
                                     <a href="market.html" class="menu__link">
                                         Маркет
@@ -165,7 +164,7 @@
                         </li>
 
                         <li class="menu__item">
-                            <a href="#blog" class="menu__link">
+                            <a tabindex="-1" href="#blog" class="menu__link">
                                 <object type="owo/uwu">
                                     <a href="blog.html" class="menu__link">
                                         Блог
@@ -177,7 +176,7 @@
     
                     <div class="btn">
                         <span class="btn__span"></span>
-                        <a href="#" class="btn__link">Записаться на стрижку</a>
+                        <a href="barbers.html" class="btn__link">Записаться на стрижку</a>
                     </div>
                 </div>
     
@@ -200,12 +199,67 @@
                                  <div class="shops__info">
                                      <span>УЛ. МАМИНА-СИБИРЯКА, 102</span>
                                      <span>ЕЖЕДНЕВНО 10:00 - 22:00</span>
-                                     <a class="shop__phone" href="tel:+73433009010">+7 (343) 300-90-10</a>
+                                     <a class="shop__phone" aria-label="Позвонить нам" href="tel:+73433009010">+7 (343) 300-90-10</a>
                                  </div>
                                  <div class="btn">
                                     <span class="btn__span"></span>
-                                    <a href="#" class="btn__link">Записаться на стрижку</a>
+                                    <a href="#entry1" class="btn__link popup-link">Записаться на стрижку</a>
                                 </div>
+                                <!-- modal-start -->
+                                <div id="entry1" class="popup entry" role="alert">
+                                    <div class="popup__body">
+                                        <div class="popup__content popup__content__entry">
+                                            <button type="button" class="popup__close close-popup" aria-label="закрыть модальное окно"></button>
+                                            
+                                            <form class="entry__form" action="#" method="post">
+
+                                                <h2 class="entry__title">Запись</h2>
+
+                                                <fieldset class="entry__fieldset">
+
+                                                    <label class="entry__label">
+                                                        <b>Ваше имя</b>
+                                                        <input type="text" name="Имя клиента">
+                                                    </label>
+
+                                                    <label class="entry__label">
+                                                        <b>Ваш телефон</b>
+                                                        <input type="tel" name="Номер телефона клиента">
+                                                    </label>
+
+                                                    <label class="entry__label">
+                                                        <b class="entry__person-title">Выбрать адрес</b>
+                                                        <select class="entry__network" name="entry-network[]">
+                                                            <option value="УЛ. МАМИНА-СИБИРЯКА, 102">
+                                                                УЛ. МАМИНА-СИБИРЯКА, 102
+                                                            </option>
+                                                            <option value="УЛ. МАРШАЛА ЖУКОВА, 11">
+                                                                УЛ. МАРШАЛА ЖУКОВА, 11
+                                                            </option>
+                                                            <option value="УЛ. МАЛЫШЕВА, 71 | BOLSHOY">
+                                                                УЛ. МАЛЫШЕВА, 71 | BOLSHOY
+                                                            </option>
+                                                            <option value="УЛ. 8 МАРТА, 169">
+                                                                УЛ. 8 МАРТА, 169
+                                                            </option>
+                                                            <option value="УЛ. ТКАЧЕЙ, 17">
+                                                                УЛ. ТКАЧЕЙ, 17
+                                                            </option>
+                                                        </select>
+                                                    </label>
+
+                                                    <p class="entry__text">Мы свяжемся с вами для уточнения времени, даты и мастера.</p>
+
+                                                    <button class="entry__btn button">Записаться</button>
+
+                                                </fieldset>
+
+                                            </form>
+                                            
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- modal-end -->
                              </div>
                         </div>
                     </div>
@@ -220,12 +274,67 @@
                                  <div class="shops__info">
                                      <span>УЛ. МАРШАЛА ЖУКОВА, 11</span>
                                      <span>ЕЖЕДНЕВНО 10:00 - 22:00</span>
-                                     <a class="shop__phone" href="tel:+73433009010">+7 (343) 300-90-10</a>
+                                     <a class="shop__phone" aria-label="Позвонить нам" href="tel:+73433009010">+7 (343) 300-90-10</a>
                                  </div>
                                  <div class="btn">
                                     <span class="btn__span"></span>
-                                    <a href="#" class="btn__link">Записаться на стрижку</a>
+                                    <a href="#entry2" class="btn__link popup-link">Записаться на стрижку</a>
                                 </div>
+                                 <!-- modal-start -->
+                                <div id="entry2" class="popup entry" role="alert">
+                                    <div class="popup__body">
+                                        <div class="popup__content popup__content__entry">
+                                            <button type="button" class="popup__close close-popup" aria-label="закрыть модальное окно"></button>
+                                            
+                                            <form class="entry__form" action="#" method="post">
+
+                                                <h2 class="entry__title">Запись</h2>
+
+                                                <fieldset class="entry__fieldset">
+
+                                                    <label class="entry__label">
+                                                        <b>Ваше имя</b>
+                                                        <input type="text" name="Имя клиента">
+                                                    </label>
+
+                                                    <label class="entry__label">
+                                                        <b>Ваш телефон</b>
+                                                        <input type="tel" name="Номер телефона клиента">
+                                                    </label>
+
+                                                    <label class="entry__label">
+                                                        <b class="entry__person-title">Выбрать адрес</b>
+                                                        <select class="entry__network" name="entry-network[]">
+                                                            <option value="УЛ. МАРШАЛА ЖУКОВА, 11">
+                                                                УЛ. МАРШАЛА ЖУКОВА, 11
+                                                            </option>
+                                                            <option value="УЛ. МАМИНА-СИБИРЯКА, 102">
+                                                                УЛ. МАМИНА-СИБИРЯКА, 102
+                                                            </option>
+                                                            <option value="УЛ. МАЛЫШЕВА, 71 | BOLSHOY">
+                                                                УЛ. МАЛЫШЕВА, 71 | BOLSHOY
+                                                            </option>
+                                                            <option value="УЛ. 8 МАРТА, 169">
+                                                                УЛ. 8 МАРТА, 169
+                                                            </option>
+                                                            <option value="УЛ. ТКАЧЕЙ, 17">
+                                                                УЛ. ТКАЧЕЙ, 17
+                                                            </option>
+                                                        </select>
+                                                    </label>
+
+                                                    <p class="entry__text">Мы свяжемся с вами для уточнения времени, даты и мастера.</p>
+
+                                                    <button class="entry__btn button">Записаться</button>
+
+                                                </fieldset>
+
+                                            </form>
+                                            
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- modal-end -->
                              </div>
                         </div>
                     </div>
@@ -240,12 +349,67 @@
                                  <div class="shops__info">
                                      <span>УЛ. МАЛЫШЕВА, 71 | BOLSHOY</span>
                                      <span>ЕЖЕДНЕВНО 10:00 - 22:00</span>
-                                     <a class="shop__phone" href="tel:+73433009010">+7 (343) 300-90-10</a>
+                                     <a class="shop__phone" aria-label="Позвонить нам" href="tel:+73433009010">+7 (343) 300-90-10</a>
                                  </div>
                                  <div class="btn">
                                     <span class="btn__span"></span>
-                                    <a href="#" class="btn__link">Записаться на стрижку</a>
+                                    <a href="#entry3" class="btn__link popup-link">Записаться на стрижку</a>
                                 </div>
+                                 <!-- modal-start -->
+                                <div id="entry3" class="popup entry" role="alert">
+                                    <div class="popup__body">
+                                        <div class="popup__content popup__content__entry">
+                                            <button type="button" class="popup__close close-popup" aria-label="закрыть модальное окно"></button>
+                                            
+                                            <form class="entry__form" action="#" method="post">
+
+                                                <h2 class="entry__title">Запись</h2>
+
+                                                <fieldset class="entry__fieldset">
+
+                                                    <label class="entry__label">
+                                                        <b>Ваше имя</b>
+                                                        <input type="text" name="Имя клиента">
+                                                    </label>
+
+                                                    <label class="entry__label">
+                                                        <b>Ваш телефон</b>
+                                                        <input type="tel" name="Номер телефона клиента">
+                                                    </label>
+
+                                                    <label class="entry__label">
+                                                        <b class="entry__person-title">Выбрать адрес</b>
+                                                        <select class="entry__network" name="entry-network[]">
+                                                            <option value="УЛ. МАЛЫШЕВА, 71 | BOLSHOY">
+                                                                УЛ. МАЛЫШЕВА, 71 | BOLSHOY
+                                                            </option>
+                                                            <option value="УЛ. МАМИНА-СИБИРЯКА, 102">
+                                                                УЛ. МАМИНА-СИБИРЯКА, 102
+                                                            </option>
+                                                            <option value="УЛ. МАРШАЛА ЖУКОВА, 11">
+                                                                УЛ. МАРШАЛА ЖУКОВА, 11
+                                                            </option>
+                                                            <option value="УЛ. 8 МАРТА, 169">
+                                                                УЛ. 8 МАРТА, 169
+                                                            </option>
+                                                            <option value="УЛ. ТКАЧЕЙ, 17">
+                                                                УЛ. ТКАЧЕЙ, 17
+                                                            </option>
+                                                        </select>
+                                                    </label>
+
+                                                    <p class="entry__text">Мы свяжемся с вами для уточнения времени, даты и мастера.</p>
+
+                                                    <button class="entry__btn button">Записаться</button>
+
+                                                </fieldset>
+
+                                            </form>
+                                            
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- modal-end -->
                              </div>
                         </div>
                     </div>
@@ -260,12 +424,67 @@
                                  <div class="shops__info">
                                      <span>УЛ. 8 МАРТА, 169</span>
                                      <span>ЕЖЕДНЕВНО 10:00 - 22:00</span>
-                                     <a class="shop__phone" href="tel:+73433009010">+7 (343) 300-90-10</a>
+                                     <a class="shop__phone" aria-label="Позвонить нам" href="tel:+73433009010">+7 (343) 300-90-10</a>
                                  </div>
                                  <div class="btn">
                                     <span class="btn__span"></span>
-                                    <a href="#" class="btn__link">Записаться на стрижку</a>
+                                    <a href="#entry4" class="btn__link popup-link">Записаться на стрижку</a>
                                 </div>
+                                 <!-- modal-start -->
+                                <div id="entry4" class="popup entry" role="alert">
+                                    <div class="popup__body">
+                                        <div class="popup__content popup__content__entry">
+                                            <button type="button" class="popup__close close-popup" aria-label="закрыть модальное окно"></button>
+                                            
+                                            <form class="entry__form" action="#" method="post">
+
+                                                <h2 class="entry__title">Запись</h2>
+
+                                                <fieldset class="entry__fieldset">
+
+                                                    <label class="entry__label">
+                                                        <b>Ваше имя</b>
+                                                        <input type="text" name="Имя клиента">
+                                                    </label>
+
+                                                    <label class="entry__label">
+                                                        <b>Ваш телефон</b>
+                                                        <input type="tel" name="Номер телефона клиента">
+                                                    </label>
+
+                                                    <label class="entry__label">
+                                                        <b class="entry__person-title">Выбрать адрес</b>
+                                                        <select class="entry__network" name="entry-network[]">
+                                                            <option value="УЛ. 8 МАРТА, 169">
+                                                                УЛ. 8 МАРТА, 169
+                                                            </option>
+                                                            <option value="УЛ. МАМИНА-СИБИРЯКА, 102">
+                                                                УЛ. МАМИНА-СИБИРЯКА, 102
+                                                            </option>
+                                                            <option value="УЛ. МАРШАЛА ЖУКОВА, 11">
+                                                                УЛ. МАРШАЛА ЖУКОВА, 11
+                                                            </option>
+                                                            <option value="УЛ. МАЛЫШЕВА, 71 | BOLSHOY">
+                                                                УЛ. МАЛЫШЕВА, 71 | BOLSHOY
+                                                            </option>
+                                                            <option value="УЛ. ТКАЧЕЙ, 17">
+                                                                УЛ. ТКАЧЕЙ, 17
+                                                            </option>
+                                                        </select>
+                                                    </label>
+
+                                                    <p class="entry__text">Мы свяжемся с вами для уточнения времени, даты и мастера.</p>
+
+                                                    <button class="entry__btn button">Записаться</button>
+
+                                                </fieldset>
+
+                                            </form>
+                                            
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- modal-end -->
                              </div>
                         </div>
                     </div>
@@ -280,12 +499,67 @@
                                  <div class="shops__info">
                                      <span>УЛ. ТКАЧЕЙ, 17</span>
                                      <span>ЕЖЕДНЕВНО 10:00 - 22:00</span>
-                                     <a class="shop__phone" href="tel:+73433009010">+7 (343) 300-90-10</a>
+                                     <a class="shop__phone" aria-label="Позвонить нам" href="tel:+73433009010">+7 (343) 300-90-10</a>
                                  </div>
                                  <div class="btn">
                                     <span class="btn__span"></span>
-                                    <a href="#" class="btn__link">Записаться на стрижку</a>
+                                    <a href="#entry5" class="btn__link popup-link">Записаться на стрижку</a>
                                 </div>
+                                 <!-- modal-start -->
+                                <div id="entry5" class="popup entry" role="alert">
+                                    <div class="popup__body">
+                                        <div class="popup__content popup__content__entry">
+                                            <button type="button" class="popup__close close-popup" aria-label="закрыть модальное окно"></button>
+                                            
+                                            <form class="entry__form" action="#" method="post">
+
+                                                <h2 class="entry__title">Запись</h2>
+
+                                                <fieldset class="entry__fieldset">
+
+                                                    <label class="entry__label">
+                                                        <b>Ваше имя</b>
+                                                        <input type="text" name="Имя клиента">
+                                                    </label>
+
+                                                    <label class="entry__label">
+                                                        <b>Ваш телефон</b>
+                                                        <input type="tel" name="Номер телефона клиента">
+                                                    </label>
+
+                                                    <label class="entry__label">
+                                                        <b class="entry__person-title">Выбрать адрес</b>
+                                                        <select class="entry__network" name="entry-network[]">
+                                                            <option value="УЛ. ТКАЧЕЙ, 17">
+                                                                УЛ. ТКАЧЕЙ, 17
+                                                            </option>
+                                                            <option value="УЛ. МАМИНА-СИБИРЯКА, 102">
+                                                                УЛ. МАМИНА-СИБИРЯКА, 102
+                                                            </option>
+                                                            <option value="УЛ. МАРШАЛА ЖУКОВА, 11">
+                                                                УЛ. МАРШАЛА ЖУКОВА, 11
+                                                            </option>
+                                                            <option value="УЛ. МАЛЫШЕВА, 71 | BOLSHOY">
+                                                                УЛ. МАЛЫШЕВА, 71 | BOLSHOY
+                                                            </option>
+                                                            <option value="УЛ. 8 МАРТА, 169">
+                                                                УЛ. 8 МАРТА, 169
+                                                            </option>
+                                                        </select>
+                                                    </label>
+
+                                                    <p class="entry__text">Мы свяжемся с вами для уточнения времени, даты и мастера.</p>
+
+                                                    <button class="entry__btn button">Записаться</button>
+
+                                                </fieldset>
+
+                                            </form>
+                                            
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- modal-end -->
                              </div>
                         </div>
                 </div>
@@ -313,7 +587,7 @@
                                 620142, г. Екатеринбург, ул. Белинского, д.180
                             </li>
                             <li class="footer__item">
-                                <a class="footer__conf menu__link" href="#">
+                                <a class="footer__conf menu__link" href="policy.html">
                                     Политика конфиденциальности
                                 </a>
                             </li>
@@ -353,12 +627,7 @@
                                 </a>
                             </li>
                             <li class="footer__menu-item">
-                                <a href="#" class="menu__link">
-                                    ФРАНШИЗА
-                                </a>
-                            </li>
-                            <li class="footer__menu-item">
-                                <a href="#" class="menu__link disabled">
+                                <a class="menu__link disabled">
                                     СЕТЬ
                                 </a>
                             </li>
@@ -373,9 +642,9 @@
                             </a>
                         </div>
                         <div class="footer__social social">
-                            <ul class="social__list">
+                            <ul class="social__list" aria-label="Наши социальные сети">
                                 <li class="social__item">
-                                    <a href="https://www.facebook.com/" class="social__link">
+                                    <a href="https://www.facebook.com/" aria-label="Перейти на сайт Фейсбук" target="_blank" class="social__link">
                                         <svg width="11px" height="20px" viewBox="0 0 11 20" fill="rgba(255, 255, 255, 0.3)" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
                                             <g transform="translate(-710.000000, -8017.000000)">
                                               <g transform="translate(0.000000, 7837.000000)">
@@ -390,7 +659,7 @@
                                     </a>
                                 </li>
                                 <li class="social__item">
-                                    <a href="https://www.instagram.com/" class="social__link">
+                                    <a href="https://www.instagram.com/" aria-label="Перейти на сайт Инстаграм" target="_blank" class="social__link">
                                         <svg width="20px" height="20px" viewBox="0 0 20 20" fill="rgba(255, 255, 255, 0.3)" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
                                             <g transform="translate(-670.000000, -8017.000000)">
                                               <g transform="translate(0.000000, 7837.000000)">
@@ -405,7 +674,7 @@
                                     </a>
                                 </li>
                                 <li class="social__item">
-                                    <a href="https://www.youtube.com/" class="social__link">
+                                    <a href="https://vk.com/" aria-label="Перейти на сайт Вконтакте" target="_blank" class="social__link">
                                         <svg width="22px" height="20px" viewBox="0 0 20 12" fill="rgba(255, 255, 255, 0.3)" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
                                             <g transform="translate(-630.000000, -8021.000000)">
                                               <g transform="translate(0.000000, 7837.000000)">
@@ -418,7 +687,7 @@
                                     </a>
                                 </li>
                                 <li class="social__item">
-                                    <a href="https://vk.com/" class="social__link">
+                                    <a href="https://www.youtube.com/" aria-label="Перейти на сайт Ютуб" target="_blank" class="social__link">
                                         <svg width="28px" height="20px" viewBox="0 0 28 20" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
                                             <g transform="translate(-741.000000, -8017.000000)">
                                               <g transform="translate(0.000000, 7837.000000)">

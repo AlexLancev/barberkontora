@@ -5,13 +5,15 @@ body {
     height: 100%;
     min-height: 100%;
     scroll-behavior: smooth;
-  }
+}
 
-*, *:before, *:after {
+*,
+*:before,
+*:after {
     box-sizing: inherit;
-  }
+}
 
-body{
+body {
     min-width: 320px;
     font-family: 'Roboto', sans-serif;
     font-style: normal;
@@ -23,21 +25,21 @@ body{
     cursor: default;
 }
 
-.wrapper{
+.wrapper {
     display: flex;
     flex-direction: column;
     min-height: 100%;
 }
 
-main{
+main {
     flex: 1 1 auto;
 }
 
-body.lock{
+body.lock {
     overflow: hidden;
 }
 
-h1{
+h1 {
     font-family: 'Roboto', sans-serif;
     font-weight: 300;
     font-size: 32px;
@@ -45,7 +47,7 @@ h1{
     color: #A3754F;
 }
 
-h2{
+h2 {
     font-family: 'Roboto', sans-serif;
     font-weight: 300;
     font-size: 44px;
@@ -53,7 +55,7 @@ h2{
     color: #1b1b1b;
 }
 
-h3{
+h3 {
     font-family: 'Roboto', sans-serif;
     font-weight: 400;
     font-size: 22px;
@@ -61,7 +63,7 @@ h3{
     color: #1b1b1b;
 }
 
-h4{
+h4 {
     font-family: 'Roboto', sans-serif;
     font-weight: 300;
     font-size: 20px;
@@ -69,30 +71,30 @@ h4{
     color: #B38861;
 }
 
-a{
+a {
     font-family: inherit;
     display: inline-block;
     text-decoration: none;
 }
 
-a.disabled{
+a.disabled {
     pointer-events: none;
     cursor: none;
     color: #A3754F;
 }
 
-.container{
+.container {
     max-width: 1230px;
     padding: 0 15px;
     margin: 0 auto;
 }
 
-button{
+button {
     background-color: transparent;
     border: 0;
 }
 
-.btn{
+.btn {
     display: inline-block;
     font-family: inherit;
     text-align: center;
@@ -108,7 +110,7 @@ button{
     position: relative;
 }
 
-.btn__span{
+.btn__span {
     display: inline-block;
     width: 0;
     height: 100%;
@@ -122,12 +124,12 @@ button{
     overflow: hidden;
 }
 
-.btn:hover .btn__span{
+.btn:hover .btn__span {
     width: 100%;
     left: 0;
 }
 
-.btn__link{
+.btn__link {
     display: inline-block;
     font-size: 12px;
     width: 100%;
@@ -142,7 +144,7 @@ button{
     border: 1px solid #B38861;
 }
 
-.btn:hover .btn__link{
+.btn:hover .btn__link {
     color: #ffffff;
 }
 
@@ -157,7 +159,7 @@ button{
     clip-path: inset(100%);
     clip: rect(0 0 0 0);
     overflow: hidden;
-  }
+}
 
 
 
@@ -171,18 +173,18 @@ button{
     background-color: #000000;
 }
 
-.header-popup{
+.header-popup {
     position: static;
     background-color: rgba(0, 0, 0, 1);
     height: 1px;
     min-height: 180px;
 }
 
-.header-popup .header__menu{
+.header-popup .header__menu {
     display: none;
 }
 
-.decorection{
+.decorection {
     width: 100%;
     max-width: 156px;
 }
@@ -197,7 +199,7 @@ button{
     justify-content: space-between;
 }
 
-.header__navigation{
+.header__navigation {
     display: flex;
     align-items: center;
 }
@@ -220,20 +222,26 @@ button{
     text-transform: uppercase;
 }
 
-.menu__link:hover{
+.menu__link svg {
+    width: 18px;
+    height: 18px;
+    object-fit: contain;
+}
+
+.menu__link:hover {
     color: rgba(255, 255, 255, 1);
 }
 
-.menu__link-maps .svg-patch{
+.menu__link-maps .svg-patch {
     transition: 0.3s;
     transition-property: fill;
 }
 
-.menu__link-maps:hover .svg-patch{
+.menu__link-maps:hover .svg-patch {
     fill: rgba(255, 255, 255, 1);
 }
 
-.btn__link-fixed{
+.btn__link-fixed {
     position: fixed;
     z-index: 45;
     bottom: 50px;
@@ -250,7 +258,13 @@ button{
     transition-property: opacity;
 }
 
-.logo__link:hover{
+.logo__link img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.logo__link:hover {
     opacity: 1;
 }
 
@@ -269,15 +283,15 @@ button{
     transition-property: border;
 }
 
-.burger:hover{
+.burger:hover {
     border: 1px solid rgba(179, 136, 97, 1);
 }
 
-.burger.active{
+.burger.active {
     border: 1px solid rgb(226, 116, 12);
 }
 
-.burger span{
+.burger span {
     position: absolute;
     visibility: hidden;
     top: 50%;
@@ -291,7 +305,7 @@ button{
 }
 
 .burger span:before,
-.burger span:after{
+.burger span:after {
     content: '';
     position: absolute;
     left: 0;
@@ -303,25 +317,25 @@ button{
     visibility: visible;
 }
 
-.burger span:before{
+.burger span:before {
     top: -10px;
 }
 
-.burger span:after{
+.burger span:after {
     bottom: -10px;
 }
 
 .burger:hover span,
 .burger:hover span:before,
-.burger:hover span:after{
+.burger:hover span:after {
     background-color: rgba(179, 136, 97, 1);
 }
 
-.burger:active span{
+.burger:active span {
     visibility: hidden;
 }
 
-.burger.active span:before{
+.burger.active span:before {
     visibility: visible;
     left: 0;
     top: 50%;
@@ -329,7 +343,7 @@ button{
     background-color: rgba(179, 136, 97, 1);
 }
 
-.burger.active span:after{
+.burger.active span:after {
     visibility: visible;
     left: 0;
     bottom: 50%;
@@ -340,27 +354,38 @@ button{
 .burger.active span:after {
     animation-name: blinker;
     animation-iteration-count: infinite;
-    animation-timing-function: cubic-bezier(1.0,0,0,1.0);
+    animation-timing-function: cubic-bezier(1.0, 0, 0, 1.0);
     animation-duration: 2s;
     -webkit-animation-name: blinker;
     -webkit-animation-iteration-count: infinite;
-    -webkit-animation-timing-function: cubic-bezier(1.0,0,0,1.0);
+    -webkit-animation-timing-function: cubic-bezier(1.0, 0, 0, 1.0);
     -webkit-animation-duration: 2s;
-  }
-  @keyframes blinker {
-    from { opacity: 1.0; }
-    to { opacity: 0.0; }
-  }
-   
-  @-webkit-keyframes blinker {
-    from { opacity: 1.0; }
-    to { opacity: 0.0; }
-  }
+}
+
+@keyframes blinker {
+    from {
+        opacity: 1.0;
+    }
+
+    to {
+        opacity: 0.0;
+    }
+}
+
+@-webkit-keyframes blinker {
+    from {
+        opacity: 1.0;
+    }
+
+    to {
+        opacity: 0.0;
+    }
+}
 
 
 
 
-.header__content{
+.header__content {
     width: 100%;
     height: 100vh;
     position: fixed;
@@ -379,12 +404,12 @@ button{
     visibility: hidden;
 }
 
-.header__content.active{
+.header__content.active {
     top: 0;
     visibility: visible;
 }
 
-.header__content .menu__list{
+.header__content .menu__list {
     display: flex;
     flex-direction: column;
     margin-bottom: 30px;
@@ -396,29 +421,34 @@ button{
 }
 
 .header__content .menu__list::-webkit-scrollbar {
-    width: 5px; /* ширина для вертикального скролла */
-    height: 0px; /* высота для горизонтального скролла */
-    background-color: rgba(31, 30, 30, 0.3); /* цвет фона */
+    width: 5px;
+    /* ширина для вертикального скролла */
+    height: 0px;
+    /* высота для горизонтального скролла */
+    background-color: rgba(31, 30, 30, 0.3);
+    /* цвет фона */
     border-radius: 10px;
-    
+
 }
+
 .header__content .menu__list::-webkit-scrollbar-thumb {
     background-color: rgba(0, 0, 0, 0.3);
     border-radius: 10px;
 }
 
-.header__content .menu__item{
+.header__content .menu__item {
     margin-bottom: 25px;
 }
 
-.header__content .menu__item:last-child{
+.header__content .menu__item:last-child {
     margin-bottom: 0px;
 }
 
-.header__content .menu__link{
+.header__content .menu__link {
     font-size: 36px;
 }
-.popup-menu__container{
+
+.popup-menu__container {
     position: absolute;
     top: 0;
     left: 0;
@@ -427,7 +457,7 @@ button{
     background-color: #000000;
 }
 
-.popup-img{
+.popup-img {
     position: absolute;
     top: 0;
     left: 0;
@@ -441,7 +471,7 @@ button{
     transition-property: opacity;
 }
 
-.popup-img--active{
+.popup-img--active {
     opacity: 1;
 }
 
@@ -494,19 +524,21 @@ button{
     z-index: 2;
     display: inline-block;
     color: rgba(255, 255, 255, 0.7);
-    font : normal 400 30px/1 'Josefin Sans', sans-serif;
+    font: normal 400 30px/1 'Josefin Sans', sans-serif;
     letter-spacing: .1em;
     text-decoration: none;
     transition: opacity .3s;
-  }
-  .demo a:hover {
-    opacity: .5;
-  }
+}
 
-  #section06 a {
+.demo a:hover {
+    opacity: .5;
+}
+
+#section06 a {
     padding-top: 70px;
-  }
-  #section06 a span {
+}
+
+#section06 a span {
     position: absolute;
     top: 0;
     left: 50%;
@@ -520,33 +552,39 @@ button{
     -webkit-animation: sdb06 1.5s infinite;
     animation: sdb06 1.5s infinite;
     box-sizing: border-box;
-  }
-  @-webkit-keyframes sdb06 {
+}
+
+@-webkit-keyframes sdb06 {
     0% {
-      -webkit-transform: rotateY(0) rotateZ(-45deg) translate(0, 0);
-      opacity: 0;
+        -webkit-transform: rotateY(0) rotateZ(-45deg) translate(0, 0);
+        opacity: 0;
     }
+
     50% {
-      opacity: 1;
+        opacity: 1;
     }
+
     100% {
-      -webkit-transform: rotateY(720deg) rotateZ(-45deg) translate(-20px, 20px);
-      opacity: 0;
+        -webkit-transform: rotateY(720deg) rotateZ(-45deg) translate(-20px, 20px);
+        opacity: 0;
     }
-  }
-  @keyframes sdb06 {
+}
+
+@keyframes sdb06 {
     0% {
-      transform: rotateY(0) rotateZ(-45deg) translate(0, 0);
-      opacity: 0;
+        transform: rotateY(0) rotateZ(-45deg) translate(0, 0);
+        opacity: 0;
     }
+
     50% {
-      opacity: 1;
+        opacity: 1;
     }
+
     100% {
-      transform: rotateY(720deg) rotateZ(-45deg) translate(-20px, 20px);
-      opacity: 0;
+        transform: rotateY(720deg) rotateZ(-45deg) translate(-20px, 20px);
+        opacity: 0;
     }
-  }
+}
 
 .our-strength {
     margin-bottom: 70px;
@@ -567,12 +605,12 @@ button{
     margin-bottom: 70px;
 }
 
-.shops__images-slider .slick-track{
+.shops__images-slider .slick-track {
     display: flex;
     height: auto;
 }
 
-.shops__images-slider .slick-slide{
+.shops__images-slider .slick-slide {
     height: auto;
     min-height: 620px;
 }
@@ -587,7 +625,7 @@ button{
     max-width: 50%;
 }
 
-.shops__images-slider img{
+.shops__images-slider img {
     width: 100%;
     height: 100%;
     object-fit: cover;
@@ -614,37 +652,37 @@ button{
     margin-bottom: 40px;
 }
 
-.network__item .shops__title{
+.network__item .shops__title {
     margin-bottom: 0;
     flex: 1 1 auto;
     margin-bottom: 20px;
 }
 
-.shops__title span{
+.shops__title span {
     display: block;
 }
 
-.shops__info{
+.shops__info {
     margin-bottom: 40px;
 }
 
-.shops__info span{
+.shops__info span {
     display: block;
     margin-bottom: 15px;
 }
 
-.shops__info a{
+.shops__info a {
     color: rgba(255, 255, 255, 0.7);
     font-size: 27px;
     transition: 0.3s;
     transition-property: color;
 }
 
-.shops__info a:hover{
+.shops__info a:hover {
     color: rgba(255, 255, 255, 1);
 }
 
-.shops .slick-btn{
+.shops .slick-btn {
     position: absolute;
     color: rgba(255, 255, 255, 0.3);
     font-size: 25px;
@@ -657,15 +695,15 @@ button{
     text-align: left;
 }
 
-.shops .slick-btn:hover{
+.shops .slick-btn:hover {
     color: rgba(255, 255, 255, 1);
 }
 
-.shops .slick-prev{
+.shops .slick-prev {
     bottom: 50px;
 }
 
-.shops .slick-next{
+.shops .slick-next {
     bottom: 20px;
 }
 
@@ -679,60 +717,60 @@ button{
 }
 
 .table {
-	width: 100%;
-	border: none;
-	margin-bottom: 20px;
+    width: 100%;
+    border: none;
+    margin-bottom: 20px;
 }
 
 .table thead th {
-	font-weight: 300;
-	text-align: right;
-	border: none;
-	padding: 15px 25px;
+    font-weight: 300;
+    text-align: right;
+    border: none;
+    padding: 15px 25px;
     color: #B38861;
-	background-color: rgba(170, 170, 170, 0.1);
-	font-size: 22px;
+    background-color: rgba(170, 170, 170, 0.1);
+    font-size: 22px;
     vertical-align: middle;
 }
 
 .table thead tr th:first-child {
-	border-radius: 8px 0 0 8px;
+    border-radius: 8px 0 0 8px;
     text-align: left;
 }
 
 .table thead tr th:last-child {
-	border-radius: 0 8px 8px 0;
+    border-radius: 0 8px 8px 0;
 }
 
 .table tbody td {
-	text-align: right;
-	border: none;
-	padding: 15px 25px;
-	font-size: 22px;
-	vertical-align: middle;
+    text-align: right;
+    border: none;
+    padding: 15px 25px;
+    font-size: 22px;
+    vertical-align: middle;
 }
 
-.table tbody tr:nth-child(even){
+.table tbody tr:nth-child(even) {
     background-color: rgba(170, 170, 170, 0.1);
 }
 
 .table tbody tr td:first-child {
-	border-radius: 8px 0 0 8px;
+    border-radius: 8px 0 0 8px;
     text-align: left;
 }
 
-.table tbody td{
+.table tbody td {
     font-weight: 300;
     transition: 0.3s;
     transition-property: color;
 }
 
-.table tbody tr:hover{
+.table tbody tr:hover {
     color: #B38861;
 }
 
 .table tbody tr td:last-child {
-	border-radius: 0 8px 8px 0;
+    border-radius: 0 8px 8px 0;
 }
 
 .barbers-home {
@@ -747,12 +785,12 @@ button{
     margin-bottom: 20px;
 }
 
-.top-row .btn__link{
+.top-row .btn__link {
     color: rgba(0, 0, 0, 1);
     border: 1px solid rgba(0, 0, 0, 0.7);
 }
 
-.top-row .btn__span{
+.top-row .btn__span {
     background-color: rgba(0, 0, 0, 0.7);
 }
 
@@ -760,7 +798,7 @@ button{
     display: flex;
 }
 
-.barbers-slider .slick-track{
+.barbers-slider .slick-track {
     display: flex;
     align-items: flex-end;
 }
@@ -770,6 +808,7 @@ button{
     align-items: center;
     justify-content: center;
 }
+
 .barbers-slider__info {
     width: 40%;
 }
@@ -790,7 +829,7 @@ button{
     margin-bottom: 20px;
 }
 
-.barbers-slider__address span{
+.barbers-slider__address span {
     font-size: 16px;
     display: block;
     color: rgba(0, 0, 0, 0.7);
@@ -801,26 +840,27 @@ button{
     width: 50%;
 }
 
-.barbers__box-images img{
+.barbers__box-images img {
     object-fit: contain;
     width: 100%;
+    max-width: 600px;
     height: 550px;
 }
 
-.barbers-btn__inner{
+.barbers-btn__inner {
     display: flex;
     justify-content: space-between;
 }
 
-.barbers-btn__inner .btn{
+.barbers-btn__inner .btn {
     max-width: 200px;
 }
 
-.barbers-slider__column{
+.barbers-slider__column {
     position: relative;
 }
 
-.barbers-home .slick-arrow{
+.barbers-home .slick-arrow {
     position: absolute;
     z-index: 2;
     top: 50%;
@@ -835,22 +875,22 @@ button{
     font-size: 0;
 }
 
-.barbers-home .slick-arrow:hover{
+.barbers-home .slick-arrow:hover {
     background-color: rgba(179, 136, 97, 0.5);
 }
 
-.barbers-home .slick-arrow:active{
+.barbers-home .slick-arrow:active {
     background-color: rgba(179, 136, 97, 0.8);
 }
 
-.barbers-home .slick-prev{
+.barbers-home .slick-prev {
     left: -30px;
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
-.barbers-home .slick-next{
+.barbers-home .slick-next {
     right: -30px;
     display: flex;
     align-items: center;
@@ -858,7 +898,7 @@ button{
 }
 
 .barbers-home .slick-prev:before,
-.barbers-home .slick-prev:after{
+.barbers-home .slick-prev:after {
     content: '';
     position: absolute;
     width: 20px;
@@ -866,18 +906,18 @@ button{
     background-color: rgba(0, 0, 0, 0.5);
 }
 
-.barbers-home .slick-prev:before{
+.barbers-home .slick-prev:before {
     transform: rotate(45deg);
     transform-origin: left;
 }
 
-.barbers-home .slick-prev::after{
+.barbers-home .slick-prev::after {
     transform: rotate(-45deg);
     transform-origin: left;
 }
 
 .barbers-home .slick-next:before,
-.barbers-home .slick-next:after{
+.barbers-home .slick-next:after {
     content: '';
     position: absolute;
     width: 20px;
@@ -885,12 +925,12 @@ button{
     background-color: rgba(0, 0, 0, 0.5);
 }
 
-.barbers-home .slick-next:before{
+.barbers-home .slick-next:before {
     transform: rotate(45deg);
     transform-origin: right;
 }
 
-.barbers-home .slick-next::after{
+.barbers-home .slick-next::after {
     transform: rotate(-45deg);
     transform-origin: right;
 }
@@ -900,7 +940,7 @@ button{
     margin-bottom: 70px;
 }
 
-.market-home__cell{
+.market-home__cell {
     padding: 20px 10px;
     text-align: center;
 }
@@ -920,7 +960,7 @@ button{
     padding: 10px;
 }
 
-.market-home__column:hover{
+.market-home__column:hover {
     box-shadow: 0px 2px 10px rgba(170, 170, 170, 0.5);
 }
 
@@ -929,25 +969,26 @@ button{
     align-items: flex-end;
     justify-content: center;
     width: 100%;
+    max-width: 437px;
     margin-bottom: 30px;
 }
 
-.home__column{
+.home__column {
     overflow: hidden;
 }
 
-.home__column img{
+.home__column img {
     transition: 0.5s;
     transition-property: transform;
     will-change: transform;
     display: block;
 }
 
-.home__column:hover img{
+.home__column:hover img {
     transform: scale(1.10);
 }
 
-.market-home__images img{
+.market-home__images img {
     object-fit: contain;
     width: 100%;
     height: 250px;
@@ -957,13 +998,13 @@ button{
     margin-bottom: 40px;
 }
 
-.market-home__title a{
+.market-home__title a {
     color: rgba(0, 0, 0, 1);
     transition: 0.3s;
     transition-property: color;
 }
 
-.market-home__title a:hover{
+.market-home__title a:hover {
     color: rgba(179, 136, 97, 1);
 }
 
@@ -991,16 +1032,16 @@ button{
     margin-bottom: 30px;
 }
 
-.market-home__list:last-child{
+.market-home__list:last-child {
     margin-bottom: 0;
 }
 
-.market-home__item{
+.market-home__item {
     font-size: 20px;
     margin-bottom: 5px;
 }
 
-.market-home__item:last-child{
+.market-home__item:last-child {
     margin-bottom: 0;
 }
 
@@ -1010,27 +1051,27 @@ button{
     font-weight: 300;
 }
 
-.market-home__phone{
+.market-home__phone {
     font-size: 20px;
     color: #1b1b1b;
     transition: 0.3s;
     transition-property: color;
 }
 
-.market-home__phone:hover{
+.market-home__phone:hover {
     color: #B38861;
 }
 
-.slick-slide{
+.slick-slide {
     display: flex;
     height: auto;
 }
 
-.market-home .top-row{
+.market-home .top-row {
     margin-bottom: 50px;
 }
 
-.market-home .slick-arrow{
+.market-home .slick-arrow {
     position: relative;
     top: 50%;
     transform: translateY(-50%);
@@ -1043,7 +1084,7 @@ button{
     transition: 0.3s;
 }
 
-.market-home .slick-prev{
+.market-home .slick-prev {
     position: absolute;
     left: -15px;
     display: flex;
@@ -1053,12 +1094,12 @@ button{
     transition-property: left;
 }
 
-.market-home .slick-prev:active{
+.market-home .slick-prev:active {
     left: -20px;
 }
 
 .market-home .slick-prev:before,
-.market-home .slick-prev:after{
+.market-home .slick-prev:after {
     content: '';
     position: absolute;
     width: 15px;
@@ -1069,22 +1110,22 @@ button{
 }
 
 .market-home .slick-prev:hover:before,
-.market-home .slick-prev:hover:after{
+.market-home .slick-prev:hover:after {
     background-color: rgba(0, 0, 0, 0.7);
 }
 
-.market-home .slick-prev:before{
+.market-home .slick-prev:before {
     transform: rotate(45deg);
     transform-origin: left;
 }
 
-.market-home .slick-prev:after{
+.market-home .slick-prev:after {
     transform: rotate(-45deg);
     transform-origin: left;
 }
 
 
-.market-home .slick-next{
+.market-home .slick-next {
     position: absolute;
     right: -15px;
     display: flex;
@@ -1092,12 +1133,12 @@ button{
     justify-content: center;
 }
 
-.market-home .slick-next:active{
+.market-home .slick-next:active {
     right: -20px;
 }
 
 .market-home .slick-next:before,
-.market-home .slick-next:after{
+.market-home .slick-next:after {
     content: '';
     position: absolute;
     width: 15px;
@@ -1108,31 +1149,31 @@ button{
 }
 
 .market-home .slick-next:hover:before,
-.market-home .slick-next:hover:after{
+.market-home .slick-next:hover:after {
     background-color: rgba(0, 0, 0, 0.7);
 }
 
-.market-home .slick-next:before{
+.market-home .slick-next:before {
     transform: rotate(45deg);
     transform-origin: right;
 }
 
-.market-home .slick-next:after{
+.market-home .slick-next:after {
     transform: rotate(-45deg);
     transform-origin: right;
 }
 
-.blog-home{
+.blog-home {
     background-color: #f7f2ee;
     padding: 100px 0 70px;
 }
 
-.blog{
+.blog {
     background-color: #f5f5f5;
     padding: 100px 0 70px;
 }
 
-.blog .top-row{
+.blog .top-row {
     margin-bottom: 50px;
 }
 
@@ -1145,18 +1186,18 @@ button{
     justify-content: space-between;
 }
 
-.blog-body__row{
+.blog-body__row {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
     margin-bottom: 40px;
 }
 
-.blog-body__row:last-child{
+.blog-body__row:last-child {
     margin-bottom: 0;
 }
 
-.blog-column:nth-last-child(-n+2){
+.blog-column:nth-last-child(-n+2) {
     margin-bottom: 0;
 }
 
@@ -1166,12 +1207,12 @@ button{
     margin-bottom: 50px;
 }
 
-.blog-column:first-child .blog-item__info{
+.blog-column:first-child .blog-item__info {
     margin-bottom: 0;
     padding-bottom: 0;
 }
 
-.blog-column{
+.blog-column {
     width: 100%;
     max-width: 450px;
     margin-bottom: 40px;
@@ -1187,7 +1228,7 @@ button{
     border: 1px solid rgba(170, 170, 170, 0.5);
 }
 
-.blog-item__images-first{
+.blog-item__images-first {
     display: block;
     width: 100%;
     max-width: 940px;
@@ -1195,28 +1236,28 @@ button{
     filter: grayscale(1);
 }
 
-.blog-item__images-first img{
+.blog-item__images-first img {
     display: block;
     object-fit: cover;
     width: 100%;
     max-height: 600px;
 }
 
-.blog-item .blog-item__images-first img{
+.blog-item .blog-item__images-first img {
     transition: 0.5s;
     transition-property: transform;
 }
 
-.blog-item:hover .blog-item__images-first img{
+.blog-item:hover .blog-item__images-first img {
     transform: scale(1.10);
 }
 
-.blog-item .blog-item__images img{
+.blog-item .blog-item__images img {
     transition: 0.5s;
     transition-property: transform;
 }
 
-.blog-item:hover .blog-item__images img{
+.blog-item:hover .blog-item__images img {
     transform: scale(1.10);
 }
 
@@ -1228,37 +1269,37 @@ button{
     filter: grayscale(1);
 }
 
-.blog-item__images img{
+.blog-item__images img {
     display: block;
     object-fit: cover;
     width: 100%;
     height: 100%;
 }
 
-.blog-item__images a{
+.blog-item__images a {
     display: block;
 }
 
-.blog-item__info{
+.blog-item__info {
     flex: 1 1 auto;
     padding: 20px;
     margin-bottom: 15px;
     padding-bottom: 0;
 }
 
-.blog-item__info .blog-author{
+.blog-item__info .blog-author {
     padding: 0;
 }
 
-.blog-item__info > *{
+.blog-item__info>* {
     margin-bottom: 20px;
 }
 
-.blog-item__info > *:last-child{
+.blog-item__info>*:last-child {
     margin-bottom: 0px;
 }
 
-.blog-item__title a{
+.blog-item__title a {
     color: #000000;
     transition: 0.3s;
     transition-property: color;
@@ -1290,12 +1331,14 @@ button{
     margin-right: 10px;
 }
 
-.blog-author__images img{
+.blog-author__images img {
     width: 100%;
+    height: 100%;
+    object-fit: contain;
     display: block;
 }
 
-.blog-author__name span{
+.blog-author__name span {
     font-size: 14px;
     display: block;
 }
@@ -1331,12 +1374,14 @@ button{
     height: 162px
 }
 
-.partners__item img{
+.partners__item img {
     display: block;
     width: 100%;
+    height: 100%;
+    object-fit: contain;
 }
 
-.parallax{
+.parallax {
     width: 100%;
     height: 100vh;
     max-height: 600px;
@@ -1361,7 +1406,7 @@ button{
     margin: 0 15px;
 }
 
-.footer__column .footer__conf{
+.footer__column .footer__conf {
     font-size: 16px;
     color: #ffffff;
     text-decoration: underline;
@@ -1369,7 +1414,7 @@ button{
     transition-property: color;
 }
 
-.footer__column .footer__conf:hover{
+.footer__column .footer__conf:hover {
     color: rgba(255, 255, 255, 0.3);
 }
 
@@ -1382,11 +1427,11 @@ button{
     margin-bottom: 10px;
 }
 
-.footer__menu-item:last-child{
+.footer__menu-item:last-child {
     margin-bottom: 0;
 }
 
-.footer .logo{
+.footer .logo {
     display: flex;
     justify-content: center;
     margin-bottom: 10px;
@@ -1401,11 +1446,17 @@ button{
     margin: 0 5px;
 }
 
-.social__link{
+.social__link {
     padding: 10px;
 }
 
-.social__link .svg-patch{
+.social__link svg {
+    width: 30px;
+    height: 20px;
+    object-fit: contain;
+}
+
+.social__link .svg-patch {
     transition: 0.3s;
     transition-property: fill;
 }
@@ -1430,7 +1481,7 @@ button{
     margin-bottom: 30px;
 }
 
-.mainthing-slider{
+.mainthing-slider {
     margin-top: -30px;
 }
 
@@ -1454,12 +1505,12 @@ button{
 }
 
 .mainthing__link--active,
-.market__link--active{
+.market__link--active {
     color: #A3754F;
 }
 
 .mainthing__link:hover,
-.market__link:hover{
+.market__link:hover {
     color: rgba(255, 255, 255, 1);
 }
 
@@ -1485,7 +1536,7 @@ button{
     font-size: 22px;
 }
 
-.mainthihg-maithing__bg{
+.mainthihg-maithing__bg {
     width: 100%;
     height: 100vh;
     min-height: 522px;
@@ -1495,7 +1546,7 @@ button{
     background-position: 50% 50%;
 }
 
-.mainthing-mainthing__container{
+.mainthing-mainthing__container {
     width: 100%;
     height: 100%;
     display: flex;
@@ -1503,12 +1554,12 @@ button{
     justify-content: center;
 }
 
-.mainthing-mainthing__info{
+.mainthing-mainthing__info {
     width: 70%;
     padding: 50px 0;
 }
 
-.mainthing-mainthing .slick-arrow{
+.mainthing-mainthing .slick-arrow {
     position: absolute;
     cursor: pointer;
     top: 50%;
@@ -1523,15 +1574,15 @@ button{
     transition-property: background-color;
 }
 
-.mainthing-mainthing .slick-arrow:hover{
+.mainthing-mainthing .slick-arrow:hover {
     background-color: rgba(170, 170, 170, 0.7);
 }
 
-.mainthing-mainthing .slick-prev{
+.mainthing-mainthing .slick-prev {
     left: 20px;
 }
 
-.mainthing-mainthing .slick-prev:before{
+.mainthing-mainthing .slick-prev:before {
     content: '';
     position: absolute;
     top: 50%;
@@ -1544,15 +1595,15 @@ button{
     transition-property: left;
 }
 
-.mainthing-mainthing .slick-prev:active::before{
+.mainthing-mainthing .slick-prev:active::before {
     left: 47%;
 }
 
-.mainthing-mainthing .slick-next{
+.mainthing-mainthing .slick-next {
     right: 20px;
 }
 
-.mainthing-mainthing .slick-next:before{
+.mainthing-mainthing .slick-next:before {
     content: '';
     position: absolute;
     top: 50%;
@@ -1565,11 +1616,11 @@ button{
     transition-property: right;
 }
 
-.mainthing-mainthing .slick-next:active::before{
+.mainthing-mainthing .slick-next:active::before {
     left: 53%;
 }
 
-.mainthing-mainthing__content{
+.mainthing-mainthing__content {
     padding: 50px 0;
 }
 
@@ -1595,10 +1646,11 @@ button{
     margin-right: 30px;
 }
 
-.founder__images img{
+.founder__images img {
     width: 100%;
     height: 100%;
     display: block;
+    object-fit: contain;
 }
 
 .founder__heading {
@@ -1620,7 +1672,7 @@ button{
     margin-bottom: 25px;
 }
 
-.maithing-history__text:last-child{
+.maithing-history__text:last-child {
     margin-bottom: 0;
 }
 
@@ -1636,23 +1688,23 @@ button{
     margin-bottom: 25px;
 }
 
-.parallax-maithing__text:last-child{
+.parallax-maithing__text:last-child {
     margin-bottom: 0;
 }
 
-.mainthing-history__btn{
+.mainthing-history__btn {
     margin-bottom: 30px;
 }
 
-.mainthing-history__btn .btn{
+.mainthing-history__btn .btn {
     margin-right: 20px;
 }
 
-.mainthing-history__btn .btn:last-child{
+.mainthing-history__btn .btn:last-child {
     margin-right: 0px;
 }
 
-.parallax-maithing{
+.parallax-maithing {
     width: 100%;
     height: 100vh;
     max-height: 500px;
@@ -1683,7 +1735,7 @@ button{
     margin-bottom: 30px;
 }
 
-.maithing-achievements__item:last-child{
+.maithing-achievements__item:last-child {
     margin-bottom: 0;
 }
 
@@ -1693,7 +1745,7 @@ button{
     font-size: 30px;
 }
 
-.header-network{
+.header-network {
     position: absolute;
     background-color: transparent;
     pointer-events: none;
@@ -1702,7 +1754,7 @@ button{
 .header-network .logo,
 .header-network .header__maps,
 .header-network .header__content,
-.header-network .burger{
+.header-network .burger {
     pointer-events: auto;
 }
 
@@ -1733,7 +1785,7 @@ button{
     transition-property: background-color;
 }
 
-.network__item:hover{
+.network__item:hover {
     background-color: transparent;
 }
 
@@ -1751,7 +1803,7 @@ button{
     height: 100%;
 }
 
-.network__item .btn{
+.network__item .btn {
     margin-top: 40px;
 }
 
@@ -1760,18 +1812,18 @@ button{
     visibility: visible;
 }
 
-.network .shop__phone{
+.network .shop__phone {
     color: #ffffff;
     transition: 0.3s;
     transition-property: color;
     font-size: calc(15px + (27 - 12) * ((100vw - 768px) / (1240 - 320)));
 }
 
-.network .shop__phone:hover{
+.network .shop__phone:hover {
     color: #A3754F;
 }
 
-.network__item .shops__info{
+.network__item .shops__info {
     margin-bottom: 0;
 }
 
@@ -1797,11 +1849,11 @@ button{
     padding: 0 10px;
 }
 
-.price__column:not(:last-child){
+.price__column:not(:last-child) {
     margin-bottom: 40px;
 }
 
-.price__item{
+.price__item {
     display: flex;
     flex-direction: column;
     height: 100%;
@@ -1815,7 +1867,7 @@ button{
     transition-property: box-shadow;
 }
 
-.price__item:hover{
+.price__item:hover {
     box-shadow: 0px 2px 12px rgba(0, 0, 0, 1);
 }
 
@@ -1831,11 +1883,11 @@ button{
     margin-bottom: 20px;
 }
 
-.price__list-item{
+.price__list-item {
     margin-bottom: 25px;
 }
 
-.price__list-item:last-child{
+.price__list-item:last-child {
     margin-bottom: 0;
 }
 
@@ -1871,7 +1923,7 @@ button{
     height: 0;
 }
 
-.market__body--active{
+.market__body--active {
     display: flex;
     height: auto;
 }
@@ -1883,7 +1935,7 @@ button{
     padding-bottom: 40px;
 }
 
-.market__body-all .market__column:last-child{
+.market__body-all .market__column:last-child {
     padding-bottom: 0;
 }
 
@@ -1897,11 +1949,11 @@ button{
     border: 1px solid rgba(170, 170, 170, 0.5);
 }
 
-.market__item > *{
+.market__item>* {
     margin-bottom: 20px;
 }
 
-.market__item > *:last-child{
+.market__item>*:last-child {
     margin-bottom: 0px;
     width: 100%;
 }
@@ -1913,7 +1965,7 @@ button{
     overflow: hidden;
 }
 
-.market__images img{
+.market__images img {
     display: block;
     object-fit: contain;
     width: 100%;
@@ -1922,7 +1974,7 @@ button{
     transition-property: transform;
 }
 
-.market__images img:hover{
+.market__images img:hover {
     transform: scale(1.03);
 }
 
@@ -1966,7 +2018,7 @@ button{
     margin-bottom: 5px;
 }
 
-.market__descriptions-item{
+.market__descriptions-item {
     font-size: 20px;
     font-weight: 300;
     line-height: 1.5;
@@ -1988,7 +2040,7 @@ button{
     max-width: 100%;
 }
 
-.barbers-title{
+.barbers-title {
     font-size: 80px;
     font-weight: 100;
     line-height: 1;
@@ -2005,11 +2057,11 @@ button{
     text-align: center;
 }
 
-.barbershop__item-cell > *{
+.barbershop__item-cell>* {
     margin-bottom: 10px;
 }
 
-.barbershop__item-cell > *:last-child{
+.barbershop__item-cell>*:last-child {
     margin-bottom: 0px;
 }
 
@@ -2050,14 +2102,14 @@ button{
     margin: auto;
 }
 
-.barbers-people__images img{
+.barbers-people__images img {
     display: block;
     object-fit: contain;
     width: 100%;
     max-height: 600px;
 }
 
-.barbers-info__slider .slick-arrow{
+.barbers-info__slider .slick-arrow {
     cursor: pointer;
     position: absolute;
     top: 50%;
@@ -2072,17 +2124,17 @@ button{
     transition-property: background-color;
 }
 
-.barbers-info__slider .slick-arrow:hover{
+.barbers-info__slider .slick-arrow:hover {
     background-color: rgba(179, 136, 97, 0.7);
 }
 
-.barbers-info__slider .slick-prev{
+.barbers-info__slider .slick-prev {
     background-color: rgba(179, 136, 97, 0.3);
     left: 0;
 }
 
 .barbers-info__slider .slick-prev:before,
-.barbers-info__slider .slick-next:before{
+.barbers-info__slider .slick-next:before {
     content: '';
     position: absolute;
     top: 50%;
@@ -2094,11 +2146,11 @@ button{
     transition-property: left;
 }
 
-.barbers-info__slider .slick-prev:active::before{
+.barbers-info__slider .slick-prev:active::before {
     left: 45%;
 }
 
-.barbers-info__slider .slick-prev:before{
+.barbers-info__slider .slick-prev:before {
     background-image: url(../images/svg/mainthing-aarow_left.svg);
     background-repeat: no-repeat;
     background-size: 24px;
@@ -2106,11 +2158,11 @@ button{
     transition: 0.3s;
 }
 
-.barbers-info__slider .slick-next{
+.barbers-info__slider .slick-next {
     right: 0;
 }
 
-.barbers-info__slider .slick-next:before{
+.barbers-info__slider .slick-next:before {
     background-image: url(../images/svg/mainthing-aarow_right.svg);
     background-repeat: no-repeat;
     background-size: 24px;
@@ -2118,11 +2170,11 @@ button{
     transition: 0.3s;
 }
 
-.barbers-info__slider .slick-next:active::before{
+.barbers-info__slider .slick-next:active::before {
     left: 55%;
 }
 
-.barbershop-slider .slick-arrow{
+.barbershop-slider .slick-arrow {
     cursor: pointer;
     position: absolute;
     z-index: 5;
@@ -2133,7 +2185,7 @@ button{
 }
 
 .barbershop-slider .slick-prev,
-.barbershop-slider .slick-next{
+.barbershop-slider .slick-next {
     position: absolute;
     z-index: 5;
     display: flex;
@@ -2150,16 +2202,16 @@ button{
 }
 
 .barbershop-slider .slick-prev:active,
-.barbershop-slider .slick-next:active{
+.barbershop-slider .slick-next:active {
     background-color: rgba(179, 136, 97, 0.7);
 }
 
-.barbershop-slider .slick-prev{
+.barbershop-slider .slick-prev {
     left: 0px;
 }
 
 .barbershop-slider .slick-prev:before,
-.barbershop-slider .slick-prev:after{
+.barbershop-slider .slick-prev:after {
     content: '';
     position: absolute;
     width: 20px;
@@ -2170,27 +2222,27 @@ button{
     transition-property: transform;
 }
 
-.barbershop-slider .slick-prev:before{
+.barbershop-slider .slick-prev:before {
     transform: rotate(45deg);
     transform-origin: left;
 }
 
-.barbershop-slider .slick-prev:after{
+.barbershop-slider .slick-prev:after {
     transform: rotate(-45deg);
     transform-origin: left;
 }
 
 .barbershop-slider .slick-prev:active:before,
-.barbershop-slider .slick-prev:active:after{
+.barbershop-slider .slick-prev:active:after {
     transform: translateX(-5px);
 }
 
-.barbershop-slider .slick-next{
+.barbershop-slider .slick-next {
     right: 0px;
 }
 
 .barbershop-slider .slick-next:before,
-.barbershop-slider .slick-next:after{
+.barbershop-slider .slick-next:after {
     content: '';
     position: absolute;
     width: 20px;
@@ -2201,34 +2253,34 @@ button{
     transition-property: transform;
 }
 
-.barbershop-slider .slick-next:before{
+.barbershop-slider .slick-next:before {
     transform: rotate(45deg);
     transform-origin: right;
 }
 
-.barbershop-slider .slick-next:after{
+.barbershop-slider .slick-next:after {
     transform: rotate(-45deg);
     transform-origin: right;
 }
 
 .barbershop-slider .slick-next:active:before,
-.barbershop-slider .slick-next:active:after{
+.barbershop-slider .slick-next:active:after {
     transform: translateX(-5px);
 }
 
-.barbers-info__slider .slick-track{
+.barbers-info__slider .slick-track {
     display: flex;
     align-items: flex-end;
 }
 
 
-@media (max-width: 1196px){
+@media (max-width: 1196px) {
 
-    .barbers-btn__inner{
+    .barbers-btn__inner {
         flex-direction: column;
     }
 
-    .btn-barbers{
+    .btn-barbers {
         margin-bottom: 10px;
     }
 }
@@ -2236,66 +2288,66 @@ button{
 
 
 
-@media (max-width: 1165px){
+@media (max-width: 1165px) {
 
     .header__menu {
         display: none;
     }
 
-    .barbers-slider__subheading{
+    .barbers-slider__subheading {
         font-size: calc(13px + (40 - 27) * ((100vw - 320px) / (1230 - 320)));
-        
+
     }
 }
 
 
-@media (max-width: 1024px){
+@media (max-width: 1024px) {
 
-    .shops__info span{
+    .shops__info span {
         font-size: 14px;
     }
 }
 
 
 
-@media (max-width: 1000px){
+@media (max-width: 1000px) {
 
-    .shops__info-slider{
+    .shops__info-slider {
         padding: 80px 10px 0 60px;
     }
 
-    .shops .slick-btn{
+    .shops .slick-btn {
         font-size: 20px;
     }
 
-    .barbers-slider__subheading{
+    .barbers-slider__subheading {
         margin-bottom: 10px;
     }
 
-    .barbers-slider__text{
+    .barbers-slider__text {
         font-size: 15px;
         margin-bottom: 10px;
     }
 
 
-    .barbers__box-images img{
+    .barbers__box-images img {
         height: 450px;
     }
 
-    .barbers-home{
+    .barbers-home {
         padding: 60px 50px 0;
     }
 }
 
 
 
-@media (max-width: 939px){
+@media (max-width: 939px) {
 
-    .market__column:last-child{
+    .market__column:last-child {
         padding-bottom: 0;
     }
 
-    .market__column{
+    .market__column {
         max-width: 600px;
     }
 
@@ -2306,33 +2358,33 @@ button{
 
 
 
-@media (max-width: 930px){
+@media (max-width: 930px) {
 
-    .table thead th{
+    .table thead th {
         text-align: center;
     }
 
-    .table tbody td{
+    .table tbody td {
         text-align: center;
     }
 
-    .blog-body{
+    .blog-body {
         justify-content: center;
     }
 
-    .blog-column{
+    .blog-column {
         max-width: 100%;
     }
 
-    .blog-item__images{
+    .blog-item__images {
         height: auto;
     }
 
-    .blog-column:nth-last-child(n){
+    .blog-column:nth-last-child(n) {
         margin-bottom: 40px;
     }
 
-    .blog-column:nth-last-child(1){
+    .blog-column:nth-last-child(1) {
         margin-bottom: 0px;
     }
 }
@@ -2340,22 +2392,24 @@ button{
 
 
 
-@media (max-width: 810px){
+@media (max-width: 810px) {
 
-    .barbers-home{
+    .barbers-home {
         padding: 25px 25px 0;
     }
 
-    .barbers-home .slick-arrow{
+    .barbers-home .slick-arrow {
         width: 35px;
         height: 35px;
     }
 
-    .barbers-home .slick-prev:before, .barbers-home .slick-prev:after{
+    .barbers-home .slick-prev:before,
+    .barbers-home .slick-prev:after {
         width: 12px;
     }
 
-    .barbers-home .slick-next:before, .barbers-home .slick-next:after{
+    .barbers-home .slick-next:before,
+    .barbers-home .slick-next:after {
         width: 12px;
     }
 }
@@ -2364,18 +2418,18 @@ button{
 
 
 
-@media (max-width: 768px){
+@media (max-width: 768px) {
 
-    .header__body{
+    .header__body {
         padding: 30px 20px 0px;
     }
 
-    .header__title{
+    .header__title {
         font-size: calc(22px + (32 - 10) * ((100vw - 320px) / (1230 - 320)));
         margin-bottom: 20px;
     }
 
-    .header__subtitle{
+    .header__subtitle {
         font-size: calc(33px + (80 - 50) * ((100vw - 320px) / (1230 - 320)));
     }
 
@@ -2388,260 +2442,260 @@ button{
         margin-bottom: 20px;
     }
 
-    .our-strength__text{
+    .our-strength__text {
         margin-bottom: 40px;
     }
 
-    .shops__info-slider{
+    .shops__info-slider {
         padding: 50px 10px 0 30px;
     }
 
-    .shops .slick-btn{
+    .shops .slick-btn {
         font-size: 16px;
     }
 
-    .shops__images-slider .slick-slide{
+    .shops__images-slider .slick-slide {
         min-height: 500px;
     }
 
-    .shop__maps{
+    .shop__maps {
         margin-bottom: 10px;
     }
 
-    .shops__title{
+    .shops__title {
         margin-bottom: 20px;
     }
 
-    .shops__info{
+    .shops__info {
         margin-bottom: 20px;
     }
 
-    .shops__info span{
-        margin-bottom: 10px;    
+    .shops__info span {
+        margin-bottom: 10px;
     }
 
-    .table thead th{
+    .table thead th {
         font-size: 16px;
     }
 
-    .table tbody td{
+    .table tbody td {
         font-size: 16px;
     }
 
-    .shops{
+    .shops {
         margin-bottom: 20px;
     }
 
-    .price{
+    .price {
         padding: 10px 0;
         margin-bottom: 20px;
     }
 
-    .barbers-slider__text{
+    .barbers-slider__text {
         font-size: 14px;
     }
 
-    .barbers-btn__inner .btn{
+    .barbers-btn__inner .btn {
         max-width: 150px;
     }
 
-    .barbers-btn__inner .btn__link{
+    .barbers-btn__inner .btn__link {
         font-size: 9px;
     }
 
-    .barbers__box-images img{
+    .barbers__box-images img {
         object-fit: cover;
     }
 
-    .barbers-slider__info{
+    .barbers-slider__info {
         width: 45%;
     }
 
-    .market-home__cell{
+    .market-home__cell {
         padding: 10px 5px;
     }
 
-    .market-home__title{
+    .market-home__title {
         margin-bottom: 20px;
         font-size: 20px;
     }
 
-    .market-home__text{
+    .market-home__text {
         font-size: 18px;
         margin-bottom: 15px;
     }
 
-    .market-home__price{
+    .market-home__price {
         font-size: 25px;
     }
 
-    .market-home__info{
+    .market-home__info {
         margin-left: 40px;
     }
 
-    .market-home__list{
+    .market-home__list {
         margin-bottom: 20px;
     }
 
-    .market-home__link{
+    .market-home__link {
         font-size: 16px;
     }
 
-    .market-home__item{
+    .market-home__item {
         font-size: 16px;
     }
 
-    .market-home__phone{
+    .market-home__phone {
         font-size: 16px;
     }
 
-    .parnters__title{
+    .parnters__title {
         text-align: center;
         margin-bottom: 30px;
         font-size: calc(32px + (44 - 12) * ((100vw - 320px) / (1230 - 320)));
     }
 
-    .footer__column-menu{
+    .footer__column-menu {
         display: none;
     }
 
-    .demo a{
+    .demo a {
         font-size: 20px;
     }
 
-    .price{
+    .price {
         padding: 30px 0;
         margin-bottom: 0;
     }
 
-    .price__title{
+    .price__title {
         margin-bottom: 15px;
     }
 
-    .market-home{
+    .market-home {
         padding: 40px 0;
         margin-bottom: 30px;
     }
 
-    .blog{
+    .blog {
         padding: 40px 0;
     }
 
-    .partners{
+    .partners {
         padding: 40px 0 30px;
         margin-bottom: 0;
     }
 
-    .mainthing-mainthing .slick-arrow{
+    .mainthing-mainthing .slick-arrow {
         width: 40px;
         height: 40px;
     }
 
-    .mainthing-mainthing .slick-prev{
+    .mainthing-mainthing .slick-prev {
         left: 5px;
     }
 
-    .mainthing-mainthing .slick-next{
+    .mainthing-mainthing .slick-next {
         right: 5px;
     }
 
-    .header-popup{
+    .header-popup {
         min-height: 150px;
     }
 
-    .mainthing__item{
+    .mainthing__item {
         margin: 0 10px 5px;
     }
 
-    .mainthing__link{
+    .mainthing__link {
         font-size: 14px;
     }
 
-    .founder__images{
+    .founder__images {
         width: 160px;
         height: 160px;
     }
 
-    .founder__heading{
+    .founder__heading {
         font-size: 16px;
         margin-bottom: 5px;
     }
 
-    .founder__title{
+    .founder__title {
         font-size: 28px;
         margin-bottom: 10px;
     }
 
-    .maithing-history__text{
+    .maithing-history__text {
         font-size: 20px;
         line-height: 1.4;
         margin-bottom: 15px;
     }
 
-    .maithing-history__header{
+    .maithing-history__header {
         margin-bottom: 30px;
     }
 
-    .mainthing-mainthing__content{
+    .mainthing-mainthing__content {
         padding: 25px 0;
     }
 
-    .parallax-maithing__text{
+    .parallax-maithing__text {
         font-size: 20px;
         line-height: 1.4;
         margin-bottom: 15px;
     }
 
-    .maithing-achievements__list{
+    .maithing-achievements__list {
         padding: 0 40px;
         margin-bottom: 30px;
     }
 
-    .maithing-achievements__item{
+    .maithing-achievements__item {
         margin-bottom: 20px;
     }
 
-    .maithing-achievements__text{
+    .maithing-achievements__text {
         font-size: 16px;
     }
 
-    .maithing-achievements__numbers{
+    .maithing-achievements__numbers {
         font-size: 20px;
     }
 
-    .shops__info span{
+    .shops__info span {
         font-size: 12px;
     }
 
-    .network__item .shops__info span{
+    .network__item .shops__info span {
         font-size: 16px;
     }
 
-    .network .shops__title span{
+    .network .shops__title span {
         font-size: 40px;
     }
 
-    .network__body{
+    .network__body {
         flex-direction: column;
     }
 
-    .network__column{
+    .network__column {
         width: 100%;
     }
 
-    .network__item{
+    .network__item {
         background-color: rgba(0, 0, 0, 0.9);
     }
 
-    .network__item .shops__title{
+    .network__item .shops__title {
         font-size: 40px;
     }
 
-    .network .shop__phone{
+    .network .shop__phone {
         font-size: 30px;
     }
 
-    .network__item .shops__item{
+    .network__item .shops__item {
         padding-top: 130px;
     }
 }
@@ -2651,9 +2705,9 @@ button{
 
 
 
-@media (max-width: 720px){
+@media (max-width: 720px) {
 
-    .market-home__info{
+    .market-home__info {
         display: none;
     }
 }
@@ -2664,42 +2718,42 @@ button{
 
 
 
-@media (max-width: 630px){
+@media (max-width: 630px) {
 
-    .shops-slider{
+    .shops-slider {
         height: 500px;
     }
 
-    .shops__images-slider .slick-slide{
+    .shops__images-slider .slick-slide {
         height: 400px;
     }
 
-    .shops__title span{
+    .shops__title span {
         font-size: 27px;
     }
 
-    .shops__info span{
+    .shops__info span {
         font-size: 14px;
     }
 
-    .shops__info a{
+    .shops__info a {
         font-size: 20px;
     }
 
-    .shops .slick-btn{
+    .shops .slick-btn {
         font-size: 12px;
     }
 
-    .shops__info-slider{
+    .shops__info-slider {
         padding-top: 25px;
     }
 
-    .maithing-mainthing__title{
+    .maithing-mainthing__title {
         font-size: 40px;
         margin-bottom: 15px;
     }
 
-    .maithing-mainthing__text{
+    .maithing-mainthing__text {
         font-size: 18px;
     }
 }
@@ -2709,57 +2763,57 @@ button{
 
 
 
-@media (max-width: 554px){
+@media (max-width: 554px) {
 
-    .barbers-slider__heading{
+    .barbers-slider__heading {
         font-size: 14px;
     }
 
-    .barbers-slider__text{
+    .barbers-slider__text {
         display: none;
     }
 
-    .barbers__box-images img{
+    .barbers__box-images img {
         height: 350px;
     }
 
-    .top-row{
+    .top-row {
         display: none;
     }
 
-    .barbers-home{
+    .barbers-home {
         padding: 0 20px;
     }
 
-    .founder__row{
+    .founder__row {
         flex-direction: column-reverse;
         text-align: center;
     }
 
-    .founder__images{
+    .founder__images {
         margin-right: 0;
     }
 
-    .founder__info{
+    .founder__info {
         margin-bottom: 20px;
     }
 
-    .maithing-achievements__list{
+    .maithing-achievements__list {
         padding: 0 20px;
         margin-bottom: 20px;
     }
 
-    .maithing-achievements__item{
+    .maithing-achievements__item {
         flex-direction: column;
         text-align: center;
     }
 
-    .maithing-achievements__text{
+    .maithing-achievements__text {
         margin-bottom: 5px;
         font-size: 14px;
     }
 
-    .maithing-achievements__numbers{
+    .maithing-achievements__numbers {
         font-size: 18px;
     }
 }
@@ -2769,46 +2823,46 @@ button{
 
 
 
-@media (max-width: 510px){
+@media (max-width: 510px) {
 
-    .header__body{
+    .header__body {
         padding: 15px 20px 0;
         justify-content: flex-start;
     }
 
-    .header__maps{
+    .header__maps {
         display: none;
     }
 
-    .logo__link{
+    .logo__link {
         width: 65px;
         height: 65px;
     }
-    
-    .logo__link img{
+
+    .logo__link img {
         object-fit: contain;
         width: 100%;
     }
 
-    .burger{
+    .burger {
         top: 20px;
         padding: 20px;
     }
 
-    .header__info-btn{
+    .header__info-btn {
         display: none;
     }
 
-    .header__content .menu__list{
+    .header__content .menu__list {
         padding: 0 20px;
         height: 300px;
     }
 
-    .header__content .menu__link{
+    .header__content .menu__link {
         font-size: 26px;
     }
 
-    .header__content .menu__item{
+    .header__content .menu__item {
         margin: 0 0 20px;
     }
 
@@ -2817,72 +2871,72 @@ button{
         font-size: 30px;
     }
 
-    .our-strength__text{
+    .our-strength__text {
         font-size: 20px;
     }
 
-    .table thead th{
+    .table thead th {
         padding: 10px 12px;
     }
 
-    .table tbody td{
+    .table tbody td {
         padding: 10px 12px;
     }
 
-    .blog-column{
+    .blog-column {
         padding: 0 10px;
     }
 
-    .blog-item{
+    .blog-item {
         padding-bottom: 15px;
     }
 
-    .blog-item__info{
+    .blog-item__info {
         padding: 15px;
     }
 
-    .blog-item__heading{
+    .blog-item__heading {
         font-size: 16px;
     }
 
-    .blog-item__title{
+    .blog-item__title {
         font-size: 19px;
     }
 
-    .blog-author{
+    .blog-author {
         padding: 0 15px;
     }
 
-    .blog-column:nth-last-child(n){
+    .blog-column:nth-last-child(n) {
         margin-bottom: 30px;
     }
 
-    .blog-column:nth-last-child(1){
+    .blog-column:nth-last-child(1) {
         margin-bottom: 0;
     }
 
-    .blog-item__info > *{
+    .blog-item__info>* {
         margin-bottom: 15px;
     }
 
-    .footer__body{
+    .footer__body {
         flex-direction: column-reverse;
         align-items: center;
     }
 
-    .footer__column{
+    .footer__column {
         text-align: center;
     }
 
-    .footer__column-social{
+    .footer__column-social {
         margin-bottom: 20px;
     }
 
-    .header-popup{
+    .header-popup {
         min-height: 100px;
     }
 
-    .network__item .shops__item{
+    .network__item .shops__item {
         padding-top: 90px;
     }
 
@@ -2894,44 +2948,45 @@ button{
         right: -10px;
     }
 
-    .barbershop-slider .slick-prev, .barbershop-slider .slick-next{
+    .barbershop-slider .slick-prev,
+    .barbershop-slider .slick-next {
         width: 40px;
         height: 40px;
     }
 
-    .barbershop-slider .slick-prev:before, 
+    .barbershop-slider .slick-prev:before,
     .barbershop-slider .slick-prev:after,
     .barbershop-slider .slick-next:before,
-    .barbershop-slider .slick-next:after{
+    .barbershop-slider .slick-next:after {
         width: 15px;
         height: 1px;
     }
 
-    .barbers-people__images img{
+    .barbers-people__images img {
         max-height: 500px;
     }
 
-    .barbers-people__header{
+    .barbers-people__header {
         margin-bottom: 10px;
     }
 
-    .barbershop__maps{
+    .barbershop__maps {
         font-size: 18px;
     }
 
-    .barbershop__opening-hours{
+    .barbershop__opening-hours {
         font-size: 14px;
     }
 
-    .barbers-people__heading{
+    .barbers-people__heading {
         font-size: 18px;
     }
 
-    .barbers-people__title{
+    .barbers-people__title {
         font-size: 30px;
     }
 
-    .barbers-info__slider .slick-arrow{
+    .barbers-info__slider .slick-arrow {
         width: 40px;
         height: 40px;
     }
@@ -2941,39 +2996,39 @@ button{
         background-size: 18px;
     }
 
-    .barbers{
+    .barbers {
         padding: 20px 0 0;
     }
 
-    .market{
+    .market {
         padding: 10px 0;
     }
 
-    .market__column{
+    .market__column {
         padding-bottom: 30px;
     }
 
-    .market__item{
+    .market__item {
         padding: 20px;
     }
 
-    .market__item > *{
+    .market__item>* {
         margin-bottom: 15px;
     }
 
-    .market__images img{
+    .market__images img {
         max-height: 250px;
     }
 
-    .market__title{
+    .market__title {
         font-size: 20px;
     }
 
-    .market__price{
+    .market__price {
         font-size: 22px;
     }
 
-    .market__text{
+    .market__text {
         font-size: 18px;
         line-height: 1.3;
     }
@@ -2984,9 +3039,9 @@ button{
 
 
 
-@media (max-width: 435px){
+@media (max-width: 435px) {
 
-    .mainthing__list-mainthing .mainthing__item:last-child{
+    .mainthing__list-mainthing .mainthing__item:last-child {
         margin-bottom: 0;
     }
 }
@@ -2995,13 +3050,13 @@ button{
 
 
 
-@media (max-width: 425px){
+@media (max-width: 425px) {
 
-    body{
+    body {
         font-size: 16px;
     }
 
-    .our-strength{
+    .our-strength {
         margin-bottom: 30px;
         padding-top: 30px;
     }
@@ -3018,186 +3073,186 @@ button{
         text-align: justify;
     }
 
-    .shops__title span{
+    .shops__title span {
         font-size: 20px;
     }
 
-    .shops__info span{
+    .shops__info span {
         font-size: 10px;
         margin-bottom: 7px;
     }
 
-    .shops__info a{
+    .shops__info a {
         font-size: 14px;
     }
 
-    .shops-slider{
+    .shops-slider {
         height: 350px;
     }
 
-    .shops__images-slider .slick-slide{
+    .shops__images-slider .slick-slide {
         height: 350px;
         min-height: 350px;
     }
 
-    .shops__info-slider{
+    .shops__info-slider {
         padding-left: 15px;
     }
 
-    .table thead th{
+    .table thead th {
         font-size: 13px;
         padding: 10px 7px;
     }
 
-    .table tbody td{
+    .table tbody td {
         font-size: 13px;
         padding: 10px 7px;
     }
 
-    .shops{
+    .shops {
         margin-bottom: 20px;
     }
 
-    .price__title{
+    .price__title {
         font-size: 30px;
         margin-bottom: 10px;
     }
 
-    .barbers-btn__inner .btn{
+    .barbers-btn__inner .btn {
         max-width: 140px;
     }
 
-    .barbers-btn__inner .btn__link{
+    .barbers-btn__inner .btn__link {
         font-size: 8px;
     }
 
-    .barbers__box-images img{
+    .barbers__box-images img {
         height: 300px;
     }
 
-    .market-home__images img{
+    .market-home__images img {
         height: 200px;
     }
 
-    .market-home__text{
+    .market-home__text {
         font-size: 16px;
     }
 
-    .footer__list{
+    .footer__list {
         font-size: 15px;
     }
 
-    .footer__column .footer__conf{
+    .footer__column .footer__conf {
         font-size: 14px;
     }
 
-    .market-home{
+    .market-home {
         margin-bottom: 10px;
     }
 
-    .partners{
+    .partners {
         padding: 30px 0 0;
     }
 
-    .mainthihg-maithing__bg{
+    .mainthihg-maithing__bg {
         min-height: 400px;
     }
 
-    .maithing-mainthing__title{
+    .maithing-mainthing__title {
         font-size: 30px;
         margin-bottom: 10px;
     }
 
-    .maithing-mainthing__text{
+    .maithing-mainthing__text {
         font-size: 16px;
     }
 
-    .founder__heading{
+    .founder__heading {
         font-size: 14px;
     }
 
-    .founder__title{
+    .founder__title {
         font-size: 22px;
         margin-bottom: 5px;
     }
 
-    .maithing-history__text{
+    .maithing-history__text {
         font-size: 16px;
         line-height: 1.3;
     }
 
-    .parallax-maithing__text{
+    .parallax-maithing__text {
         font-size: 16px;
         line-height: 1.3;
     }
 
-    .maithing-history__span{
+    .maithing-history__span {
         font-size: 12px;
     }
 
-    .mainthing-mainthing__content{
+    .mainthing-mainthing__content {
         padding: 15px 0;
     }
 
-    .network .shop__phone{
+    .network .shop__phone {
         font-size: 25px;
     }
 
-    .price__item{
+    .price__item {
         padding: 25px;
         min-height: 450px;
     }
 
-    .price__heading{
+    .price__heading {
         font-size: 25px;
         margin-bottom: 30px;
     }
 
-    .price__price{
+    .price__price {
         font-size: 25px;
     }
 
-    .header__performance{
+    .header__performance {
         min-height: 425px;
     }
 
-    .barbers-title{
+    .barbers-title {
         font-size: 55px;
     }
 
-    .barbers-people__images img{
+    .barbers-people__images img {
         max-height: 400px;
     }
 
-    .burger{
+    .burger {
         width: 40px;
         height: 40px;
         top: 10px;
         right: 10px;
     }
 
-    .burger span:before{
+    .burger span:before {
         top: -8px;
     }
 
-    .burger span:after{
+    .burger span:after {
         bottom: -8px;
     }
 
-    .market__body{
+    .market__body {
         margin-bottom: 10px;
     }
 
-    .market__descriptions-text{
+    .market__descriptions-text {
         font-size: 18px;
         margin-bottom: 20px;
     }
 
-    .market__descriptions-list:not(:last-child){
+    .market__descriptions-list:not(:last-child) {
         margin-bottom: 20px;
     }
 
-    .market__descriptions-item{
+    .market__descriptions-item {
         font-size: 18px;
         line-height: 1.3;
     }
@@ -3207,103 +3262,105 @@ button{
 
 
 
-@media (max-width: 376px){
+@media (max-width: 376px) {
 
-    .shops .slick-next{
+    .shops .slick-next {
         bottom: 15px;
     }
 
-    .barbers-slider__heading{
+    .barbers-slider__heading {
         font-size: 10px;
     }
 
-    .barbers-slider__address span{
+    .barbers-slider__address span {
         font-size: 14px;
     }
 
-    .barbers__box-images img{
+    .barbers__box-images img {
         height: 250px;
     }
 
-    .barbers-btn__inner .btn{
+    .barbers-btn__inner .btn {
         max-width: 110px;
     }
 
-    .barbers-btn__inner .btn__link{
+    .barbers-btn__inner .btn__link {
         font-size: 8px;
         padding: 5px;
     }
 
-    .barbers-home .slick-arrow{
+    .barbers-home .slick-arrow {
         width: 25px;
         height: 25px;
     }
 
-    .barbers-home .slick-prev:before, .barbers-home .slick-prev:after,
-    .barbers-home .slick-next:before, .barbers-home .slick-next:after{
+    .barbers-home .slick-prev:before,
+    .barbers-home .slick-prev:after,
+    .barbers-home .slick-next:before,
+    .barbers-home .slick-next:after {
         width: 8px;
     }
 
-    .market-home__title{
+    .market-home__title {
         font-size: 17px;
     }
 
-    .blog-column:nth-last-child(n){
+    .blog-column:nth-last-child(n) {
         margin-bottom: 20px;
     }
 
-    .blog-column:nth-last-child(1){
+    .blog-column:nth-last-child(1) {
         margin-bottom: 0;
     }
 
-    .blog-item__info{
+    .blog-item__info {
         text-align: center;
         padding: 10px;
     }
 
-    .blog-item__heading{
+    .blog-item__heading {
         font-size: 14px;
     }
 
-    .blog-item__title{
+    .blog-item__title {
         font-size: 17px;
     }
 
-    .blog-item__text{
+    .blog-item__text {
         font-size: 14px;
     }
 
-    .blog-author{
+    .blog-author {
         padding: 0 10px;
     }
 
-    .blog-author__name span{
+    .blog-author__name span {
         font-size: 12px;
     }
 
-    .blog-author__time{
+    .blog-author__time {
         font-size: 12px;
     }
 
-    .blog-item__info .blog-author{
+    .blog-item__info .blog-author {
         text-align: left;
     }
 
-    .blog-item__info > *{
+    .blog-item__info>* {
         margin-bottom: 10px;
     }
 
-    .blog-author__images{
+    .blog-author__images {
         width: 40px;
         height: 40px;
         margin-right: 5px;
     }
 
-    .parnters__title{
+    .parnters__title {
         margin-bottom: 20px;
     }
 
-    .price__column:not(:last-child){
+    .price__column:not(:last-child) {
         margin-bottom: 25px;
     }
 
@@ -3325,11 +3382,11 @@ button{
         font-size: 20px;
     }
 
-    .barbershop__maps{
+    .barbershop__maps {
         font-size: 16px;
     }
 
-    .barbershop__opening-hours{
+    .barbershop__opening-hours {
         font-size: 12px;
     }
 
@@ -3339,20 +3396,22 @@ button{
         height: 30px;
     }
 
-    .barbershop-slider .slick-prev:before, .barbershop-slider .slick-prev:after,
-    .barbershop-slider .slick-next:before, .barbershop-slider .slick-next:after{
+    .barbershop-slider .slick-prev:before,
+    .barbershop-slider .slick-prev:after,
+    .barbershop-slider .slick-next:before,
+    .barbershop-slider .slick-next:after {
         width: 10px;
     }
 
-    .barbers-people__heading{
+    .barbers-people__heading {
         font-size: 16px;
     }
 
-    .barbers-people__title{
+    .barbers-people__title {
         font-size: 22px;
     }
 
-    .barbers-info__slider .slick-arrow{
+    .barbers-info__slider .slick-arrow {
         width: 35px;
         height: 35px;
     }
@@ -3362,31 +3421,31 @@ button{
         background-size: 16px;
     }
 
-    .market{
+    .market {
         padding: 0;
     }
 
-    .market__body{
+    .market__body {
         padding: 0;
     }
 
-    .market__column{
+    .market__column {
         padding-bottom: 20px;
     }
 
-    .market__item{
+    .market__item {
         padding: 15px 10px;
     }
 
-    .market__images img{
+    .market__images img {
         max-height: 200px;
     }
 
-    .market__title{
+    .market__title {
         font-size: 18px;
     }
 
-    .market__text{
+    .market__text {
         font-size: 16px;
     }
 }
@@ -3398,7 +3457,7 @@ button{
 
 @media (max-width: 370px) {
 
-    .partners__item:last-child{
+    .partners__item:last-child {
         margin-bottom: 0;
     }
 }
@@ -3409,24 +3468,24 @@ button{
 
 .privacy__list-wrapper,
 .privacy__list {
-    counter-reset: section;           
+    counter-reset: section;
     list-style-type: none;
-  }
-  
+}
+
 .privacy__items-wrapper::before {
-    counter-increment: section;      
-    content: counters(section,".") ". ";
+    counter-increment: section;
+    content: counters(section, ".") ". ";
     font-size: 35px;
     font-weight: 700;
-  }
+}
 
 .privacy__item::before {
-    counter-increment: section;      
-    content: counters(section,".") " ";
+    counter-increment: section;
+    content: counters(section, ".") " ";
     font-size: 20px;
     font-weight: 700;
     margin-right: 5px;
-  }
+}
 
 .privacy {
     background-color: #f9f9f9;
@@ -3665,7 +3724,7 @@ button{
 
 }
 
-  
+
 /* policy-end */
 
 /* // Попап начало */
@@ -3848,12 +3907,12 @@ body.lock {
     opacity: 0.6;
 }
 
-.sertificate__real-checkbox:focus-visible + .sertificate__fake-checkbox,
-.sertificate__real-checkbox:hover + .sertificate__fake-checkbox {
+.sertificate__real-checkbox:focus-visible+.sertificate__fake-checkbox,
+.sertificate__real-checkbox:hover+.sertificate__fake-checkbox {
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.8);
 }
 
-.sertificate__real-checkbox:checked + .sertificate__fake-checkbox {
+.sertificate__real-checkbox:checked+.sertificate__fake-checkbox {
     border: 5px solid rgb(151, 151, 151);
 }
 

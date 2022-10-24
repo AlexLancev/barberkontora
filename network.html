@@ -16,6 +16,7 @@
 
 
         <header class="header header-popup header-network">
+            <h1 class="visually-hidden">Сеть парикмахерских компании Барберконтора</h1>
             <div class="header__body">
 
                 <div class="header__maps">
@@ -59,7 +60,7 @@
                     </nav>
 
                     <div class="logo">
-                        <a href="index.html" class="logo__link">
+                        <a href="index.html" class="logo__link" aria-label="Вернутся на главную страницу">
                             <img src="images/svg/logo.svg" alt="Логотип компании barberkontora">
                         </a>
                     </div>
@@ -89,109 +90,84 @@
                     </nav>
                 </div>
 
-                <button aria-label="Меню октрыть закрыть" type="button" class="burger btn">
+                <button aria-label="Меню открыть закрыть" type="button" class="burger btn">
                     <span></span>
                 </button>
 
                 <div class="header__content">
 
                     <div class="popup-menu__container">
-
-                        <div id="main-thing" class="popup-img popup-img--active"
-                            style="background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(images/popup-munu/item_1.jpg);">
-                        </div>
-
-                        <div id="network" class="popup-img"
-                            style="background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(images/popup-munu/item_2.jpg);">
-                        </div>
-
-                        <div id="price" class="popup-img"
-                            style="background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(images/popup-munu/item_3.jpg);">
-                        </div>
-
-                        <div id="barbers" class="popup-img"
-                            style="background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(images/popup-munu/item_4.jpg);">
-                        </div>
-
-                        <div id="market" class="popup-img"
-                            style="background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(images/popup-munu/item_5.jpg);">
-                        </div>
-
-                        <div id="blog" class="popup-img"
-                            style="background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(images/popup-munu/item_6.jpg);">
-                        </div>
-
-                        <div id="franchise" class="popup-img"
-                            style="background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(images/popup-munu/item_7.jpg);">
-                        </div>
-
+                     
+                         <div data-content id="main-thing" class="popup-img" style="background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(images/popup-munu/item_1.jpg);">
+                         </div>
+ 
+                         <div data-content id="network" class="popup-img popup-img--active" style="background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(images/popup-munu/item_2.jpg);">
+                         </div>
+ 
+                         <div data-content id="price" class="popup-img" style="background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(images/popup-munu/item_3.jpg);">
+                         </div>
+ 
+                         <div data-content id="barbers" class="popup-img" style="background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(images/popup-munu/item_4.jpg);">
+                         </div>
+ 
+                         <div data-content id="market" class="popup-img" style="background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(images/popup-munu/item_5.jpg);">
+                         </div>
+ 
+                         <div data-content id="blog" class="popup-img" style="background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(images/popup-munu/item_6.jpg);">
+                         </div>
+ 
+                         <div data-content id="franchise" class="popup-img" style="background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(images/popup-munu/item_7.jpg);">
+                         </div>
+ 
                     </div>
-
-                    <ul class="menu__list">
-
-                        <li class="menu__item menu__item--active">
-                            <a tabindex="-1" href="#main-thing" class="menu__link menu__link--active">
-                                <object type="owo/uwu">
+ 
+                     
+                         <ul class="menu__list" aria-label="Меню">
+ 
+                             <li class="menu__item">
+                                 <div data-href="main-thing" class="menu__link">
                                     <a href="mainthing.html" class="menu__link">О главном</a>
-                                </object>
-                            </a>
-                        </li>
-
-
-                        <li class="menu__item">
-                            <a tabindex="-1" href="#network" class="menu__link disabled">
-                                <object type="owo/uwu">
+                                 </div>
+                             </li>
+                             
+ 
+                             <li class="menu__item">
+                                 <div data-href="network" class="menu__link menu__link--active">
                                     <a class="menu__link disabled">Сеть</a>
-                                </object>
-                            </a>
-                        </li>
-
-                        <li class="menu__item">
-                            <a tabindex="-1" href="#price" class="menu__link">
-                                <object type="owo/uwu">
-                                    <a href="price.html" class="menu__link">
-                                        Цена вопроса
-                                    </a>
-                                </object>
-                            </a>
-                        </li>
-
-                        <li class="menu__item">
-                            <a tabindex="-1" href="#barbers" class="menu__link">
-                                <object type="owo/uwu">
-                                    <a href="barbers.html" class="menu__link">
-                                        Барберы
-                                    </a>
-                                </object>
-                            </a>
-                        </li>
-
-                        <li class="menu__item">
-                            <a tabindex="-1" href="#market" class="menu__link">
-                                <object type="owo/uwu">
-                                    <a href="market.html" class="menu__link">
-                                        Маркет
-                                    </a>
-                                </object>
-                            </a>
-                        </li>
-
-                        <li class="menu__item">
-                            <a tabindex="-1" href="#blog" class="menu__link">
-                                <object type="owo/uwu">
-                                    <a href="blog.html" class="menu__link">
-                                        Блог
-                                    </a>
-                                </object>
-                            </a>
-                        </li>
-                    </ul>
-
-                    <div class="btn">
-                        <span class="btn__span"></span>
-                        <a href="barbers.html" class="btn__link">Записаться на стрижку</a>
-                    </div>
-                </div>
+                                 </div>
+                             </li>
+ 
+                             <li class="menu__item">
+                                 <div data-href="price" class="menu__link">
+                                    <a href="price.html" class="menu__link">Цена вопроса</a>
+                                 </div>
+                             </li>
+ 
+                             <li class="menu__item">
+                                 <div data-href="barbers" class="menu__link">
+                                    <a href="barbers.html" class="menu__link">Барберы</a>
+                                 </div>
+                             </li>
+ 
+                             <li class="menu__item">
+                                 <div data-href="market" class="menu__link">
+                                    <a href="market.html" class="menu__link">Маркет</a>
+                                 </div>
+                             </li>
+ 
+                             <li class="menu__item">
+                                 <div data-href="blog" class="menu__link">
+                                    <a href="blog.html" class="menu__link">Блог</a>
+                                 </div>
+                             </li>
+                         </ul>            
+ 
+                     <div class="btn">
+                         <span class="btn__span"></span>
+                         <a href="barbers.html" class="btn__link">Записаться на стрижку</a>
+                     </div>
+                     
+                 </div>
 
                 <div class="decorection"></div>
 
@@ -218,7 +194,7 @@
                                 </div>
                                 <div class="btn">
                                     <span class="btn__span"></span>
-                                    <a href="#entry1" class="btn__link popup-link">Записаться на стрижку</a>
+                                    <button data-href="entry1" class="btn__link popup-link">Записаться на стрижку</button>
                                 </div>
                                 <!-- modal-start -->
                                 <div id="entry1" class="popup entry" role="alert">
@@ -297,7 +273,7 @@
                                 </div>
                                 <div class="btn">
                                     <span class="btn__span"></span>
-                                    <a href="#entry2" class="btn__link popup-link">Записаться на стрижку</a>
+                                    <button data-href="entry2" class="btn__link popup-link">Записаться на стрижку</button>
                                 </div>
                                 <!-- modal-start -->
                                 <div id="entry2" class="popup entry" role="alert">
@@ -376,7 +352,7 @@
                                 </div>
                                 <div class="btn">
                                     <span class="btn__span"></span>
-                                    <a href="#entry3" class="btn__link popup-link">Записаться на стрижку</a>
+                                    <button data-href="entry3" class="btn__link popup-link">Записаться на стрижку</button>
                                 </div>
                                 <!-- modal-start -->
                                 <div id="entry3" class="popup entry" role="alert">
@@ -455,7 +431,7 @@
                                 </div>
                                 <div class="btn">
                                     <span class="btn__span"></span>
-                                    <a href="#entry4" class="btn__link popup-link">Записаться на стрижку</a>
+                                    <button data-href="entry4" class="btn__link popup-link">Записаться на стрижку</button>
                                 </div>
                                 <!-- modal-start -->
                                 <div id="entry4" class="popup entry" role="alert">
@@ -534,7 +510,7 @@
                                 </div>
                                 <div class="btn">
                                     <span class="btn__span"></span>
-                                    <a href="#entry5" class="btn__link popup-link">Записаться на стрижку</a>
+                                    <button data-href="entry5" class="btn__link popup-link">Записаться на стрижку</button>
                                 </div>
                                 <!-- modal-start -->
                                 <div id="entry5" class="popup entry" role="alert">
@@ -628,7 +604,7 @@
                     </div>
 
                     <div class="footer__column footer__column-menu">
-                        <ul class="footer__menu-list">
+                        <ul class="footer__menu-list" aria-label="Меню">
                             <li class="footer__menu-item">
                                 <a href="mainthing.html" class="menu__link">
                                     О ГЛАВНОМ
@@ -653,7 +629,7 @@
                     </div>
 
                     <div class="footer__column footer__column-menu">
-                        <ul class="footer__menu-list">
+                        <ul class="footer__menu-list" aria-label="Меню">
                             <li class="footer__menu-item">
                                 <a href="blog.html" class="menu__link">
                                     БЛОГ
@@ -670,7 +646,7 @@
                     <div class="footer__column footer__column-social">
 
                         <div class="logo">
-                            <a href="index.html" class="logo__link">
+                            <a href="index.html" class="logo__link" aria-label="Вернутся на главную страницу">
                                 <img src="images/svg/logo.svg" alt="Логотип компании barberkontora">
                             </a>
                         </div>
@@ -773,6 +749,10 @@
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="js/slick.min.js"></script>
+    <script src="js/burger-menu-hover.js"></script>
+    <script src="js/burger.js"></script>
+    <script src="js/modal.js"></script>
+    <script src="js/tabs.js"></script>
     <script src="js/main.js"></script>
 
 </body>

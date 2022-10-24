@@ -16,6 +16,9 @@
         <div class="wrapper">
 
             <header class="header header-popup">
+
+                <h1 class="visually-hidden">О компании Барберконтора</h1>
+
                 <div class="header__body">
     
                     <div class="header__maps">
@@ -53,7 +56,7 @@
                             </ul>
                         </nav>    
                         
-                                <a href="index.html" class="logo__link">
+                                <a href="index.html" class="logo__link" aria-label="Вернутся на главную страницу">
                                     <img src="images/svg/logo.svg" alt="Логотип компании barberkontora">
                                 </a>
         
@@ -82,103 +85,84 @@
                         </nav>
                     </div>
 
-                    <button aria-label="Меню октрыть закрыть" type="button" class="burger btn">
+                    <button aria-label="Меню открыть закрыть" type="button" class="burger btn">
                         <span></span>
                     </button>
     
                     <div class="header__content">
-    
-                       <div class="popup-menu__container">
-                        
-                            <div id="main-thing" class="popup-img popup-img--active" style="background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(images/popup-munu/item_1.jpg);">
-                            </div>
-    
-                            <div id="network" class="popup-img" style="background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(images/popup-munu/item_2.jpg);">
-                            </div>
-    
-                            <div id="price" class="popup-img" style="background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(images/popup-munu/item_3.jpg);">
-                            </div>
-    
-                            <div id="barbers" class="popup-img" style="background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(images/popup-munu/item_4.jpg);">
-                            </div>
-    
-                            <div id="market" class="popup-img" style="background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(images/popup-munu/item_5.jpg);">
-                            </div>
-    
-                            <div id="blog" class="popup-img" style="background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(images/popup-munu/item_6.jpg);">
-                            </div>
-    
-                            <div id="franchise" class="popup-img" style="background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(images/popup-munu/item_7.jpg);">
-                            </div>
-    
-                       </div>
-    
-                        
-                        <ul class="menu__list">
 
-                            <li class="menu__item menu__item--active">
-                                <a tabindex="-1" href="#main-thing" class="menu__link menu__link--active disabled">
-                                        <object type="owo/uwu">
-                                            <a class="menu__link disabled">О главном</a>
-                                        </object>
-                                </a>
-                            </li>
-                            
-
-                            <li class="menu__item">
-                                <a tabindex="-1" href="#network" class="menu__link">
-                                    <object type="owo/uwu">
-                                        <a href="network.html" class="menu__link">Сеть</a>
-                                    </object>
-                                </a>
-                            </li>
-
-                            <li class="menu__item">
-                                <a tabindex="-1" href="#price" class="menu__link">
-                                    <object type="owo/uwu">
-                                        <a href="price.html" class="menu__link">
-                                            Цена вопроса
-                                        </a>
-                                    </object>
-                                </a>
-                            </li>
-
-                            <li class="menu__item">
-                                <a tabindex="-1" href="#barbers" class="menu__link">
-                                    <object type="owo/uwu">
-                                        <a href="barbers.html" class="menu__link">
-                                            Барберы
-                                        </a>
-                                    </object>
-                                </a>
-                            </li>
-
-                            <li class="menu__item">
-                                <a tabindex="-1" href="#market" class="menu__link">
-                                    <object type="owo/uwu">
-                                        <a href="market.html" class="menu__link">
-                                            Маркет
-                                        </a>
-                                    </object>
-                                </a>
-                            </li>
-
-                            <li class="menu__item">
-                                <a tabindex="-1" href="#blog" class="menu__link">
-                                    <object type="owo/uwu">
-                                        <a href="blog.html" class="menu__link">
-                                            Блог
-                                        </a>
-                                    </object>
-                                </a>
-                            </li>
-                        </ul>            
-    
-                        <div class="btn">
-                            <span class="btn__span"></span>
-                            <a href="barbers.html" class="btn__link">Записаться на стрижку</a>
+                        <div class="popup-menu__container">
+                         
+                             <div data-content id="main-thing" class="popup-img popup-img--active" style="background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(images/popup-munu/item_1.jpg);">
+                             </div>
+     
+                             <div data-content id="network" class="popup-img" style="background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(images/popup-munu/item_2.jpg);">
+                             </div>
+     
+                             <div data-content id="price" class="popup-img" style="background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(images/popup-munu/item_3.jpg);">
+                             </div>
+     
+                             <div data-content id="barbers" class="popup-img" style="background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(images/popup-munu/item_4.jpg);">
+                             </div>
+     
+                             <div data-content id="market" class="popup-img" style="background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(images/popup-munu/item_5.jpg);">
+                             </div>
+     
+                             <div data-content id="blog" class="popup-img" style="background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(images/popup-munu/item_6.jpg);">
+                             </div>
+     
+                             <div data-content id="franchise" class="popup-img" style="background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(images/popup-munu/item_7.jpg);">
+                             </div>
+     
                         </div>
-                    </div>
+     
+                         
+                             <ul class="menu__list" aria-label="Меню">
+     
+                                 <li class="menu__item">
+                                     <div data-href="main-thing" class="menu__link menu__link--active">
+                                        <a class="menu__link disabled">О главном</a>
+                                     </div>
+                                 </li>
+                                 
+     
+                                 <li class="menu__item">
+                                     <div data-href="network" class="menu__link">
+                                        <a href="network.html" class="menu__link">Сеть</a>
+                                     </div>
+                                 </li>
+     
+                                 <li class="menu__item">
+                                     <div data-href="price" class="menu__link">
+                                        <a href="price.html" class="menu__link">Цена вопроса</a>
+                                     </div>
+                                 </li>
+     
+                                 <li class="menu__item">
+                                     <div data-href="barbers" class="menu__link">
+                                        <a href="barbers.html" class="menu__link">Барберы</a>
+                                     </div>
+                                 </li>
+     
+                                 <li class="menu__item">
+                                     <div data-href="market" class="menu__link">
+                                        <a href="market.html" class="menu__link">Маркет</a>
+                                     </div>
+                                 </li>
+     
+                                 <li class="menu__item">
+                                     <div data-href="blog" class="menu__link">
+                                        <a href="blog.html" class="menu__link">Блог</a>
+                                     </div>
+                                 </li>
+                             </ul>            
+     
+                         <div class="btn">
+                             <span class="btn__span"></span>
+                             <a href="barbers.html" class="btn__link">Записаться на стрижку</a>
+                         </div>
+                         
+                     </div>
     
                     <div class="decorection"></div>
     
@@ -191,19 +175,19 @@
 
                             <ul class="mainthing__list mainthing__list-mainthing">
                                 <li class="mainthing__item">
-                                    <a href="#tabs-1" class="mainthing__link mainthing__link--active">
+                                    <button data-tab="tab-1" class="mainthing__link mainthing__link--active">
                                         О ГЛАВНОМ
-                                    </a>
+                                    </button>
                                 </li>
                                 <li class="mainthing__item">
-                                    <a href="#tabs-2" class="mainthing__link">
+                                    <button data-tab="tab-2" class="mainthing__link">
                                         ИСТоРИЯ СОЗДАНИЯ
-                                    </a>
+                                    </button>
                                 </li>
                                 <li class="mainthing__item">
-                                    <a href="#tabs-3" class="mainthing__link">
+                                    <button data-tab="tab-3" class="mainthing__link">
                                         ДОСТИЖЕНИЯ
-                                    </a>
+                                    </button>
                                 </li>
                             </ul>
                         </div>
@@ -211,7 +195,7 @@
 
                     <div class="mainthing__container">
 
-                        <div class="mainthing-slider mainthing-mainthing mainthing-mainthing--active" id="tabs-1">
+                        <div class="mainthing-slider" data-tab-content id="tab-1">
                             <div class="mainthihg-maithing__slider">
 
                                 <div class="mainthing__mission mainthihg-maithing__bg" style="background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(images/mainthing/mainthing-slider_1.jpg);">
@@ -280,7 +264,7 @@
                             </div>
                         </div>
 
-                         <div class="mainthing-history mainthing-mainthing" id="tabs-2">
+                         <div class="mainthing-history mainthing-mainthing" data-tab-content id="tab-2">
                                 <div class="maithing-history__body">
 
                                     <div class="maithing-history__header">
@@ -291,9 +275,9 @@
                                                         <img src="images/mainthing-history/history-profile.jpg" alt="ОСНОВАТЕЛЬ БАРБЕРШОПА KONTORA АЛЕКСАНДР ЛУКОЯНОВ">
                                                     </figure>
                                                     <div class="founder__info">
-                                                        <h4 class="founder__heading">
+                                                        <h3 class="founder__heading">
                                                             ОСНОВАТЕЛЬ БАРБЕРШОПА KONTORA
-                                                        </h4>
+                                                        </h3>
                                                         <h2 class="founder__title">
                                                             АЛЕКСАНДР ЛУКОЯНОВ
                                                         </h2>
@@ -354,7 +338,7 @@
                                 </div>
                         </div>
                         
-                        <div class="maithing-achievements mainthing-mainthing" id="tabs-3">
+                        <div class="maithing-achievements mainthing-mainthing" data-tab-content id="tab-3">
                             <div class="container">
                                 <ul class="maithing-achievements__list">
                                     <li class="maithing-achievements__item">
@@ -455,7 +439,7 @@
                         </div>
     
                         <div class="footer__column footer__column-menu">
-                            <ul class="footer__menu-list">
+                            <ul class="footer__menu-list" aria-label="Меню">
                                 <li class="footer__menu-item">
                                     <a class="menu__link disabled">
                                         О ГЛАВНОМ
@@ -480,7 +464,7 @@
                         </div>
     
                         <div class="footer__column footer__column-menu">
-                            <ul class="footer__menu-list">
+                            <ul class="footer__menu-list" aria-label="Меню">
                                 <li class="footer__menu-item">
                                     <a href="blog.html" class="menu__link">
                                         БЛОГ
@@ -497,7 +481,7 @@
                         <div class="footer__column footer__column-social">
     
                             <div class="logo">
-                                <a href="index.html" class="logo__link">
+                                <a href="index.html" class="logo__link" aria-label="Вернутся на главную страницу">
                                     <img src="images/svg/logo.svg" alt="Логотип компании barberkontora">
                                 </a>
                             </div>
@@ -576,6 +560,10 @@
 
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
         <script src="js/slick.min.js"></script>
+        <script src="js/burger-menu-hover.js"></script>
+        <script src="js/burger.js"></script>
+        <script src="js/modal.js"></script>
+        <script src="js/tabs.js"></script>
         <script src="js/main.js"></script>
 
     </body>

@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="ru">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,759 +8,819 @@
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/slick.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,regular&display=swap&subset=cyrillic-ext" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,regular&display=swap&subset=cyrillic-ext"
+        rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
     <title>Барберы</title>
 </head>
-    <body>
-        
-        <div class="wrapper">
 
-            <header class="header">
-                <div class="header__body">
-    
-                    <div class="header__maps">
-                        <a class="menu__link menu__link-maps">
-                            <span>
-                                <svg xmlns="http://www.w3.org/2000/svg" id="Outline" viewBox="0 0 24 24" width="18" height="18" fill="rgba(255, 255, 255, 0.3)"><path class="svg-patch" d="M12,6a4,4,0,1,0,4,4A4,4,0,0,0,12,6Zm0,6a2,2,0,1,1,2-2A2,2,0,0,1,12,12Z"/><path class="svg-patch" d="M12,24a5.271,5.271,0,0,1-4.311-2.2c-3.811-5.257-5.744-9.209-5.744-11.747a10.055,10.055,0,0,1,20.11,0c0,2.538-1.933,6.49-5.744,11.747A5.271,5.271,0,0,1,12,24ZM12,2.181a7.883,7.883,0,0,0-7.874,7.874c0,2.01,1.893,5.727,5.329,10.466a3.145,3.145,0,0,0,5.09,0c3.436-4.739,5.329-8.456,5.329-10.466A7.883,7.883,0,0,0,12,2.181Z"/>
-                                </svg>
-                            </span>
-                            <span>Екатеринбург</span>
-                        </a>
+<body>
+
+    <div class="wrapper">
+
+        <header class="header">
+            <div class="header__body">
+
+                <div class="header__maps menu">
+                    <a class="menu__link menu__link-maps">
+                        <span>
+                            <svg xmlns="http://www.w3.org/2000/svg" id="Outline" viewBox="0 0 24 24" width="18"
+                                height="18" fill="rgba(255, 255, 255, 0.3)">
+                                <path class="svg-patch"
+                                    d="M12,6a4,4,0,1,0,4,4A4,4,0,0,0,12,6Zm0,6a2,2,0,1,1,2-2A2,2,0,0,1,12,12Z" />
+                                <path class="svg-patch"
+                                    d="M12,24a5.271,5.271,0,0,1-4.311-2.2c-3.811-5.257-5.744-9.209-5.744-11.747a10.055,10.055,0,0,1,20.11,0c0,2.538-1.933,6.49-5.744,11.747A5.271,5.271,0,0,1,12,24ZM12,2.181a7.883,7.883,0,0,0-7.874,7.874c0,2.01,1.893,5.727,5.329,10.466a3.145,3.145,0,0,0,5.09,0c3.436-4.739,5.329-8.456,5.329-10.466A7.883,7.883,0,0,0,12,2.181Z" />
+                            </svg>
+                        </span>
+                        <span>Екатеринбург</span>
+                    </a>
+                </div>
+
+                <div class="header__navigation logo">
+                    <a href="index.html" class="logo__link" aria-label="Вернутся на главную страницу">
+                        <img src="images/svg/logo.svg" alt="Логотип компании barberkontora">
+                    </a>
+                </div>
+
+                <button class="burger btn" type="button" aria-label="Меню открыть закрыть">
+                    <span></span>
+                </button>
+
+                <div class="header__content popup-menu menu">
+
+                    <div class="popup-menu__container">
+
+                        <div data-content id="main-thing" class="popup-img"
+                            style="background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(images/popup-munu/item_1.jpg);">
+                        </div>
+
+                        <div data-content id="network" class="popup-img"
+                            style="background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(images/popup-munu/item_2.jpg);">
+                        </div>
+
+                        <div data-content id="price" class="popup-img"
+                            style="background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(images/popup-munu/item_3.jpg);">
+                        </div>
+
+                        <div data-content id="barbers" class="popup-img popup-img--active"
+                            style="background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(images/popup-munu/item_4.jpg);">
+                        </div>
+
+                        <div data-content id="market" class="popup-img"
+                            style="background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(images/popup-munu/item_5.jpg);">
+                        </div>
+
+                        <div data-content id="blog" class="popup-img"
+                            style="background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(images/popup-munu/item_6.jpg);">
+                        </div>
+
+                        <div data-content id="franchise" class="popup-img"
+                            style="background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(images/popup-munu/item_7.jpg);">
+                        </div>
+
                     </div>
-    
-                    <div class="header__navigation">
-                                <a href="index.html" class="logo__link" aria-label="Вернутся на главную страницу">
-                                    <img src="images/svg/logo.svg" alt="Логотип компании barberkontora">
+
+
+                    <ul class="menu__list" aria-label="Меню">
+
+                        <li class="menu__item">
+                            <div data-href="main-thing" class="menu__link">
+                                <a href="mainthing.html" class="menu__link">О главном</a>
+                            </div>
+                        </li>
+
+
+                        <li class="menu__item">
+                            <div data-href="network" class="menu__link">
+                                <a href="network.html" class="menu__link">Сеть</a>
+                            </div>
+                        </li>
+
+                        <li class="menu__item">
+                            <div data-href="price" class="menu__link">
+                                <a href="price.html" class="menu__link">Цена вопроса</a>
+                            </div>
+                        </li>
+
+                        <li class="menu__item">
+                            <div data-href="barbers" class="menu__link menu__link--active">
+                                <a class="menu__link disabled">Барберы</a>
+                            </div>
+                        </li>
+
+                        <li class="menu__item">
+                            <div data-href="market" class="menu__link">
+                                <a href="market.html" class="menu__link">Маркет</a>
+                            </div>
+                        </li>
+
+                        <li class="menu__item">
+                            <div data-href="blog" class="menu__link">
+                                <a href="blog.html" class="menu__link">Блог</a>
+                            </div>
+                        </li>
+                    </ul>
+
+                    <div class="btn">
+                        <span class="btn__span"></span>
+                        <a href="barbers.html" class="btn__link">Записаться на стрижку</a>
+                    </div>
+
+                </div>
+
+
+
+                <div class="btn btn-link-fixed">
+                    <span class="btn__span"></span>
+                    <button data-href="entry1" class="btn__link popup-link">Онлайн запись</button>
+                </div>
+                <!-- modal-start -->
+                <div id="entry1" class="popup entry" role="alert">
+                    <div class="popup__body">
+                        <div class="popup__content popup__content__entry">
+                            <button type="button" class="popup__close close-popup"
+                                aria-label="закрыть модальное окно"></button>
+
+                            <form class="entry__form" action="#" method="post">
+
+                                <p class="entry__title">Запись</p>
+
+                                <fieldset class="entry__fieldset">
+
+                                    <label class="entry__label">
+                                        <b>Ваше имя</b>
+                                        <input type="text" name="Имя клиента">
+                                    </label>
+
+                                    <label class="entry__label">
+                                        <b>Ваш телефон</b>
+                                        <input type="tel" name="Номер телефона клиента">
+                                    </label>
+
+                                    <label class="entry__label">
+                                        <b class="entry__person-title">Выбрать адрес</b>
+                                        <select class="entry__network" name="entry-network[]">
+                                            <option value="УЛ. МАМИНА-СИБИРЯКА, 102">
+                                                УЛ. МАМИНА-СИБИРЯКА, 102
+                                            </option>
+                                            <option value="УЛ. МАРШАЛА ЖУКОВА, 11">
+                                                УЛ. МАРШАЛА ЖУКОВА, 11
+                                            </option>
+                                            <option value="УЛ. МАЛЫШЕВА, 71 | BOLSHOY">
+                                                УЛ. МАЛЫШЕВА, 71 | BOLSHOY
+                                            </option>
+                                            <option value="УЛ. 8 МАРТА, 169">
+                                                УЛ. 8 МАРТА, 169
+                                            </option>
+                                            <option value="УЛ. ТКАЧЕЙ, 17">
+                                                УЛ. ТКАЧЕЙ, 17
+                                            </option>
+                                        </select>
+                                    </label>
+
+                                    <p class="entry__text">Мы свяжемся с вами для уточнения времени, даты и мастера.
+                                    </p>
+
+                                    <button class="entry__btn button">Записаться</button>
+
+                                </fieldset>
+
+                            </form>
+
+                        </div>
+                    </div>
+                </div>
+                <!-- modal-end -->
+
+
+
+                <div class="decorection"></div>
+
+            </div>
+        </header>
+
+        <main class="main">
+            <div class="header-performance"
+                style="background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(images/bg/barbers-bg.jpg);">
+
+                <div class="header-performance__container">
+                    <h1 class="barbers-title">БаРБЕРЫ</h1>
+                </div>
+                <div id="section06" class="demo">
+                    <a href="#barbers-info" aria-label="Перейти чуть ниже по странице"><span></span>Scroll</a>
+                </div>
+            </div>
+            <div class="container">
+
+                <div id="barbers-info" class="barbers barbers-info">
+
+                    <div class="barbershop-slider barbershop">
+
+                        <div class="barbershop__item">
+                            <div class="barbershop__item-cell">
+                                <span class="barbershop__address">
+                                    АДРЕС
+                                </span>
+                                <h2 class="barbershop__maps">
+                                    ул. Мамина-Сибиряка, 102
+                                </h2>
+                                <h3 class="barbershop__opening-hours">
+                                    Ежедневно 10:00 - 22:00
+                                </h3>
+                            </div>
+                        </div>
+
+                        <div class="barbershop__item">
+                            <div class="barbershop__item-cell">
+                                <span class="barbershop__address">
+                                    АДРЕС
+                                </span>
+                                <h2 class="barbershop__maps">
+                                    ул. Маршала Жукова, 11
+                                </h2>
+                                <h3 class="barbershop__opening-hours">
+                                    Ежедневно 10:00 - 22:00
+                                </h3>
+                            </div>
+                        </div>
+
+                        <div class="barbershop__item">
+                            <div class="barbershop__item-cell">
+                                <span class="barbershop__address">
+                                    АДРЕС
+                                </span>
+                                <h2 class="barbershop__maps">
+                                    ул. Малышева, 71 | Bolshoy
+                                </h2>
+                                <h3 class="barbershop__opening-hours">
+                                    Ежедневно 10:00 - 22:00
+                                </h3>
+                            </div>
+                        </div>
+
+                        <div class="barbershop__item">
+                            <div class="barbershop__item-cell">
+                                <span class="barbershop__address">
+                                    АДРЕС
+                                </span>
+                                <h2 class="barbershop__maps">
+                                    ул. 8 Марта, 169
+                                </h2>
+                                <h3 class="barbershop__opening-hours">
+                                    Ежедневно 10:00 - 22:00
+                                </h3>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="barbers-info__slider barbers-people">
+
+                        <div class="barbers-people__item">
+                            <div class="barbers-people__slider">
+
+
+
+                                <div class="barbers-people__container">
+                                    <div class="barbers-people__header">
+                                        <h3 class="barbers-people__heading">
+                                            Старший барбер
+                                        </h3>
+                                        <h2 class="barbers-people__title">
+                                            Баха Бабаджанов
+                                        </h2>
+                                    </div>
+                                    <figure class="barbers-people__images">
+                                        <img src="images/barbers/barbers-people/barber_people-1.png"
+                                            alt="Барбер Баха Бабаджанов">
+                                    </figure>
+                                </div>
+
+                                <div class="barbers-people__container">
+                                    <div class="barbers-people__header">
+                                        <h3 class="barbers-people__heading">
+                                            Барбер
+                                        </h3>
+                                        <h2 class="barbers-people__title">
+                                            Александр Тетюев
+                                        </h2>
+                                    </div>
+                                    <figure class="barbers-people__images">
+                                        <img src="images/barbers/barbers-people/barber_people-2.png"
+                                            alt="Барбер Александр Тетюев">
+                                    </figure>
+                                </div>
+
+                                <div class="barbers-people__container">
+                                    <div class="barbers-people__header">
+                                        <h3 class="barbers-people__heading">
+                                            Старший барбер
+                                        </h3>
+                                        <h2 class="barbers-people__title">
+                                            Богдан Бородин
+                                        </h2>
+                                    </div>
+                                    <figure class="barbers-people__images">
+                                        <img src="images/barbers/barbers-people/barber_people-3.png"
+                                            alt="Барбер Богдан Бородин">
+                                    </figure>
+                                </div>
+
+                                <div class="barbers-people__container">
+                                    <div class="barbers-people__header">
+                                        <h3 class="barbers-people__heading">
+                                            Барбер
+                                        </h3>
+                                        <h2 class="barbers-people__title">
+                                            Рой Мбая
+                                        </h2>
+                                    </div>
+                                    <figure class="barbers-people__images">
+                                        <img src="images/barbers/barbers-people/barber_people-4.png"
+                                            alt="Барбер Рой Мбая">
+                                    </figure>
+                                </div>
+
+
+                            </div>
+                        </div>
+
+                        <div class="barbers-people__item">
+                            <div class="barbers-people__slider">
+
+
+                                <div class="barbers-people__container">
+                                    <div class="barbers-people__header">
+                                        <h3 class="barbers-people__heading">
+                                            Старший барбер
+                                        </h3>
+                                        <h2 class="barbers-people__title">
+                                            Евгений Новохацкий
+                                        </h2>
+                                    </div>
+                                    <figure class="barbers-people__images">
+                                        <img src="images/barbers/barbers-people/barber_people-5.png"
+                                            alt="Барбер Евгений Новохацкий">
+                                    </figure>
+                                </div>
+
+                                <div class="barbers-people__container">
+                                    <div class="barbers-people__header">
+                                        <h3 class="barbers-people__heading">
+                                            Шеф барбер
+                                        </h3>
+                                        <h2 class="barbers-people__title">
+                                            Олег Мухин
+                                        </h2>
+                                    </div>
+                                    <figure class="barbers-people__images">
+                                        <img src="images/barbers/home-barber-3.png" alt="Барбер Олег Мухин">
+                                    </figure>
+                                </div>
+
+                                <div class="barbers-people__container">
+                                    <div class="barbers-people__header">
+                                        <h3 class="barbers-people__heading">
+                                            Старший барбер
+                                        </h3>
+                                        <h2 class="barbers-people__title">
+                                            Слава Зиновьев
+                                        </h2>
+                                    </div>
+                                    <figure class="barbers-people__images">
+                                        <img src="images/barbers/barbers-people/barber_people-6.png"
+                                            alt="Барбер Слава Зиновьев">
+                                    </figure>
+                                </div>
+
+                                <div class="barbers-people__container">
+                                    <div class="barbers-people__header">
+                                        <h3 class="barbers-people__heading">
+                                            Барбер
+                                        </h3>
+                                        <h2 class="barbers-people__title">
+                                            Алексей Уколов
+                                        </h2>
+                                    </div>
+                                    <figure class="barbers-people__images">
+                                        <img src="images/barbers/barbers-people/barber_people-7.png"
+                                            alt="Барбер Алексей Уколов">
+                                    </figure>
+                                </div>
+
+                                <div class="barbers-people__container">
+                                    <div class="barbers-people__header">
+                                        <h3 class="barbers-people__heading">
+                                            Барбер
+                                        </h3>
+                                        <h2 class="barbers-people__title">
+                                            Олег Черных
+                                        </h2>
+                                    </div>
+                                    <figure class="barbers-people__images">
+                                        <img src="images/barbers/barbers-people/barber_people-8.png"
+                                            alt="Барбер Олег Черных">
+                                    </figure>
+                                </div>
+
+                                <div class="barbers-people__container">
+                                    <div class="barbers-people__header">
+                                        <h3 class="barbers-people__heading">
+                                            Барбер
+                                        </h3>
+                                        <h2 class="barbers-people__title">
+                                            Сергей Табакаев
+                                        </h2>
+                                    </div>
+                                    <figure class="barbers-people__images">
+                                        <img src="images/barbers/barbers-people/barber_people-9.png"
+                                            alt="Барбер Сергей Табакаев">
+                                    </figure>
+                                </div>
+
+                                <div class="barbers-people__container">
+                                    <div class="barbers-people__header">
+                                        <h3 class="barbers-people__heading">
+                                            Шеф барбер
+                                        </h3>
+                                        <h2 class="barbers-people__title">
+                                            Евгений Антоненко
+                                        </h2>
+                                    </div>
+                                    <figure class="barbers-people__images">
+                                        <img src="images/barbers/home-barber-2.png" alt="Барбер Евгений Антоненко">
+                                    </figure>
+                                </div>
+
+                                <div class="barbers-people__container">
+                                    <div class="barbers-people__header">
+                                        <h3 class="barbers-people__heading">
+                                            Старший барбер
+                                        </h3>
+                                        <h2 class="barbers-people__title">
+                                            Сергей Кулыгин
+                                        </h2>
+                                    </div>
+                                    <figure class="barbers-people__images">
+                                        <img src="images/barbers/barbers-people/barber_people-10.png"
+                                            alt="Барбер Сергей Кулыгин">
+                                    </figure>
+                                </div>
+
+
+                            </div>
+                        </div>
+
+                        <div class="barbers-people__item">
+                            <div class="barbers-people__slider">
+
+
+                                <div class="barbers-people__container">
+                                    <div class="barbers-people__header">
+                                        <h3 class="barbers-people__heading">
+                                            Барбер
+                                        </h3>
+                                        <h2 class="barbers-people__title">
+                                            Кирилл Хизнеченко
+                                        </h2>
+                                    </div>
+                                    <figure class="barbers-people__images">
+                                        <img src="images/barbers/barbers-people/barber_people-11.png"
+                                            alt="Барбер Кирилл Хизнеченко">
+                                    </figure>
+                                </div>
+
+                                <div class="barbers-people__container">
+                                    <div class="barbers-people__header">
+                                        <h3 class="barbers-people__heading">
+                                            Барбер
+                                        </h3>
+                                        <h2 class="barbers-people__title">
+                                            Максим Филлипов
+                                        </h2>
+                                    </div>
+                                    <figure class="barbers-people__images">
+                                        <img src="images/barbers/barbers-people/barber_people-12.png"
+                                            alt="Барбер Максим Филлипов">
+                                    </figure>
+                                </div>
+
+                                <div class="barbers-people__container">
+                                    <div class="barbers-people__header">
+                                        <h3 class="barbers-people__heading">
+                                            Шеф барбер
+                                        </h3>
+                                        <h2 class="barbers-people__title">
+                                            Святослав Пушкин
+                                        </h2>
+                                    </div>
+                                    <figure class="barbers-people__images">
+                                        <img src="images/barbers/home-barber-1.png" alt="Барбер Святослав Пушкин">
+                                    </figure>
+                                </div>
+
+                                <div class="barbers-people__container">
+                                    <div class="barbers-people__header">
+                                        <h3 class="barbers-people__heading">
+                                            Барбер
+                                        </h3>
+                                        <h2 class="barbers-people__title">
+                                            Александр Салатов
+                                        </h2>
+                                    </div>
+                                    <figure class="barbers-people__images">
+                                        <img src="images/barbers/barbers-people/barber_people-13.png"
+                                            alt="Барбер Александр Салатов">
+                                    </figure>
+                                </div>
+
+                                <div class="barbers-people__container">
+                                    <div class="barbers-people__header">
+                                        <h3 class="barbers-people__heading">
+                                            Старший барбер
+                                        </h3>
+                                        <h2 class="barbers-people__title">
+                                            Дмитрий Минин
+                                        </h2>
+                                    </div>
+                                    <figure class="barbers-people__images">
+                                        <img src="images/barbers/barbers-people/barber_people-14.png"
+                                            alt="Барбер Дмитрий Минин">
+                                    </figure>
+                                </div>
+
+                                <div class="barbers-people__container">
+                                    <div class="barbers-people__header">
+                                        <h3 class="barbers-people__heading">
+                                            Старший барбер
+                                        </h3>
+                                        <h2 class="barbers-people__title">
+                                            Леонид Корюкалов
+                                        </h2>
+                                    </div>
+                                    <figure class="barbers-people__images">
+                                        <img src="images/barbers/barbers-people/barber_people-15.png"
+                                            alt="Барбер Леонид Корюкалов">
+                                    </figure>
+                                </div>
+
+
+                            </div>
+                        </div>
+
+                        <div class="barbers-people__item">
+                            <div class="barbers-people__slider">
+
+
+                                <div class="barbers-people__container">
+                                    <div class="barbers-people__header">
+                                        <h3 class="barbers-people__heading">
+                                            Барбер
+                                        </h3>
+                                        <h2 class="barbers-people__title">
+                                            Лёва Арутонян
+                                        </h2>
+                                    </div>
+                                    <figure class="barbers-people__images">
+                                        <img src="images/barbers/barbers-people/barber_people-16.png"
+                                            alt="Барбер Лёва Арутонян">
+                                    </figure>
+                                </div>
+
+                                <div class="barbers-people__container">
+                                    <div class="barbers-people__header">
+                                        <h3 class="barbers-people__heading">
+                                            Барбер
+                                        </h3>
+                                        <h2 class="barbers-people__title">
+                                            Евгений Белобородько
+                                        </h2>
+                                    </div>
+                                    <figure class="barbers-people__images">
+                                        <img src="images/barbers/barbers-people/barber_people-17.png"
+                                            alt="Барбер Евгений Белобородько">
+                                    </figure>
+                                </div>
+
+                                <div class="barbers-people__container">
+                                    <div class="barbers-people__header">
+                                        <h3 class="barbers-people__heading">
+                                            Шеф барбер
+                                        </h3>
+                                        <h2 class="barbers-people__title">
+                                            Артур Дивотян
+                                        </h2>
+                                    </div>
+                                    <figure class="barbers-people__images">
+                                        <img src="images/barbers/barbers-people/barber_people-18.png"
+                                            alt="Барбер Артур Дивотян">
+                                    </figure>
+                                </div>
+
+                                <div class="barbers-people__container">
+                                    <div class="barbers-people__header">
+                                        <h3 class="barbers-people__heading">
+                                            Барбер
+                                        </h3>
+                                        <h2 class="barbers-people__title">
+                                            Шах
+                                        </h2>
+                                    </div>
+                                    <figure class="barbers-people__images">
+                                        <img src="images/barbers/barbers-people/barber_people-19.png" alt="Барбер Шах">
+                                    </figure>
+                                </div>
+
+
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+        </main>
+
+        <footer class="footer">
+            <div class="container">
+                <div class="footer__body">
+
+                    <div class="footer__column">
+                        <ul class="footer__list menu">
+                            <li class="footer__item">
+                                ИП Гулецкий Н.С.
+                            </li>
+                            <li class="footer__item">
+                                ИНН 666305116380
+                            </li>
+                            <li class="footer__item">
+                                ОГРН 315665800071539
+                            </li>
+                            <li class="footer__item">
+                                620142, г. Екатеринбург, ул. Белинского, д.180
+                            </li>
+                            <li class="footer__item">
+                                <a class="footer__conf menu__link" href="policy.html">
+                                    Политика конфиденциальности
                                 </a>
+                            </li>
+                        </ul>
                     </div>
 
-                    <button class="burger btn" type="button" aria-label="Меню открыть закрыть">
-                        <span></span>
-                    </button>
-    
-                    <div class="header__content">
-
-                        <div class="popup-menu__container">
-                         
-                             <div data-content id="main-thing" class="popup-img" style="background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(images/popup-munu/item_1.jpg);">
-                             </div>
-     
-                             <div data-content id="network" class="popup-img" style="background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(images/popup-munu/item_2.jpg);">
-                             </div>
-     
-                             <div data-content id="price" class="popup-img" style="background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(images/popup-munu/item_3.jpg);">
-                             </div>
-     
-                             <div data-content id="barbers" class="popup-img popup-img--active" style="background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(images/popup-munu/item_4.jpg);">
-                             </div>
-     
-                             <div data-content id="market" class="popup-img" style="background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(images/popup-munu/item_5.jpg);">
-                             </div>
-     
-                             <div data-content id="blog" class="popup-img" style="background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(images/popup-munu/item_6.jpg);">
-                             </div>
-     
-                             <div data-content id="franchise" class="popup-img" style="background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(images/popup-munu/item_7.jpg);">
-                             </div>
-     
-                        </div>
-     
-                         
-                             <ul class="menu__list" aria-label="Меню">
-     
-                                 <li class="menu__item">
-                                     <div data-href="main-thing" class="menu__link">
-                                         <a href="mainthing.html" class="menu__link">О главном</a>
-                                     </div>
-                                 </li>
-                                 
-     
-                                 <li class="menu__item">
-                                     <div data-href="network" class="menu__link">
-                                         <a href="network.html" class="menu__link">Сеть</a>
-                                     </div>
-                                 </li>
-     
-                                 <li class="menu__item">
-                                     <div data-href="price" class="menu__link">
-                                         <a href="price.html" class="menu__link">Цена вопроса</a>
-                                     </div>
-                                 </li>
-     
-                                 <li class="menu__item">
-                                     <div data-href="barbers" class="menu__link menu__link--active">
-                                         <a class="menu__link disabled">Барберы</a>
-                                     </div>
-                                 </li>
-     
-                                 <li class="menu__item">
-                                     <div data-href="market" class="menu__link">
-                                         <a href="market.html" class="menu__link">Маркет</a>
-                                     </div>
-                                 </li>
-     
-                                 <li class="menu__item">
-                                     <div data-href="blog" class="menu__link">
-                                         <a href="blog.html" class="menu__link">Блог</a>
-                                     </div>
-                                 </li>
-                             </ul>            
-     
-                         <div class="btn">
-                             <span class="btn__span"></span>
-                             <a href="barbers.html" class="btn__link">Записаться на стрижку</a>
-                         </div>
-     
-                     </div>
-    
-                    <div class="header__info-btn">
-                    
-                        <div class="btn btn__link-fixed">
-                            <span class="btn__span"></span>
-                            <button data-href="entry1" class="btn__link popup-link">Онлайн запись</button>
-                        </div>
-                        <!-- modal-start -->
-                        <div id="entry1" class="popup entry" role="alert">
-                            <div class="popup__body">
-                                <div class="popup__content popup__content__entry">
-                                    <button type="button" class="popup__close close-popup" aria-label="закрыть модальное окно"></button>
-                                    
-                                    <form class="entry__form" action="#" method="post">
-    
-                                        <p class="entry__title">Запись</p>
-    
-                                        <fieldset class="entry__fieldset">
-    
-                                            <label class="entry__label">
-                                                <b>Ваше имя</b>
-                                                <input type="text" name="Имя клиента">
-                                            </label>
-    
-                                            <label class="entry__label">
-                                                <b>Ваш телефон</b>
-                                                <input type="tel" name="Номер телефона клиента">
-                                            </label>
-    
-                                            <label class="entry__label">
-                                                <b class="entry__person-title">Выбрать адрес</b>
-                                                <select class="entry__network" name="entry-network[]">
-                                                    <option value="УЛ. МАМИНА-СИБИРЯКА, 102">
-                                                        УЛ. МАМИНА-СИБИРЯКА, 102
-                                                    </option>
-                                                    <option value="УЛ. МАРШАЛА ЖУКОВА, 11">
-                                                        УЛ. МАРШАЛА ЖУКОВА, 11
-                                                    </option>
-                                                    <option value="УЛ. МАЛЫШЕВА, 71 | BOLSHOY">
-                                                        УЛ. МАЛЫШЕВА, 71 | BOLSHOY
-                                                    </option>
-                                                    <option value="УЛ. 8 МАРТА, 169">
-                                                        УЛ. 8 МАРТА, 169
-                                                    </option>
-                                                    <option value="УЛ. ТКАЧЕЙ, 17">
-                                                        УЛ. ТКАЧЕЙ, 17
-                                                    </option>
-                                                </select>
-                                            </label>
-    
-                                            <p class="entry__text">Мы свяжемся с вами для уточнения времени, даты и мастера.</p>
-    
-                                            <button class="entry__btn button">Записаться</button>
-    
-                                        </fieldset>
-    
-                                    </form>
-                                    
-                                </div>
-                            </div>
-                        </div>
-                        <!-- modal-end -->
-    
-                    </div>
-
-                    <div class="decorection"></div>
-    
-                </div>
-            </header>
-
-            <main class="main">
-                <div class="header__performance" style="background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(images/bg/barbers-bg.jpg);">
-            
-                    <div class="header__info-container">
-                        <h1 class="barbers-title">БаРБЕРЫ</h1>
-                    </div>
-                    <div id="section06" class="demo">
-                        <a href="#barbers-info" aria-label="Перейти чуть ниже по странице"><span></span>Scroll</a>
-                    </div>
-                </div>
-                <div class="container">
-                    
-                    <div id="barbers-info" class="barbers">
-
-                        <div class="barbershop-slider barbershop">
-
-                            <div class="barbershop__item">
-                                <div class="barbershop__item-cell">
-                                    <span class="barbershop__address">
-                                        АДРЕС
-                                    </span>
-                                    <h2 class="barbershop__maps">
-                                        ул. Мамина-Сибиряка, 102
-                                    </h2>
-                                    <h3 class="barbershop__opening-hours">
-                                        Ежедневно 10:00 - 22:00
-                                    </h3>
-                                </div>
-                            </div>
-
-                            <div class="barbershop__item">
-                                <div class="barbershop__item-cell">
-                                    <span class="barbershop__address">
-                                        АДРЕС
-                                    </span>
-                                    <h2 class="barbershop__maps">
-                                        ул. Маршала Жукова, 11
-                                    </h2>
-                                    <h3 class="barbershop__opening-hours">
-                                        Ежедневно 10:00 - 22:00
-                                    </h3>
-                                </div>
-                            </div>
-
-                            <div class="barbershop__item">
-                                <div class="barbershop__item-cell">
-                                    <span class="barbershop__address">
-                                        АДРЕС
-                                    </span>
-                                    <h2 class="barbershop__maps">
-                                        ул. Малышева, 71 | Bolshoy
-                                    </h2>
-                                    <h3 class="barbershop__opening-hours">
-                                        Ежедневно 10:00 - 22:00
-                                    </h3>
-                                </div>
-                            </div>
-
-                            <div class="barbershop__item">
-                                <div class="barbershop__item-cell">
-                                    <span class="barbershop__address">
-                                        АДРЕС
-                                    </span>
-                                    <h2 class="barbershop__maps">
-                                        ул. 8 Марта, 169
-                                    </h2>
-                                    <h3 class="barbershop__opening-hours">
-                                        Ежедневно 10:00 - 22:00
-                                    </h3>
-                                </div>
-                            </div>
-
-                        </div>
-
-                        <div class="barbers-info__slider barbers-people">
-
-                            <div class="barbers-people__item">
-                                <div class="barbers-people__slider">
-                                    
-
- 
-                                        <div class="barbers-people__container">
-                                            <div class="barbers-people__header">
-                                                <h3 class="barbers-people__heading">
-                                                    Старший барбер
-                                                </h3>
-                                                <h2 class="barbers-people__title">
-                                                    Баха Бабаджанов
-                                                </h2>
-                                            </div>
-                                            <figure class="barbers-people__images">
-                                                <img src="images/barbers/barbers-people/barber_people-1.png" alt="Барбер Баха Бабаджанов">
-                                            </figure>
-                                        </div>
-
-                                        <div class="barbers-people__container">
-                                            <div class="barbers-people__header">
-                                                <h3 class="barbers-people__heading">
-                                                    Барбер
-                                                </h3>
-                                                <h2 class="barbers-people__title">
-                                                    Александр Тетюев
-                                                </h2>
-                                            </div>
-                                            <figure class="barbers-people__images">
-                                                <img src="images/barbers/barbers-people/barber_people-2.png" alt="Барбер Александр Тетюев">
-                                            </figure>
-                                        </div>
-
-                                        <div class="barbers-people__container">
-                                            <div class="barbers-people__header">
-                                                <h3 class="barbers-people__heading">
-                                                    Старший барбер
-                                                </h3>
-                                                <h2 class="barbers-people__title">
-                                                    Богдан Бородин
-                                                </h2>
-                                            </div>
-                                            <figure class="barbers-people__images">
-                                                <img src="images/barbers/barbers-people/barber_people-3.png" alt="Барбер Богдан Бородин">
-                                            </figure>
-                                        </div>
-
-                                        <div class="barbers-people__container">
-                                            <div class="barbers-people__header">
-                                                <h3 class="barbers-people__heading">
-                                                    Барбер
-                                                </h3>
-                                                <h2 class="barbers-people__title">
-                                                    Рой Мбая
-                                                </h2>
-                                            </div>
-                                            <figure class="barbers-people__images">
-                                                <img src="images/barbers/barbers-people/barber_people-4.png" alt="Барбер Рой Мбая">
-                                            </figure>
-                                        </div>
-
-                                    
-                                </div>
-                            </div>
-
-                            <div class="barbers-people__item">
-                                <div class="barbers-people__slider">
-                                    
-
-                                        <div class="barbers-people__container">
-                                            <div class="barbers-people__header">
-                                                <h3 class="barbers-people__heading">
-                                                    Старший барбер
-                                                </h3>
-                                                <h2 class="barbers-people__title">
-                                                    Евгений Новохацкий
-                                                </h2>
-                                            </div>
-                                            <figure class="barbers-people__images">
-                                                <img src="images/barbers/barbers-people/barber_people-5.png" alt="Барбер Евгений Новохацкий">
-                                            </figure>
-                                        </div>
-
-                                        <div class="barbers-people__container">
-                                            <div class="barbers-people__header">
-                                                <h3 class="barbers-people__heading">
-                                                    Шеф барбер
-                                                </h3>
-                                                <h2 class="barbers-people__title">
-                                                    Олег Мухин
-                                                </h2>
-                                            </div>
-                                            <figure class="barbers-people__images">
-                                                <img src="images/barbers/home-barber-3.png" alt="Барбер Олег Мухин">
-                                            </figure>
-                                        </div>
-
-                                        <div class="barbers-people__container">
-                                            <div class="barbers-people__header">
-                                                <h3 class="barbers-people__heading">
-                                                    Старший барбер
-                                                </h3>
-                                                <h2 class="barbers-people__title">
-                                                    Слава Зиновьев
-                                                </h2>
-                                            </div>
-                                            <figure class="barbers-people__images">
-                                                <img src="images/barbers/barbers-people/barber_people-6.png" alt="Барбер Слава Зиновьев">
-                                            </figure>
-                                        </div>
-
-                                        <div class="barbers-people__container">
-                                            <div class="barbers-people__header">
-                                                <h3 class="barbers-people__heading">
-                                                    Барбер
-                                                </h3>
-                                                <h2 class="barbers-people__title">
-                                                    Алексей Уколов
-                                                </h2>
-                                            </div>
-                                            <figure class="barbers-people__images">
-                                                <img src="images/barbers/barbers-people/barber_people-7.png" alt="Барбер Алексей Уколов">
-                                            </figure>
-                                        </div>
-
-                                        <div class="barbers-people__container">
-                                            <div class="barbers-people__header">
-                                                <h3 class="barbers-people__heading">
-                                                    Барбер
-                                                </h3>
-                                                <h2 class="barbers-people__title">
-                                                    Олег Черных
-                                                </h2>
-                                            </div>
-                                            <figure class="barbers-people__images">
-                                                <img src="images/barbers/barbers-people/barber_people-8.png" alt="Барбер Олег Черных">
-                                            </figure>
-                                        </div>
-
-                                        <div class="barbers-people__container">
-                                            <div class="barbers-people__header">
-                                                <h3 class="barbers-people__heading">
-                                                    Барбер
-                                                </h3>
-                                                <h2 class="barbers-people__title">
-                                                    Сергей Табакаев
-                                                </h2>
-                                            </div>
-                                            <figure class="barbers-people__images">
-                                                <img src="images/barbers/barbers-people/barber_people-9.png" alt="Барбер Сергей Табакаев">
-                                            </figure>
-                                        </div>
-
-                                        <div class="barbers-people__container">
-                                            <div class="barbers-people__header">
-                                                <h3 class="barbers-people__heading">
-                                                    Шеф барбер
-                                                </h3>
-                                                <h2 class="barbers-people__title">
-                                                    Евгений Антоненко
-                                                </h2>
-                                            </div>
-                                            <figure class="barbers-people__images">
-                                                <img src="images/barbers/home-barber-2.png" alt="Барбер Евгений Антоненко">
-                                            </figure>
-                                        </div>
-
-                                        <div class="barbers-people__container">
-                                            <div class="barbers-people__header">
-                                                <h3 class="barbers-people__heading">
-                                                    Старший барбер
-                                                </h3>
-                                                <h2 class="barbers-people__title">
-                                                    Сергей Кулыгин
-                                                </h2>
-                                            </div>
-                                            <figure class="barbers-people__images">
-                                                <img src="images/barbers/barbers-people/barber_people-10.png" alt="Барбер Сергей Кулыгин">
-                                            </figure>
-                                        </div>
-
-                                    
-                                </div>
-                            </div>
-
-                            <div class="barbers-people__item">
-                                <div class="barbers-people__slider">
-                                    
-
-                                        <div class="barbers-people__container">
-                                            <div class="barbers-people__header">
-                                                <h3 class="barbers-people__heading">
-                                                    Барбер
-                                                </h3>
-                                                <h2 class="barbers-people__title">
-                                                    Кирилл Хизнеченко
-                                                </h2>
-                                            </div>
-                                            <figure class="barbers-people__images">
-                                                <img src="images/barbers/barbers-people/barber_people-11.png" alt="Барбер Кирилл Хизнеченко">
-                                            </figure>
-                                        </div>
-
-                                        <div class="barbers-people__container">
-                                            <div class="barbers-people__header">
-                                                <h3 class="barbers-people__heading">
-                                                    Барбер
-                                                </h3>
-                                                <h2 class="barbers-people__title">
-                                                    Максим Филлипов
-                                                </h2>
-                                            </div>
-                                            <figure class="barbers-people__images">
-                                                <img src="images/barbers/barbers-people/barber_people-12.png" alt="Барбер Максим Филлипов">
-                                            </figure>
-                                        </div>
-
-                                        <div class="barbers-people__container">
-                                            <div class="barbers-people__header">
-                                                <h3 class="barbers-people__heading">
-                                                    Шеф барбер
-                                                </h3>
-                                                <h2 class="barbers-people__title">
-                                                    Святослав Пушкин
-                                                </h2>
-                                            </div>
-                                            <figure class="barbers-people__images">
-                                                <img src="images/barbers/home-barber-1.png" alt="Барбер Святослав Пушкин">
-                                            </figure>
-                                        </div>
-
-                                        <div class="barbers-people__container">
-                                            <div class="barbers-people__header">
-                                                <h3 class="barbers-people__heading">
-                                                    Барбер
-                                                </h3>
-                                                <h2 class="barbers-people__title">
-                                                    Александр Салатов
-                                                </h2>
-                                            </div>
-                                            <figure class="barbers-people__images">
-                                                <img src="images/barbers/barbers-people/barber_people-13.png" alt="Барбер Александр Салатов">
-                                            </figure>
-                                        </div>
-
-                                        <div class="barbers-people__container">
-                                            <div class="barbers-people__header">
-                                                <h3 class="barbers-people__heading">
-                                                    Старший барбер
-                                                </h3>
-                                                <h2 class="barbers-people__title">
-                                                    Дмитрий Минин
-                                                </h2>
-                                            </div>
-                                            <figure class="barbers-people__images">
-                                                <img src="images/barbers/barbers-people/barber_people-14.png" alt="Барбер Дмитрий Минин">
-                                            </figure>
-                                        </div>
-
-                                        <div class="barbers-people__container">
-                                            <div class="barbers-people__header">
-                                                <h3 class="barbers-people__heading">
-                                                    Старший барбер
-                                                </h3>
-                                                <h2 class="barbers-people__title">
-                                                    Леонид Корюкалов
-                                                </h2>
-                                            </div>
-                                            <figure class="barbers-people__images">
-                                                <img src="images/barbers/barbers-people/barber_people-15.png" alt="Барбер Леонид Корюкалов">
-                                            </figure>
-                                        </div>
-
-                                    
-                                </div>
-                            </div>
-
-                            <div class="barbers-people__item">
-                                <div class="barbers-people__slider">
-                                    
-
-                                        <div class="barbers-people__container">
-                                            <div class="barbers-people__header">
-                                                <h3 class="barbers-people__heading">
-                                                    Барбер
-                                                </h3>
-                                                <h2 class="barbers-people__title">
-                                                    Лёва Арутонян
-                                                </h2>
-                                            </div>
-                                            <figure class="barbers-people__images">
-                                                <img src="images/barbers/barbers-people/barber_people-16.png" alt="Барбер Лёва Арутонян">
-                                            </figure>
-                                        </div>
-
-                                        <div class="barbers-people__container">
-                                            <div class="barbers-people__header">
-                                                <h3 class="barbers-people__heading">
-                                                    Барбер
-                                                </h3>
-                                                <h2 class="barbers-people__title">
-                                                    Евгений Белобородько
-                                                </h2>
-                                            </div>
-                                            <figure class="barbers-people__images">
-                                                <img src="images/barbers/barbers-people/barber_people-17.png" alt="Барбер Евгений Белобородько">
-                                            </figure>
-                                        </div>
-
-                                        <div class="barbers-people__container">
-                                            <div class="barbers-people__header">
-                                                <h3 class="barbers-people__heading">
-                                                    Шеф барбер
-                                                </h3>
-                                                <h2 class="barbers-people__title">
-                                                    Артур Дивотян
-                                                </h2>
-                                            </div>
-                                            <figure class="barbers-people__images">
-                                                <img src="images/barbers/barbers-people/barber_people-18.png" alt="Барбер Артур Дивотян">
-                                            </figure>
-                                        </div>
-
-                                        <div class="barbers-people__container">
-                                            <div class="barbers-people__header">
-                                                <h3 class="barbers-people__heading">
-                                                    Барбер
-                                                </h3>
-                                                <h2 class="barbers-people__title">
-                                                    Шах
-                                                </h2>
-                                            </div>
-                                            <figure class="barbers-people__images">
-                                                <img src="images/barbers/barbers-people/barber_people-19.png" alt="Барбер Шах">
-                                            </figure>
-                                        </div>
-
-                                    
-                                </div>
-                            </div>
-
-                        </div>
-
-                    </div>
-
-                </div>
-            </main>
-
-            <footer class="footer">
-                <div class="container">
-                    <div class="footer__body">
-    
-                        <div class="footer__column">
-                            <ul class="footer__list">
-                                <li class="footer__item">
-                                    ИП Гулецкий Н.С.
-                                </li>
-                                <li class="footer__item">
-                                    ИНН 666305116380
-                                </li>
-                                <li class="footer__item">
-                                    ОГРН 315665800071539
-                                </li>
-                                <li class="footer__item">
-                                    620142, г. Екатеринбург, ул. Белинского, д.180
-                                </li>
-                                <li class="footer__item">
-                                    <a class="footer__conf menu__link" href="policy.html">
-                                        Политика конфиденциальности
-                                    </a>
-                                </li>
-                            </ul>
-                        </div>
-    
-                        <div class="footer__column footer__column-menu">
-                            <ul class="footer__menu-list" aria-label="Меню">
-                                <li class="footer__menu-item">
-                                    <a href="mainthing.html" class="menu__link">
-                                        О ГЛАВНОМ
-                                    </a>
-                                </li>
-                                <li class="footer__menu-item">
-                                    <a href="price.html" class="menu__link">
-                                        ЦЕНА ВОПРОСА
-                                    </a>
-                                </li>
-                                <li class="footer__menu-item">
-                                    <a href="#" class="menu__link disabled">
-                                        БАРБЕРЫ
-                                    </a>
-                                </li>
-                                <li class="footer__menu-item">
-                                    <a href="market.html" class="menu__link">
-                                        МАРКЕТ
-                                    </a>
-                                </li>
-                            </ul>
-                        </div>
-    
-                        <div class="footer__column footer__column-menu">
-                            <ul class="footer__menu-list" aria-label="Меню">
-                                <li class="footer__menu-item">
-                                    <a href="blog.html" class="menu__link">
-                                        БЛОГ
-                                    </a>
-                                </li>
-                                <li class="footer__menu-item">
-                                    <a href="network.html" class="menu__link">
-                                        СЕТЬ
-                                    </a>
-                                </li>
-                            </ul>
-                        </div>
-    
-                        <div class="footer__column footer__column-social">
-    
-                            <div class="logo">
-                                <a href="index.html" class="logo__link" aria-label="Вернутся на главную страницу">
-                                    <img src="images/svg/logo.svg" alt="Логотип компании БАРБЕРКОНТОРА">
+                    <div class="footer__column footer__column-menu">
+                        <ul class="footer__menu-list menu" aria-label="Меню">
+                            <li class="footer__menu-item">
+                                <a href="mainthing.html" class="menu__link">
+                                    О ГЛАВНОМ
                                 </a>
-                            </div>
-                           
-                                <div class="footer__social social">
-                                    <ul class="social__list" aria-label="Наши социальные сети">
-                                        <li class="social__item">
-                                            <a href="https://www.facebook.com/" aria-label="Перейти на сайт Фейсбук" target="_blank" class="social__link">
-                                                <svg width="11px" height="20px" viewBox="0 0 11 20" fill="rgba(255, 255, 255, 0.3)" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-                                                    <g transform="translate(-710.000000, -8017.000000)">
-                                                      <g transform="translate(0.000000, 7837.000000)">
-                                                        <g transform="translate(630.000000, 180.000000)">
-                                                          <g transform="translate(80.000000, 0.000000)">
-                                                            <path class="svg-patch" d="M6.71192308,19.9118269 L6.71192308,10.8290385 L9.76067308,10.8290385 L10.2171154,7.28932692 L6.71192308,7.28932692 L6.71192308,5.02932692 C6.71192308,4.00451923 6.99653846,3.30605769 8.46625,3.30605769 L10.3406731,3.30519231 L10.3406731,0.139326923 C10.0163462,0.0963461538 8.90375,0 7.60932692,0 C4.90682692,0 3.05663462,1.64951923 3.05663462,4.67894231 L3.05663462,7.28942308 L0,7.28942308 L0,10.8291346 L3.05653846,10.8291346 L3.05653846,19.9119231 L6.71192308,19.9118269 Z" id="Shape"></path>
-                                                          </g>
-                                                        </g>
-                                                      </g>
-                                                    </g>
-                                                  </svg>
-                                            </a>
-                                        </li>
-                                        <li class="social__item">
-                                            <a href="https://www.instagram.com/" aria-label="Перейти на сайт Инстаграм" target="_blank" class="social__link">
-                                                <svg width="20px" height="20px" viewBox="0 0 20 20" fill="rgba(255, 255, 255, 0.3)" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-                                                    <g transform="translate(-670.000000, -8017.000000)">
-                                                      <g transform="translate(0.000000, 7837.000000)">
-                                                        <g transform="translate(630.000000, 180.000000)">
-                                                          <g transform="translate(40.000000, 0.000000)">
-                                                            <path class="svg-patch" d="M6.66720517,10 C6.66720517,8.15912763 8.15912763,6.66639742 10,6.66639742 C11.8408724,6.66639742 13.3336026,8.15912763 13.3336026,10 C13.3336026,11.8408724 11.8408724,13.3336026 10,13.3336026 C8.15912763,13.3336026 6.66720517,11.8408724 6.66720517,10 M4.86510501,10 C4.86510501,12.8360258 7.16397415,15.134895 10,15.134895 C12.8360258,15.134895 15.134895,12.8360258 15.134895,10 C15.134895,7.16397415 12.8360258,4.86510501 10,4.86510501 C7.16397415,4.86510501 4.86510501,7.16397415 4.86510501,10 M14.138126,4.66155089 C14.138126,5.32390953 14.6752827,5.86187399 15.3384491,5.86187399 C16.0008078,5.86187399 16.5387722,5.32390953 16.5387722,4.66155089 C16.5387722,3.99919225 16.0016155,3.46203554 15.3384491,3.46203554 C14.6752827,3.46203554 14.138126,3.99919225 14.138126,4.66155089 M5.95961228,18.1397415 C4.98465267,18.095315 4.45476575,17.9329564 4.10258481,17.7956381 C3.63570275,17.6138934 3.30290792,17.3974152 2.95234249,17.0476575 C2.60258481,16.6978998 2.38529887,16.365105 2.20436187,15.8982229 C2.06704362,15.546042 1.90468498,15.0161551 1.86025848,14.0411955 C1.81179321,12.9870759 1.80210016,12.6704362 1.80210016,10 C1.80210016,7.32956381 1.81260097,7.01373183 1.86025848,5.95880452 C1.90468498,4.98384491 2.06785137,4.45476575 2.20436187,4.10177706 C2.38610662,3.63489499 2.60258481,3.30210016 2.95234249,2.95153473 C3.30210016,2.60177706 3.63489499,2.38449111 4.10258481,2.20355412 C4.45476575,2.06623586 4.98465267,1.90387722 5.95961228,1.85945073 C7.01373183,1.81098546 7.33037157,1.80129241 10,1.80129241 C12.6704362,1.80129241 12.9862682,1.81179321 14.0411955,1.85945073 C15.0161551,1.90387722 15.5452342,2.06704362 15.8982229,2.20355412 C16.365105,2.38449111 16.6978998,2.60177706 17.0484653,2.95153473 C17.3982229,3.30129241 17.6147011,3.63489499 17.7964459,4.10177706 C17.9337641,4.453958 18.0961228,4.98384491 18.1405493,5.95880452 C18.1890145,7.01373183 18.1987076,7.32956381 18.1987076,10 C18.1987076,12.6696284 18.1890145,12.9862682 18.1405493,14.0411955 C18.0961228,15.0161551 17.9329564,15.546042 17.7964459,15.8982229 C17.6147011,16.365105 17.3982229,16.6978998 17.0484653,17.0476575 C16.6987076,17.3974152 16.365105,17.6138934 15.8982229,17.7956381 C15.546042,17.9329564 15.0161551,18.095315 14.0411955,18.1397415 C12.9870759,18.1882068 12.6704362,18.1978998 10,18.1978998 C7.33037157,18.1978998 7.01373183,18.1882068 5.95961228,18.1397415 M5.87722132,0.0605815832 C4.81260097,0.10904685 4.08562197,0.277867528 3.44991922,0.525040388 C2.79240711,0.780290792 2.23505654,1.12277868 1.67851373,1.67851373 C1.12277868,2.23424879 0.780290792,2.79159935 0.525040388,3.44991922 C0.277867528,4.08562197 0.10904685,4.81260097 0.0605815832,5.87722132 C0.0113085622,6.94345719 0,7.28432956 0,10 C0,12.7156704 0.0113085622,13.0565428 0.0605815832,14.1227787 C0.10904685,15.187399 0.277867528,15.914378 0.525040388,16.5500808 C0.780290792,17.2075929 1.12197092,17.7657512 1.67851373,18.3214863 C2.23424879,18.8772213 2.79159935,19.2189015 3.44991922,19.4749596 C4.08642973,19.7221325 4.81260097,19.8909532 5.87722132,19.9394184 C6.94426494,19.9878837 7.28432956,20 10,20 C12.7164782,20 13.0565428,19.9886914 14.1227787,19.9394184 C15.187399,19.8909532 15.914378,19.7221325 16.5500808,19.4749596 C17.2075929,19.2189015 17.7649435,18.8772213 18.3214863,18.3214863 C18.8772213,17.7657512 19.2189015,17.2075929 19.4749596,16.5500808 C19.7221325,15.914378 19.8917609,15.187399 19.9394184,14.1227787 C19.9878837,13.0557351 19.9991922,12.7156704 19.9991922,10 C19.9991922,7.28432956 19.9878837,6.94345719 19.9394184,5.87722132 C19.8909532,4.81260097 19.7221325,4.08562197 19.4749596,3.44991922 C19.2189015,2.79240711 18.8772213,2.23505654 18.3214863,1.67851373 C17.7657512,1.12277868 17.2075929,0.780290792 16.5508885,0.525040388 C15.914378,0.277867528 15.187399,0.108239095 14.1235864,0.0605815832 C13.0573506,0.0121163166 12.7164782,0 10.0008078,0 C7.28432956,0 6.94426494,0.0113085622 5.87722132,0.0605815832"></path>
-                                                          </g>
-                                                        </g>
-                                                      </g>
-                                                    </g>
-                                                  </svg>
-                                            </a>
-                                        </li>
-                                        <li class="social__item">
-                                            <a href="https://vk.com/" aria-label="Перейти на сайт Вконтакте" target="_blank" class="social__link">
-                                                <svg width="22px" height="20px" viewBox="0 0 20 12" fill="rgba(255, 255, 255, 0.3)" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-                                                    <g transform="translate(-630.000000, -8021.000000)">
-                                                      <g transform="translate(0.000000, 7837.000000)">
-                                                        <g transform="translate(630.000000, 180.000000)">
-                                                          <path class="svg-patch" d="M19.5395147,4.7972122 C19.6801992,4.32826385 19.5395147,4 18.882987,4 L16.6945614,4 C16.1318233,4 15.8817176,4.29700062 15.7410331,4.62526447 C15.7410331,4.62526447 14.6311886,7.34516492 13.0523958,9.09590544 C12.5365526,9.61174863 12.3177101,9.76806474 12.0363411,9.76806474 C11.8956566,9.76806474 11.6924456,9.61174863 11.6924456,9.14280027 L11.6924456,4.7972122 C11.6924456,4.23447418 11.5361295,4 11.0671811,4 L7.62822654,4 C7.28433109,4 7.06548852,4.2657374 7.06548852,4.50021158 C7.06548852,5.03168638 7.84706911,5.15673927 7.94085878,6.62611078 L7.94085878,9.8462228 C7.94085878,10.5496453 7.81580589,10.6746982 7.53443687,10.6746982 C6.79975112,10.6746982 4.98648416,7.95479778 3.92353455,4.82847542 C3.70469199,4.25010579 3.50148104,4 2.93874301,4 L0.750317365,4 C0.125052894,4 0,4.29700062 0,4.62526447 C0,5.20363411 0.734685753,8.07985067 3.4545862,11.8783323 C5.26785317,14.4731799 7.81580589,15.8800249 10.1292844,15.8800249 C11.5204979,15.8800249 11.6924456,15.5673927 11.6924456,15.0359179 L11.6924456,13.0663348 C11.6924456,12.4410704 11.8174985,12.3160175 12.2708152,12.3160175 C12.5990791,12.3160175 13.1461855,12.4723336 14.4436093,13.7228625 C15.9286124,15.2078656 16.1787182,15.8800249 17.0071936,15.8800249 L19.1956193,15.8800249 C19.8208837,15.8800249 20.133516,15.5673927 19.9459366,14.9577599 C19.7427257,14.348127 19.0393031,13.4571251 18.1014064,12.3941755 C17.5855632,11.7845427 16.8196143,11.1436466 16.6007717,10.8153827 C16.2725079,10.3933292 16.3662975,10.2057499 16.6007717,9.8462228 C16.6007717,9.83059119 19.2737773,6.07900437 19.5395147,4.7972122 L19.5395147,4.7972122 Z"></path>
-                                                        </g>
-                                                      </g>
-                                                    </g>
-                                                  </svg>
-                                            </a>
-                                        </li>
-                                        <li class="social__item">
-                                            <a href="https://www.youtube.com/" aria-label="Перейти на сайт Ютуб" target="_blank" class="social__link">
-                                                <svg width="28px" height="20px" viewBox="0 0 28 20" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-                                                    <g transform="translate(-741.000000, -8017.000000)">
-                                                      <g transform="translate(0.000000, 7837.000000)">
-                                                        <g transform="translate(630.000000, 180.000000)">
-                                                          <g transform="translate(111.000000, 0.000000)">
-                                                            <path d="M18.6010256,9.64615385 C16.0666667,8.29179487 13.64,7.04666667 11.1594872,5.74666667 L11.1594872,13.5235897 C13.7697436,12.1046154 16.5210256,10.8051282 18.6117949,9.64615385 L18.6010256,9.64615385 L18.6010256,9.64615385 Z" fill="#000000"></path>
-                                                            <path class="svg-patch" d="M18.6010256,9.64615385 C16.0666667,8.29179487 11.1594872,5.74666667 11.1594872,5.74666667 L17.7020513,10.1441026 C17.7025641,10.1441026 16.5102564,10.8051282 18.6010256,9.64615385 Z" fill="rgba(255, 255, 255, 0.3)"></path>
-                                                            <path class="svg-patch" d="M11.6364103,19.6112821 C6.37230769,19.514359 4.57435897,19.4271795 3.46923077,19.1994872 C2.72153846,19.0482051 2.07179487,18.7123077 1.59538462,18.2251282 C1.22717949,17.8564103 0.934358974,17.2938462 0.707179487,16.5133333 C0.512307692,15.8630769 0.436410256,15.3220513 0.328205128,14.0005128 C0.162564103,11.0179487 0.123076923,8.57948718 0.328205128,5.85487179 C0.497435897,4.35025641 0.579487179,2.56410256 1.70358974,1.52205128 C2.23435897,1.03435897 2.85179487,0.720512821 3.54512821,0.590769231 C4.62820513,0.385128205 9.2425641,0.222564103 14.0194872,0.222564103 C18.785641,0.222564103 23.4102564,0.385128205 24.494359,0.590769231 C25.3605128,0.753333333 26.1728205,1.24051282 26.6497436,1.86871795 C27.6753846,3.48205128 27.6933333,5.48820513 27.7974359,7.0574359 C27.8405128,7.80512821 27.8405128,12.0507692 27.7974359,12.7984615 C27.6353846,15.2784615 27.5051282,16.1558974 27.1369231,17.065641 C26.9092308,17.64 26.7148718,17.9430769 26.3784615,18.2789744 C25.850853,18.7958759 25.1782356,19.1396979 24.4502564,19.2646154 C19.8948718,19.6071795 16.0266667,19.6815385 11.6364103,19.6112821 L11.6364103,19.6112821 Z M18.6123077,9.64615385 C16.0779487,8.29179487 13.6512821,7.03589744 11.1707692,5.73589744 L11.1707692,13.5133333 C13.7810256,12.094359 16.5328205,10.794359 18.6230769,9.63538462 L18.6123077,9.64615385 Z" fill="rgba(255, 255, 255, 0.3)"></path>
-                                                          </g>
-                                                        </g>
-                                                      </g>
-                                                    </g>
-                                                  </svg>
-                                            </a>
-                                        </li>
-                                    </ul>
-                                </div>
-                        </div>
-    
+                            </li>
+                            <li class="footer__menu-item">
+                                <a href="price.html" class="menu__link">
+                                    ЦЕНА ВОПРОСА
+                                </a>
+                            </li>
+                            <li class="footer__menu-item">
+                                <a href="#" class="menu__link disabled">
+                                    БАРБЕРЫ
+                                </a>
+                            </li>
+                            <li class="footer__menu-item">
+                                <a href="market.html" class="menu__link">
+                                    МАРКЕТ
+                                </a>
+                            </li>
+                        </ul>
                     </div>
+
+                    <div class="footer__column footer__column-menu">
+                        <ul class="footer__menu-list menu" aria-label="Меню">
+                            <li class="footer__menu-item">
+                                <a href="blog.html" class="menu__link">
+                                    БЛОГ
+                                </a>
+                            </li>
+                            <li class="footer__menu-item">
+                                <a href="network.html" class="menu__link">
+                                    СЕТЬ
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="footer__column footer__column-social">
+
+                        <div class="logo">
+                            <a href="index.html" class="logo__link" aria-label="Вернутся на главную страницу">
+                                <img src="images/svg/logo.svg" alt="Логотип компании БАРБЕРКОНТОРА">
+                            </a>
+                        </div>
+
+                        <div class="footer__social social">
+                            <ul class="social__list" aria-label="Наши социальные сети">
+                                <li class="social__item">
+                                    <a href="https://www.facebook.com/" aria-label="Перейти на сайт Фейсбук"
+                                        target="_blank" class="social__link">
+                                        <svg width="11px" height="20px" viewBox="0 0 11 20"
+                                            fill="rgba(255, 255, 255, 0.3)" xmlns="http://www.w3.org/2000/svg"
+                                            xmlns:xlink="http://www.w3.org/1999/xlink">
+                                            <g transform="translate(-710.000000, -8017.000000)">
+                                                <g transform="translate(0.000000, 7837.000000)">
+                                                    <g transform="translate(630.000000, 180.000000)">
+                                                        <g transform="translate(80.000000, 0.000000)">
+                                                            <path class="svg-patch"
+                                                                d="M6.71192308,19.9118269 L6.71192308,10.8290385 L9.76067308,10.8290385 L10.2171154,7.28932692 L6.71192308,7.28932692 L6.71192308,5.02932692 C6.71192308,4.00451923 6.99653846,3.30605769 8.46625,3.30605769 L10.3406731,3.30519231 L10.3406731,0.139326923 C10.0163462,0.0963461538 8.90375,0 7.60932692,0 C4.90682692,0 3.05663462,1.64951923 3.05663462,4.67894231 L3.05663462,7.28942308 L0,7.28942308 L0,10.8291346 L3.05653846,10.8291346 L3.05653846,19.9119231 L6.71192308,19.9118269 Z"
+                                                                id="Shape"></path>
+                                                        </g>
+                                                    </g>
+                                                </g>
+                                            </g>
+                                        </svg>
+                                    </a>
+                                </li>
+                                <li class="social__item">
+                                    <a href="https://www.instagram.com/" aria-label="Перейти на сайт Инстаграм"
+                                        target="_blank" class="social__link">
+                                        <svg width="20px" height="20px" viewBox="0 0 20 20"
+                                            fill="rgba(255, 255, 255, 0.3)" xmlns="http://www.w3.org/2000/svg"
+                                            xmlns:xlink="http://www.w3.org/1999/xlink">
+                                            <g transform="translate(-670.000000, -8017.000000)">
+                                                <g transform="translate(0.000000, 7837.000000)">
+                                                    <g transform="translate(630.000000, 180.000000)">
+                                                        <g transform="translate(40.000000, 0.000000)">
+                                                            <path class="svg-patch"
+                                                                d="M6.66720517,10 C6.66720517,8.15912763 8.15912763,6.66639742 10,6.66639742 C11.8408724,6.66639742 13.3336026,8.15912763 13.3336026,10 C13.3336026,11.8408724 11.8408724,13.3336026 10,13.3336026 C8.15912763,13.3336026 6.66720517,11.8408724 6.66720517,10 M4.86510501,10 C4.86510501,12.8360258 7.16397415,15.134895 10,15.134895 C12.8360258,15.134895 15.134895,12.8360258 15.134895,10 C15.134895,7.16397415 12.8360258,4.86510501 10,4.86510501 C7.16397415,4.86510501 4.86510501,7.16397415 4.86510501,10 M14.138126,4.66155089 C14.138126,5.32390953 14.6752827,5.86187399 15.3384491,5.86187399 C16.0008078,5.86187399 16.5387722,5.32390953 16.5387722,4.66155089 C16.5387722,3.99919225 16.0016155,3.46203554 15.3384491,3.46203554 C14.6752827,3.46203554 14.138126,3.99919225 14.138126,4.66155089 M5.95961228,18.1397415 C4.98465267,18.095315 4.45476575,17.9329564 4.10258481,17.7956381 C3.63570275,17.6138934 3.30290792,17.3974152 2.95234249,17.0476575 C2.60258481,16.6978998 2.38529887,16.365105 2.20436187,15.8982229 C2.06704362,15.546042 1.90468498,15.0161551 1.86025848,14.0411955 C1.81179321,12.9870759 1.80210016,12.6704362 1.80210016,10 C1.80210016,7.32956381 1.81260097,7.01373183 1.86025848,5.95880452 C1.90468498,4.98384491 2.06785137,4.45476575 2.20436187,4.10177706 C2.38610662,3.63489499 2.60258481,3.30210016 2.95234249,2.95153473 C3.30210016,2.60177706 3.63489499,2.38449111 4.10258481,2.20355412 C4.45476575,2.06623586 4.98465267,1.90387722 5.95961228,1.85945073 C7.01373183,1.81098546 7.33037157,1.80129241 10,1.80129241 C12.6704362,1.80129241 12.9862682,1.81179321 14.0411955,1.85945073 C15.0161551,1.90387722 15.5452342,2.06704362 15.8982229,2.20355412 C16.365105,2.38449111 16.6978998,2.60177706 17.0484653,2.95153473 C17.3982229,3.30129241 17.6147011,3.63489499 17.7964459,4.10177706 C17.9337641,4.453958 18.0961228,4.98384491 18.1405493,5.95880452 C18.1890145,7.01373183 18.1987076,7.32956381 18.1987076,10 C18.1987076,12.6696284 18.1890145,12.9862682 18.1405493,14.0411955 C18.0961228,15.0161551 17.9329564,15.546042 17.7964459,15.8982229 C17.6147011,16.365105 17.3982229,16.6978998 17.0484653,17.0476575 C16.6987076,17.3974152 16.365105,17.6138934 15.8982229,17.7956381 C15.546042,17.9329564 15.0161551,18.095315 14.0411955,18.1397415 C12.9870759,18.1882068 12.6704362,18.1978998 10,18.1978998 C7.33037157,18.1978998 7.01373183,18.1882068 5.95961228,18.1397415 M5.87722132,0.0605815832 C4.81260097,0.10904685 4.08562197,0.277867528 3.44991922,0.525040388 C2.79240711,0.780290792 2.23505654,1.12277868 1.67851373,1.67851373 C1.12277868,2.23424879 0.780290792,2.79159935 0.525040388,3.44991922 C0.277867528,4.08562197 0.10904685,4.81260097 0.0605815832,5.87722132 C0.0113085622,6.94345719 0,7.28432956 0,10 C0,12.7156704 0.0113085622,13.0565428 0.0605815832,14.1227787 C0.10904685,15.187399 0.277867528,15.914378 0.525040388,16.5500808 C0.780290792,17.2075929 1.12197092,17.7657512 1.67851373,18.3214863 C2.23424879,18.8772213 2.79159935,19.2189015 3.44991922,19.4749596 C4.08642973,19.7221325 4.81260097,19.8909532 5.87722132,19.9394184 C6.94426494,19.9878837 7.28432956,20 10,20 C12.7164782,20 13.0565428,19.9886914 14.1227787,19.9394184 C15.187399,19.8909532 15.914378,19.7221325 16.5500808,19.4749596 C17.2075929,19.2189015 17.7649435,18.8772213 18.3214863,18.3214863 C18.8772213,17.7657512 19.2189015,17.2075929 19.4749596,16.5500808 C19.7221325,15.914378 19.8917609,15.187399 19.9394184,14.1227787 C19.9878837,13.0557351 19.9991922,12.7156704 19.9991922,10 C19.9991922,7.28432956 19.9878837,6.94345719 19.9394184,5.87722132 C19.8909532,4.81260097 19.7221325,4.08562197 19.4749596,3.44991922 C19.2189015,2.79240711 18.8772213,2.23505654 18.3214863,1.67851373 C17.7657512,1.12277868 17.2075929,0.780290792 16.5508885,0.525040388 C15.914378,0.277867528 15.187399,0.108239095 14.1235864,0.0605815832 C13.0573506,0.0121163166 12.7164782,0 10.0008078,0 C7.28432956,0 6.94426494,0.0113085622 5.87722132,0.0605815832">
+                                                            </path>
+                                                        </g>
+                                                    </g>
+                                                </g>
+                                            </g>
+                                        </svg>
+                                    </a>
+                                </li>
+                                <li class="social__item">
+                                    <a href="https://vk.com/" aria-label="Перейти на сайт Вконтакте" target="_blank"
+                                        class="social__link">
+                                        <svg width="22px" height="20px" viewBox="0 0 20 12"
+                                            fill="rgba(255, 255, 255, 0.3)" xmlns="http://www.w3.org/2000/svg"
+                                            xmlns:xlink="http://www.w3.org/1999/xlink">
+                                            <g transform="translate(-630.000000, -8021.000000)">
+                                                <g transform="translate(0.000000, 7837.000000)">
+                                                    <g transform="translate(630.000000, 180.000000)">
+                                                        <path class="svg-patch"
+                                                            d="M19.5395147,4.7972122 C19.6801992,4.32826385 19.5395147,4 18.882987,4 L16.6945614,4 C16.1318233,4 15.8817176,4.29700062 15.7410331,4.62526447 C15.7410331,4.62526447 14.6311886,7.34516492 13.0523958,9.09590544 C12.5365526,9.61174863 12.3177101,9.76806474 12.0363411,9.76806474 C11.8956566,9.76806474 11.6924456,9.61174863 11.6924456,9.14280027 L11.6924456,4.7972122 C11.6924456,4.23447418 11.5361295,4 11.0671811,4 L7.62822654,4 C7.28433109,4 7.06548852,4.2657374 7.06548852,4.50021158 C7.06548852,5.03168638 7.84706911,5.15673927 7.94085878,6.62611078 L7.94085878,9.8462228 C7.94085878,10.5496453 7.81580589,10.6746982 7.53443687,10.6746982 C6.79975112,10.6746982 4.98648416,7.95479778 3.92353455,4.82847542 C3.70469199,4.25010579 3.50148104,4 2.93874301,4 L0.750317365,4 C0.125052894,4 0,4.29700062 0,4.62526447 C0,5.20363411 0.734685753,8.07985067 3.4545862,11.8783323 C5.26785317,14.4731799 7.81580589,15.8800249 10.1292844,15.8800249 C11.5204979,15.8800249 11.6924456,15.5673927 11.6924456,15.0359179 L11.6924456,13.0663348 C11.6924456,12.4410704 11.8174985,12.3160175 12.2708152,12.3160175 C12.5990791,12.3160175 13.1461855,12.4723336 14.4436093,13.7228625 C15.9286124,15.2078656 16.1787182,15.8800249 17.0071936,15.8800249 L19.1956193,15.8800249 C19.8208837,15.8800249 20.133516,15.5673927 19.9459366,14.9577599 C19.7427257,14.348127 19.0393031,13.4571251 18.1014064,12.3941755 C17.5855632,11.7845427 16.8196143,11.1436466 16.6007717,10.8153827 C16.2725079,10.3933292 16.3662975,10.2057499 16.6007717,9.8462228 C16.6007717,9.83059119 19.2737773,6.07900437 19.5395147,4.7972122 L19.5395147,4.7972122 Z">
+                                                        </path>
+                                                    </g>
+                                                </g>
+                                            </g>
+                                        </svg>
+                                    </a>
+                                </li>
+                                <li class="social__item">
+                                    <a href="https://www.youtube.com/" aria-label="Перейти на сайт Ютуб" target="_blank"
+                                        class="social__link">
+                                        <svg width="28px" height="20px" viewBox="0 0 28 20"
+                                            xmlns="http://www.w3.org/2000/svg"
+                                            xmlns:xlink="http://www.w3.org/1999/xlink">
+                                            <g transform="translate(-741.000000, -8017.000000)">
+                                                <g transform="translate(0.000000, 7837.000000)">
+                                                    <g transform="translate(630.000000, 180.000000)">
+                                                        <g transform="translate(111.000000, 0.000000)">
+                                                            <path
+                                                                d="M18.6010256,9.64615385 C16.0666667,8.29179487 13.64,7.04666667 11.1594872,5.74666667 L11.1594872,13.5235897 C13.7697436,12.1046154 16.5210256,10.8051282 18.6117949,9.64615385 L18.6010256,9.64615385 L18.6010256,9.64615385 Z"
+                                                                fill="#000000"></path>
+                                                            <path class="svg-patch"
+                                                                d="M18.6010256,9.64615385 C16.0666667,8.29179487 11.1594872,5.74666667 11.1594872,5.74666667 L17.7020513,10.1441026 C17.7025641,10.1441026 16.5102564,10.8051282 18.6010256,9.64615385 Z"
+                                                                fill="rgba(255, 255, 255, 0.3)"></path>
+                                                            <path class="svg-patch"
+                                                                d="M11.6364103,19.6112821 C6.37230769,19.514359 4.57435897,19.4271795 3.46923077,19.1994872 C2.72153846,19.0482051 2.07179487,18.7123077 1.59538462,18.2251282 C1.22717949,17.8564103 0.934358974,17.2938462 0.707179487,16.5133333 C0.512307692,15.8630769 0.436410256,15.3220513 0.328205128,14.0005128 C0.162564103,11.0179487 0.123076923,8.57948718 0.328205128,5.85487179 C0.497435897,4.35025641 0.579487179,2.56410256 1.70358974,1.52205128 C2.23435897,1.03435897 2.85179487,0.720512821 3.54512821,0.590769231 C4.62820513,0.385128205 9.2425641,0.222564103 14.0194872,0.222564103 C18.785641,0.222564103 23.4102564,0.385128205 24.494359,0.590769231 C25.3605128,0.753333333 26.1728205,1.24051282 26.6497436,1.86871795 C27.6753846,3.48205128 27.6933333,5.48820513 27.7974359,7.0574359 C27.8405128,7.80512821 27.8405128,12.0507692 27.7974359,12.7984615 C27.6353846,15.2784615 27.5051282,16.1558974 27.1369231,17.065641 C26.9092308,17.64 26.7148718,17.9430769 26.3784615,18.2789744 C25.850853,18.7958759 25.1782356,19.1396979 24.4502564,19.2646154 C19.8948718,19.6071795 16.0266667,19.6815385 11.6364103,19.6112821 L11.6364103,19.6112821 Z M18.6123077,9.64615385 C16.0779487,8.29179487 13.6512821,7.03589744 11.1707692,5.73589744 L11.1707692,13.5133333 C13.7810256,12.094359 16.5328205,10.794359 18.6230769,9.63538462 L18.6123077,9.64615385 Z"
+                                                                fill="rgba(255, 255, 255, 0.3)"></path>
+                                                        </g>
+                                                    </g>
+                                                </g>
+                                            </g>
+                                        </svg>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
                 </div>
-            </footer>
+            </div>
+        </footer>
 
-        </div>
+    </div>
 
 
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-        <script src="js/slick.min.js"></script>
-        <script src="js/burger-menu-hover.js"></script>
-        <script src="js/burger.js"></script>
-        <script src="js/modal.js"></script>
-        <script src="js/tabs.js"></script>
-        <script src="js/main.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="js/slick.min.js"></script>
+    <script src="js/burger-menu-hover.js"></script>
+    <script src="js/burger.js"></script>
+    <script src="js/modal.js"></script>
+    <script src="js/tabs.js"></script>
+    <script src="js/main.js"></script>
 
-    </body>
+</body>
+
 </html>

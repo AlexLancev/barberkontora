@@ -31,7 +31,7 @@ $(function () {
     fade: true
   });
 
-  $('.mainthihg-maithing__slider').slick({
+  $('.mainthing-mainthings__slider').slick({
     slidesToShow: 1,
     slidesToScroll: 1,
     lazyLoad: 'ondemand',
